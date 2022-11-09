@@ -18,10 +18,14 @@ namespace test.Conexion
     {
         //Tipo de usuario, se asigna en Login
         public string user = "";
+
+
+        //Conexion SQL
         readonly SqlConnection cn;
         SqlCommand cmd;
         SqlDataAdapter dr;
-        //Conexion SQL
+
+        //Abrir conexion con SQL
         public SQL(){
             try
             {
@@ -35,7 +39,7 @@ namespace test.Conexion
                 MessageBox.Show("Conexion Fallida, "+x.ToString());
             }
         }
-        //Comando SQL
+        //Comando SQL, ejecuta un Query
         public void CMD(string query)
         {
             try
@@ -49,7 +53,8 @@ namespace test.Conexion
                 MessageBox.Show("Error, " + x.ToString());
             }
         }
-        //Misma Conexion, diferente metodo de uso (Desmarcar solo si el primero causa errores
+        //Misma Conexion, diferente metodo de uso
+        //*** Desmarcar solo si el primero causa errores ***
         /*public void SQL(string command)
         {
             try

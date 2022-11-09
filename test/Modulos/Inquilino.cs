@@ -16,5 +16,10 @@ namespace test.Modulos
         {
             InitializeComponent();
         }
+
+        private void Inquilino_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

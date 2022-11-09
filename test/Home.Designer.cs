@@ -33,6 +33,7 @@
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.fecha1 = new test.Misc.Fecha();
             this.SuspendLayout();
             // 
             // iconButton1
@@ -66,11 +67,10 @@
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.User;
             this.iconButton2.IconColor = System.Drawing.Color.Black;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 64;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.iconButton2.Location = new System.Drawing.Point(698, 214);
+            this.iconButton2.Location = new System.Drawing.Point(730, 214);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(96, 96);
+            this.iconButton2.Size = new System.Drawing.Size(64, 96);
             this.iconButton2.TabIndex = 12;
             this.iconButton2.Text = "Inquilinos";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -87,11 +87,10 @@
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.MoneyBillTransfer;
             this.iconButton3.IconColor = System.Drawing.Color.Black;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 64;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.iconButton3.Location = new System.Drawing.Point(462, 348);
+            this.iconButton3.Location = new System.Drawing.Point(462, 380);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(96, 96);
+            this.iconButton3.Size = new System.Drawing.Size(96, 64);
             this.iconButton3.TabIndex = 13;
             this.iconButton3.Text = "Rentas";
             this.iconButton3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -108,11 +107,10 @@
             this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.ClipboardQuestion;
             this.iconButton4.IconColor = System.Drawing.Color.Black;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 64;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.iconButton4.Location = new System.Drawing.Point(564, 348);
+            this.iconButton4.Location = new System.Drawing.Point(564, 380);
             this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(96, 96);
+            this.iconButton4.Size = new System.Drawing.Size(96, 64);
             this.iconButton4.TabIndex = 14;
             this.iconButton4.Text = "Administracion";
             this.iconButton4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -129,22 +127,30 @@
             this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
             this.iconButton5.IconColor = System.Drawing.Color.Black;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.IconSize = 64;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.iconButton5.Location = new System.Drawing.Point(698, 112);
+            this.iconButton5.Location = new System.Drawing.Point(730, 112);
             this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(96, 96);
+            this.iconButton5.Size = new System.Drawing.Size(64, 96);
             this.iconButton5.TabIndex = 15;
             this.iconButton5.Text = "Dept";
             this.iconButton5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.iconButton5.UseVisualStyleBackColor = true;
             // 
+            // fecha1
+            // 
+            this.fecha1.BackColor = System.Drawing.SystemColors.Control;
+            this.fecha1.Location = new System.Drawing.Point(644, 67);
+            this.fecha1.Name = "fecha1";
+            this.fecha1.Size = new System.Drawing.Size(150, 32);
+            this.fecha1.TabIndex = 16;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.fecha1);
             this.Controls.Add(this.iconButton5);
             this.Controls.Add(this.iconButton4);
             this.Controls.Add(this.iconButton3);
@@ -163,5 +169,6 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton iconButton5;
+        private Misc.Fecha fecha1;
     }
 }

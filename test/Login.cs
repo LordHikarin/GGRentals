@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace test
 {
-    public partial class main : MaterialForm
+    public partial class Login : MaterialForm
     {
-        public main()
+        public Login()
         {
             InitializeComponent();
         }
@@ -26,22 +26,23 @@ namespace test
 
         private void login_BTN_Click(object sender, EventArgs e)
         {
-            SQL(usr_TBX.Text.ToString(), psw_TBX.Text.ToString());
-        }
-
-        public void SQL(string user, string password)
-        {
-            if (Conexion.Login("SELECT * FROM Empleado WHERE Usuario = '" + user + "'and Contraseña = '" + password + "'"))
+            //Si el usuario y contraseña coinciden, cambiar de pantalla
+            if (Conexion.Login("SELECT * FROM Empleado WHERE Usuario = '" + usr_TBX.Text.ToString() + "'and Contraseña = '" + psw_TBX.Text.ToString() + "'"))
             {
                 Home rentas = new Home();
                 this.Hide();
                 rentas.ShowDialog();
                 this.Close();
-            }
-            else
+            } else
+            //Contraseña o Usuario incorrecto
             {
                 MessageBox.Show("Datos Incorrectos");
             }
+        }
+
+        public void SQL(string user, string password)
+        {
+            
         }
 
         private void usr_TBX_TextChanged(object sender, EventArgs e)

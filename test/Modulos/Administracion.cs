@@ -27,8 +27,8 @@ namespace test.Modulos
             }
             else
             {
-                string command = "backup database GGRentals to disk = 'C:\\backup\\" + nombre_TBX.Text.ToString() + ".bak' with name = 'backup prueba 1', description = 'Backup Complete'";
-                conexion.CMD(command);
+                string query = "backup database GGRentals to disk = 'C:\\backup\\" + nombre_TBX.Text.ToString() + ".bak' with name = 'backup prueba 1', description = 'Backup Complete'";
+                conexion.CMD(query);
             }
         }
 
@@ -41,8 +41,8 @@ namespace test.Modulos
             }
             else
             {
-                string command = "Restore Database GGRentals From Disk = 'c:\\backup\\" + nombre_TBX.Text.ToString() + ".bak' with file = 1, recovery";
-                conexion.CMD(command);
+                string query = "Restore Database GGRentals From Disk = 'c:\\backup\\" + nombre_TBX.Text.ToString() + ".bak' with file = 1, recovery";
+                conexion.CMD(query);
             }
         }
 

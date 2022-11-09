@@ -31,6 +31,7 @@
             this.Restore_BTN = new System.Windows.Forms.Button();
             this.Save_BTN = new System.Windows.Forms.Button();
             this.nombre_TBX = new System.Windows.Forms.TextBox();
+            this.back_CBX = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // Restore_BTN
@@ -60,10 +61,20 @@
             this.nombre_TBX.Size = new System.Drawing.Size(493, 20);
             this.nombre_TBX.TabIndex = 2;
             // 
+            // back_CBX
+            // 
+            this.back_CBX.FormattingEnabled = true;
+            this.back_CBX.Location = new System.Drawing.Point(4, 12);
+            this.back_CBX.Name = "back_CBX";
+            this.back_CBX.Size = new System.Drawing.Size(493, 21);
+            this.back_CBX.TabIndex = 25;
+            this.back_CBX.Text = "Seleccionar";
+            // 
             // Administracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.back_CBX);
             this.Controls.Add(this.nombre_TBX);
             this.Controls.Add(this.Save_BTN);
             this.Controls.Add(this.Restore_BTN);
@@ -80,5 +91,6 @@
         private System.Windows.Forms.Button Restore_BTN;
         private System.Windows.Forms.Button Save_BTN;
         private System.Windows.Forms.TextBox nombre_TBX;
+        private System.Windows.Forms.ComboBox back_CBX;
     }
 }

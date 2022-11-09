@@ -1,6 +1,6 @@
 ﻿namespace test
 {
-    partial class main
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.

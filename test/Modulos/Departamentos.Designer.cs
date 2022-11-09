@@ -227,6 +227,7 @@
             this.Controls.Add(this.dept_id_LBL);
             this.Name = "Departamentos";
             this.Size = new System.Drawing.Size(500, 340);
+            this.Load += new System.EventHandler(this.Departamentos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

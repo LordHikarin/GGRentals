@@ -16,5 +16,10 @@ namespace test.Modulos
         {
             InitializeComponent();
         }
+
+        private void Departamentos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
