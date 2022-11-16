@@ -91,7 +91,6 @@ namespace test.Conexion
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.HasRows)
                 {
-                    user = "Admin";
                     return true;
                 }
                 else

@@ -31,32 +31,20 @@ namespace test
         private void admin_BTN_Click(object sender, EventArgs e)
         {
             adm.Show();
-            rent.Hide();
-            inq.Hide();
-            dept.Hide();
         }
 
         private void rentas_BTN_Click(object sender, EventArgs e)
         {
-            adm.Hide();
             rent.Show();
-            inq.Hide();
-            dept.Hide();
         }
 
         private void inq_BTN_Click(object sender, EventArgs e)
         {
-            adm.Hide();
-            rent.Hide();
             inq.Show();
-            dept.Hide();
         }
 
         private void dept_BTN_Click(object sender, EventArgs e)
         {
-            adm.Hide();
-            rent.Hide();
-            inq.Hide();
             dept.Show();
         }
     }
