@@ -151,7 +151,7 @@
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.fecha1);
@@ -161,6 +161,7 @@
             this.Controls.Add(this.inq_BTN);
             this.Controls.Add(this.home_BTN);
             this.Name = "Home";
+            this.Padding = new System.Windows.Forms.Padding(4, 79, 4, 4);
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.ResumeLayout(false);
