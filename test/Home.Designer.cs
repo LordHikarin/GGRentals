@@ -33,7 +33,7 @@
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.fecha1 = new test.Misc.Fecha();
+            //this.fecha1 = new test.Misc.Fecha();
             this.SuspendLayout();
             // 
             // iconButton1
@@ -139,18 +139,18 @@
             // 
             // fecha1
             // 
-            this.fecha1.BackColor = System.Drawing.SystemColors.Control;
+            /*this.fecha1.BackColor = System.Drawing.SystemColors.Control;
             this.fecha1.Location = new System.Drawing.Point(644, 67);
             this.fecha1.Name = "fecha1";
             this.fecha1.Size = new System.Drawing.Size(150, 32);
-            this.fecha1.TabIndex = 16;
+            this.fecha1.TabIndex = 16;*/
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.fecha1);
+           // this.Controls.Add(this.fecha1);
             this.Controls.Add(this.iconButton5);
             this.Controls.Add(this.iconButton4);
             this.Controls.Add(this.iconButton3);
@@ -169,6 +169,6 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton iconButton5;
-        private Misc.Fecha fecha1;
+       // private Misc.Fecha fecha1;
     }
 }
