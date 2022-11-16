@@ -16,5 +16,10 @@ namespace test.Modulos
         {
             InitializeComponent();
         }
+
+        private void Rentas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
