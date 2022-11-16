@@ -8,11 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using test.Modulos;
 
 namespace test
 {
     public partial class Home : MaterialForm
     {
+        Rentas rent= new Rentas();
+        Inquilino inq= new Inquilino();
+        Departamentos dept= new Departamentos();
+        Administracion adm = new Administracion();
         public Home()
         {
             InitializeComponent();
@@ -21,6 +26,38 @@ namespace test
         private void Home_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void admin_BTN_Click(object sender, EventArgs e)
+        {
+            adm.Show();
+            rent.Hide();
+            inq.Hide();
+            dept.Hide();
+        }
+
+        private void rentas_BTN_Click(object sender, EventArgs e)
+        {
+            adm.Hide();
+            rent.Show();
+            inq.Hide();
+            dept.Hide();
+        }
+
+        private void inq_BTN_Click(object sender, EventArgs e)
+        {
+            adm.Hide();
+            rent.Hide();
+            inq.Show();
+            dept.Hide();
+        }
+
+        private void dept_BTN_Click(object sender, EventArgs e)
+        {
+            adm.Hide();
+            rent.Hide();
+            inq.Hide();
+            dept.Show();
         }
     }
 }

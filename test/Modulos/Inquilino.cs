@@ -12,6 +12,7 @@ namespace test.Modulos
 {
     public partial class Inquilino : UserControl
     {
+        Conexion.SQL conexion = new Conexion.SQL();
         public Inquilino()
         {
             InitializeComponent();
@@ -19,6 +20,9 @@ namespace test.Modulos
 
         private void Inquilino_Load(object sender, EventArgs e)
         {
+            string sqlCommand = "SELECT * FROM inquilino";
+            DataSet ds = conexion.GetDataSet(sqlCommand);
+            dataGridView1.DataSource = ds;
 
         }
     }

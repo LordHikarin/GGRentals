@@ -14,11 +14,11 @@ namespace test
 {
     public partial class Login : MaterialForm
     {
+        Conexion.SQL Conexion = new Conexion.SQL();
         public Login()
         {
             InitializeComponent();
         }
-        Conexion.SQL Conexion = new Conexion.SQL();
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -38,11 +38,6 @@ namespace test
             {
                 MessageBox.Show("Datos Incorrectos");
             }
-        }
-
-        public void SQL(string user, string password)
-        {
-            
         }
 
         private void usr_TBX_TextChanged(object sender, EventArgs e)

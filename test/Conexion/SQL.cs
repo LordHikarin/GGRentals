@@ -23,7 +23,6 @@ namespace test.Conexion
         //Conexion SQL
         readonly SqlConnection cn;
         SqlCommand cmd;
-        SqlDataAdapter dr;
 
         //Abrir conexion con SQL
         public SQL(){
@@ -53,9 +52,10 @@ namespace test.Conexion
                 MessageBox.Show("Error, " + x.ToString());
             }
         }
-        //Misma Conexion, diferente metodo de uso
-        //*** Desmarcar solo si el primero causa errores ***
-        /*public void SQL(string command)
+        /*Misma Conexion, diferente metodo de uso
+        ** Desmarcar solo si el primero causa errores **
+        SqlDataAdapter dr;
+        public void SQL(string command)
         {
             try
             {
@@ -106,6 +106,18 @@ namespace test.Conexion
                 return false;
             }
 
+        }
+
+        //Rellenar un Dataset con un query SELECT*FROM Tabla
+        public DataSet GetDataSet(string sqlCommand)
+        {
+            DataSet ds = new DataSet();
+            cmd = new SqlCommand(sqlCommand, cn);
+            cmd.Connection.Open();
+            DataTable table = new DataTable();
+            table.Load(cmd.ExecuteReader());
+            ds.Tables.Add(table);
+            return ds;
         }
     }
 }

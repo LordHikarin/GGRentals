@@ -12,6 +12,7 @@ namespace test.Modulos
 {
     public partial class Departamentos : UserControl
     {
+        Conexion.SQL conexion = new Conexion.SQL();
         public Departamentos()
         {
             InitializeComponent();
@@ -19,7 +20,9 @@ namespace test.Modulos
 
         private void Departamentos_Load(object sender, EventArgs e)
         {
-
+            string sqlCommand = "SELECT * FROM departamentos";
+            DataSet ds = conexion.GetDataSet(sqlCommand);
+            dept_DATA.DataSource = ds;
         }
     }
 }

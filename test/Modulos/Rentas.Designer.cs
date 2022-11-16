@@ -31,7 +31,7 @@
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.rentas_DATA = new System.Windows.Forms.DataGridView();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.dept_CBX = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -40,7 +40,9 @@
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.costo_LBL = new MaterialSkin.Controls.MaterialLabel();
+            this.costo_TBX = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.rentas_DATA)).BeginInit();
             this.SuspendLayout();
             // 
             // materialButton1
@@ -100,13 +102,13 @@
             this.materialButton3.UseAccentColor = false;
             this.materialButton3.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // rentas_DATA
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 147);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 3;
+            this.rentas_DATA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.rentas_DATA.Location = new System.Drawing.Point(4, 147);
+            this.rentas_DATA.Name = "rentas_DATA";
+            this.rentas_DATA.Size = new System.Drawing.Size(240, 150);
+            this.rentas_DATA.TabIndex = 3;
             // 
             // materialLabel2
             // 
@@ -187,10 +189,32 @@
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 33;
             // 
+            // costo_LBL
+            // 
+            this.costo_LBL.AutoSize = true;
+            this.costo_LBL.Depth = 0;
+            this.costo_LBL.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.costo_LBL.Location = new System.Drawing.Point(328, 147);
+            this.costo_LBL.MouseState = MaterialSkin.MouseState.HOVER;
+            this.costo_LBL.Name = "costo_LBL";
+            this.costo_LBL.Size = new System.Drawing.Size(91, 19);
+            this.costo_LBL.TabIndex = 34;
+            this.costo_LBL.Text = "Costo Total :";
+            // 
+            // costo_TBX
+            // 
+            this.costo_TBX.Location = new System.Drawing.Point(331, 169);
+            this.costo_TBX.Name = "costo_TBX";
+            this.costo_TBX.ReadOnly = true;
+            this.costo_TBX.Size = new System.Drawing.Size(120, 20);
+            this.costo_TBX.TabIndex = 35;
+            // 
             // Rentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.costo_TBX);
+            this.Controls.Add(this.costo_LBL);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.materialLabel3);
@@ -199,13 +223,14 @@
             this.Controls.Add(this.dept_CBX);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.inquilino_id_LBL);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.rentas_DATA);
             this.Controls.Add(this.materialButton3);
             this.Controls.Add(this.materialButton2);
             this.Controls.Add(this.materialButton1);
             this.Name = "Rentas";
             this.Size = new System.Drawing.Size(500, 340);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Rentas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.rentas_DATA)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,7 +241,7 @@
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private MaterialSkin.Controls.MaterialButton materialButton2;
         private MaterialSkin.Controls.MaterialButton materialButton3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView rentas_DATA;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private System.Windows.Forms.ComboBox dept_CBX;
         private System.Windows.Forms.TextBox textBox1;
@@ -225,5 +250,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private MaterialSkin.Controls.MaterialLabel costo_LBL;
+        private System.Windows.Forms.TextBox costo_TBX;
     }
 }
