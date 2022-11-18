@@ -34,6 +34,7 @@
             this.rentas_BTN = new FontAwesome.Sharp.IconButton();
             this.admin_BTN = new FontAwesome.Sharp.IconButton();
             this.dept_BTN = new FontAwesome.Sharp.IconButton();
+            this.administracion1 = new test.Modulos.Administracion();
             this.SuspendLayout();
             // 
             // home_BTN
@@ -49,14 +50,16 @@
             this.home_BTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.home_BTN.IconSize = 128;
             this.home_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.home_BTN.Location = new System.Drawing.Point(666, 316);
+            this.home_BTN.Location = new System.Drawing.Point(500, 257);
+            this.home_BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.home_BTN.Name = "home_BTN";
-            this.home_BTN.Size = new System.Drawing.Size(128, 128);
+            this.home_BTN.Size = new System.Drawing.Size(96, 104);
             this.home_BTN.TabIndex = 11;
             this.home_BTN.Text = "Inicio";
             this.home_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.home_BTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.home_BTN.UseVisualStyleBackColor = false;
+            this.home_BTN.Click += new System.EventHandler(this.home_BTN_Click);
             // 
             // inq_BTN
             // 
@@ -68,9 +71,10 @@
             this.inq_BTN.IconColor = System.Drawing.Color.Black;
             this.inq_BTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.inq_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.inq_BTN.Location = new System.Drawing.Point(730, 214);
+            this.inq_BTN.Location = new System.Drawing.Point(548, 174);
+            this.inq_BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.inq_BTN.Name = "inq_BTN";
-            this.inq_BTN.Size = new System.Drawing.Size(64, 96);
+            this.inq_BTN.Size = new System.Drawing.Size(48, 78);
             this.inq_BTN.TabIndex = 12;
             this.inq_BTN.Text = "Inquilinos";
             this.inq_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -89,9 +93,10 @@
             this.rentas_BTN.IconColor = System.Drawing.Color.Black;
             this.rentas_BTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.rentas_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rentas_BTN.Location = new System.Drawing.Point(462, 380);
+            this.rentas_BTN.Location = new System.Drawing.Point(346, 309);
+            this.rentas_BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rentas_BTN.Name = "rentas_BTN";
-            this.rentas_BTN.Size = new System.Drawing.Size(96, 64);
+            this.rentas_BTN.Size = new System.Drawing.Size(72, 52);
             this.rentas_BTN.TabIndex = 13;
             this.rentas_BTN.Text = "Rentas";
             this.rentas_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -110,9 +115,10 @@
             this.admin_BTN.IconColor = System.Drawing.Color.Black;
             this.admin_BTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.admin_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.admin_BTN.Location = new System.Drawing.Point(564, 352);
+            this.admin_BTN.Location = new System.Drawing.Point(423, 286);
+            this.admin_BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.admin_BTN.Name = "admin_BTN";
-            this.admin_BTN.Size = new System.Drawing.Size(96, 92);
+            this.admin_BTN.Size = new System.Drawing.Size(72, 75);
             this.admin_BTN.TabIndex = 14;
             this.admin_BTN.Text = "Administracion";
             this.admin_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -131,9 +137,10 @@
             this.dept_BTN.IconColor = System.Drawing.Color.Black;
             this.dept_BTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.dept_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.dept_BTN.Location = new System.Drawing.Point(730, 112);
+            this.dept_BTN.Location = new System.Drawing.Point(548, 91);
+            this.dept_BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dept_BTN.Name = "dept_BTN";
-            this.dept_BTN.Size = new System.Drawing.Size(64, 96);
+            this.dept_BTN.Size = new System.Drawing.Size(48, 78);
             this.dept_BTN.TabIndex = 15;
             this.dept_BTN.Text = "Dept";
             this.dept_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -141,20 +148,28 @@
             this.dept_BTN.UseVisualStyleBackColor = true;
             this.dept_BTN.Click += new System.EventHandler(this.dept_BTN_Click);
             // 
+            // administracion1
+            // 
+            this.administracion1.Location = new System.Drawing.Point(7, 68);
+            this.administracion1.Name = "administracion1";
+            this.administracion1.Size = new System.Drawing.Size(500, 340);
+            this.administracion1.TabIndex = 16;
+            // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.administracion1);
             this.Controls.Add(this.dept_BTN);
             this.Controls.Add(this.admin_BTN);
             this.Controls.Add(this.rentas_BTN);
             this.Controls.Add(this.inq_BTN);
             this.Controls.Add(this.home_BTN);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Home";
-            this.Padding = new System.Windows.Forms.Padding(4, 79, 4, 4);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
@@ -168,6 +183,7 @@
         private FontAwesome.Sharp.IconButton rentas_BTN;
         private FontAwesome.Sharp.IconButton admin_BTN;
         private FontAwesome.Sharp.IconButton dept_BTN;
+        private Modulos.Administracion administracion1;
         //private Misc.Fecha fecha1;
     }
 }

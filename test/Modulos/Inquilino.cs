@@ -20,7 +20,7 @@ namespace test.Modulos
 
         private void Inquilino_Load(object sender, EventArgs e)
         {
-            string sqlCommand = "SELECT * FROM inquilino";
+            string sqlCommand = "SELECT * FROM inquilinos";
             DataSet ds = conexion.GetDataSet(sqlCommand);
             dataGridView1.DataSource = ds;
 

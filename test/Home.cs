@@ -47,5 +47,10 @@ namespace test
         {
             dept.Show();
         }
+
+        private void home_BTN_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

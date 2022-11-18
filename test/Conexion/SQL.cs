@@ -28,9 +28,9 @@ namespace test.Conexion
             try
             {
                 //Ingresar informacion de la base de datos
-                cn = new MySqlConnection("Data Source = Localhot; User ID = root; Password = 4696; Initial Catalog = GGRentals;");
+                cn = new MySqlConnection("Data Source = Localhost; User ID = root; Password = itspp; Initial Catalog = GGRentals;");
                 cn.Open();
-                MessageBox.Show("Conexion Correcta.");
+                //MessageBox.Show("Conexion Correcta.");
             }
             catch (Exception x)
             {
@@ -111,7 +111,6 @@ namespace test.Conexion
         {
             DataSet ds = new DataSet();
             cmd = new MySqlCommand(sqlCommand, cn);
-            cmd.Connection.Open();
             DataTable table = new DataTable();
             table.Load(cmd.ExecuteReader());
             ds.Tables.Add(table);
