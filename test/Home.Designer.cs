@@ -33,7 +33,6 @@
             this.rentas_BTN = new FontAwesome.Sharp.IconButton();
             this.admin_BTN = new FontAwesome.Sharp.IconButton();
             this.dept_BTN = new FontAwesome.Sharp.IconButton();
-            this.fecha1 = new test.Misc.Fecha();
             this.SuspendLayout();
             // 
             // home_BTN
@@ -110,9 +109,9 @@
             this.admin_BTN.IconColor = System.Drawing.Color.Black;
             this.admin_BTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.admin_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.admin_BTN.Location = new System.Drawing.Point(564, 380);
+            this.admin_BTN.Location = new System.Drawing.Point(564, 352);
             this.admin_BTN.Name = "admin_BTN";
-            this.admin_BTN.Size = new System.Drawing.Size(96, 64);
+            this.admin_BTN.Size = new System.Drawing.Size(96, 92);
             this.admin_BTN.TabIndex = 14;
             this.admin_BTN.Text = "Administracion";
             this.admin_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -141,20 +140,11 @@
             this.dept_BTN.UseVisualStyleBackColor = true;
             this.dept_BTN.Click += new System.EventHandler(this.dept_BTN_Click);
             // 
-            // fecha1
-            // 
-            this.fecha1.BackColor = System.Drawing.SystemColors.Control;
-            this.fecha1.Location = new System.Drawing.Point(644, 67);
-            this.fecha1.Name = "fecha1";
-            this.fecha1.Size = new System.Drawing.Size(150, 32);
-            this.fecha1.TabIndex = 16;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.fecha1);
             this.Controls.Add(this.dept_BTN);
             this.Controls.Add(this.admin_BTN);
             this.Controls.Add(this.rentas_BTN);
@@ -174,6 +164,6 @@
         private FontAwesome.Sharp.IconButton rentas_BTN;
         private FontAwesome.Sharp.IconButton admin_BTN;
         private FontAwesome.Sharp.IconButton dept_BTN;
-        private Misc.Fecha fecha1;
+        //private Misc.Fecha fecha1;
     }
 }
