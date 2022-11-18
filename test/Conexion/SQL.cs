@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.Sql;
-using System.Data.SqlClient;
 using System.Windows.Navigation;
 
 namespace test.Conexion
@@ -21,15 +20,15 @@ namespace test.Conexion
 
 
         //Conexion SQL
-        readonly SqlConnection cn;
-        SqlCommand cmd;
+        readonly MySqlConnection cn;
+        MySqlCommand cmd;
 
         //Abrir conexion con SQL
         public SQL(){
             try
             {
                 //Ingresar informacion de la base de datos
-                cn = new SqlConnection("Data Source = Localhot; User ID = root; Password = 4696; Initial Catalog = GGRentals;");
+                cn = new MySqlConnection("Data Source = Localhot; User ID = root; Password = 4696; Initial Catalog = GGRentals;");
                 cn.Open();
                 MessageBox.Show("Conexion Correcta.");
             }
@@ -43,7 +42,7 @@ namespace test.Conexion
         {
             try
             {
-                cmd = new SqlCommand(query, cn);
+                cmd = new MySqlCommand(query, cn);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Cambios Efectuados Correctamente.");
             }
@@ -86,9 +85,9 @@ namespace test.Conexion
         {
             try
             {
-                cmd = new SqlCommand(query, cn);
+                cmd = new MySqlCommand(query, cn);
                 cmd.ExecuteNonQuery();
-                SqlDataReader reader = cmd.ExecuteReader();
+                MySqlDataReader reader = cmd.ExecuteReader();
                 if (reader.HasRows)
                 {
                     return true;
@@ -111,7 +110,7 @@ namespace test.Conexion
         public DataSet GetDataSet(string sqlCommand)
         {
             DataSet ds = new DataSet();
-            cmd = new SqlCommand(sqlCommand, cn);
+            cmd = new MySqlCommand(sqlCommand, cn);
             cmd.Connection.Open();
             DataTable table = new DataTable();
             table.Load(cmd.ExecuteReader());
