@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.home_BTN = new FontAwesome.Sharp.IconButton();
             this.inq_BTN = new FontAwesome.Sharp.IconButton();
             this.rentas_BTN = new FontAwesome.Sharp.IconButton();
@@ -144,14 +145,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dept_BTN);
             this.Controls.Add(this.admin_BTN);
             this.Controls.Add(this.rentas_BTN);
             this.Controls.Add(this.inq_BTN);
             this.Controls.Add(this.home_BTN);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Home";
             this.Padding = new System.Windows.Forms.Padding(4, 79, 4, 4);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.ResumeLayout(false);
