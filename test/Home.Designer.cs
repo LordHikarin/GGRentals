@@ -34,11 +34,11 @@
             this.rentas_BTN = new FontAwesome.Sharp.IconButton();
             this.admin_BTN = new FontAwesome.Sharp.IconButton();
             this.dept_BTN = new FontAwesome.Sharp.IconButton();
-            this.administracion1 = new test.Modulos.Administracion();
-            this.fecha1 = new test.Misc.Fecha();
-            this.departamentos1 = new test.Modulos.Departamentos();
-            this.inquilino1 = new test.Modulos.Inquilino();
             this.rentas1 = new test.Modulos.Rentas();
+            this.inquilino1 = new test.Modulos.Inquilino();
+            this.departamentos1 = new test.Modulos.Departamentos();
+            this.fecha1 = new test.Misc.Fecha();
+            this.administracion1 = new test.Modulos.Administracion();
             this.SuspendLayout();
             // 
             // home_BTN
@@ -152,31 +152,13 @@
             this.dept_BTN.UseVisualStyleBackColor = true;
             this.dept_BTN.Click += new System.EventHandler(this.dept_BTN_Click);
             // 
-            // administracion1
+            // rentas1
             // 
-            this.administracion1.Location = new System.Drawing.Point(9, 84);
-            this.administracion1.Margin = new System.Windows.Forms.Padding(5);
-            this.administracion1.Name = "administracion1";
-            this.administracion1.Size = new System.Drawing.Size(667, 418);
-            this.administracion1.TabIndex = 16;
-            this.administracion1.Visible = false;
-            // 
-            // fecha1
-            // 
-            this.fecha1.BackColor = System.Drawing.SystemColors.Control;
-            this.fecha1.Location = new System.Drawing.Point(937, 83);
-            this.fecha1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.fecha1.Name = "fecha1";
-            this.fecha1.Size = new System.Drawing.Size(200, 39);
-            this.fecha1.TabIndex = 17;
-            // 
-            // departamentos1
-            // 
-            this.departamentos1.Location = new System.Drawing.Point(9, 84);
-            this.departamentos1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.departamentos1.Name = "departamentos1";
-            this.departamentos1.Size = new System.Drawing.Size(667, 418);
-            this.departamentos1.TabIndex = 18;
+            this.rentas1.Location = new System.Drawing.Point(8, 84);
+            this.rentas1.Margin = new System.Windows.Forms.Padding(4);
+            this.rentas1.Name = "rentas1";
+            this.rentas1.Size = new System.Drawing.Size(668, 418);
+            this.rentas1.TabIndex = 20;
             // 
             // inquilino1
             // 
@@ -186,13 +168,31 @@
             this.inquilino1.Size = new System.Drawing.Size(667, 418);
             this.inquilino1.TabIndex = 19;
             // 
-            // rentas1
+            // departamentos1
             // 
-            this.rentas1.Location = new System.Drawing.Point(8, 84);
-            this.rentas1.Margin = new System.Windows.Forms.Padding(4);
-            this.rentas1.Name = "rentas1";
-            this.rentas1.Size = new System.Drawing.Size(668, 418);
-            this.rentas1.TabIndex = 20;
+            this.departamentos1.Location = new System.Drawing.Point(9, 84);
+            this.departamentos1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.departamentos1.Name = "departamentos1";
+            this.departamentos1.Size = new System.Drawing.Size(667, 418);
+            this.departamentos1.TabIndex = 18;
+            // 
+            // fecha1
+            // 
+            this.fecha1.BackColor = System.Drawing.SystemColors.Control;
+            this.fecha1.Location = new System.Drawing.Point(937, 83);
+            this.fecha1.Margin = new System.Windows.Forms.Padding(4);
+            this.fecha1.Name = "fecha1";
+            this.fecha1.Size = new System.Drawing.Size(200, 39);
+            this.fecha1.TabIndex = 17;
+            // 
+            // administracion1
+            // 
+            this.administracion1.Location = new System.Drawing.Point(9, 83);
+            this.administracion1.Margin = new System.Windows.Forms.Padding(5);
+            this.administracion1.Name = "administracion1";
+            this.administracion1.Size = new System.Drawing.Size(667, 418);
+            this.administracion1.TabIndex = 16;
+            this.administracion1.Visible = false;
             // 
             // Home
             // 
