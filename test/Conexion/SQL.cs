@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,8 +27,11 @@ namespace test.Conexion
         public SQL(){
             try
             {
+                //Descomenta el que necesites
                 //Ingresar informacion de la base de datos
-                cn = new MySqlConnection("Data Source = Localhost; User ID = root; Password = itspp; Initial Catalog = GGRentals;");
+             //   cn = new MySqlConnection("Data Source = Localhost; User ID = root; Password = itspp; Initial Catalog = GGRentals;");
+             //   cn.Open(); 
+                cn = new MySqlConnection("Data Source = Localhost; User ID = root; Password = RousLee; Initial Catalog = ggrentals;");
                 cn.Open();
                 //MessageBox.Show("Conexion Correcta.");
             }
@@ -51,34 +54,6 @@ namespace test.Conexion
                 MessageBox.Show("Error, " + x.ToString());
             }
         }
-        /*Misma Conexion, diferente metodo de uso
-        ** Desmarcar solo si el primero causa errores **
-        SqlDataAdapter dr;
-        public void SQL(string command)
-        {
-            try
-            {
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder()
-                {
-                    DataSource = "Localhost",
-                    UserID = "root",
-                    Password = "4696",
-                    InitialCatalog = "GGRentals"
-                };
-                using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
-                {
-                    SqlCommand cmd = new SqlCommand(command, connection);
-                    connection.Open();
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Cambios Efectuados Correctamente.");
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Error de conexion.");
-            }
-        }
-        */
 
         //Login, se usa en la primera pantalla
         public Boolean Login(string query)
