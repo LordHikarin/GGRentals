@@ -30,22 +30,27 @@ namespace test
 
         private void admin_BTN_Click(object sender, EventArgs e)
         {
-            adm.Show();
+            administracion1.Visible = true;
         }
 
         private void rentas_BTN_Click(object sender, EventArgs e)
         {
-            rent.Show();
+            rentas1.Visible = true;
         }
 
         private void inq_BTN_Click(object sender, EventArgs e)
         {
-            inq.Show();
+            inquilino1.Visible = true;
         }
 
         private void dept_BTN_Click(object sender, EventArgs e)
         {
-            dept.Show();
+           departamentos1.Visible = true;
+        }
+
+        private void home_BTN_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

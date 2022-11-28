@@ -34,6 +34,11 @@
             this.rentas_BTN = new FontAwesome.Sharp.IconButton();
             this.admin_BTN = new FontAwesome.Sharp.IconButton();
             this.dept_BTN = new FontAwesome.Sharp.IconButton();
+            this.rentas1 = new test.Modulos.Rentas();
+            this.inquilino1 = new test.Modulos.Inquilino();
+            this.departamentos1 = new test.Modulos.Departamentos();
+            this.fecha1 = new test.Misc.Fecha();
+            this.administracion1 = new test.Modulos.Administracion();
             this.SuspendLayout();
             // 
             // home_BTN
@@ -49,15 +54,16 @@
             this.home_BTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.home_BTN.IconSize = 96;
             this.home_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.home_BTN.Location = new System.Drawing.Point(500, 257);
-            this.home_BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.home_BTN.Location = new System.Drawing.Point(1001, 469);
+            this.home_BTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.home_BTN.Name = "home_BTN";
-            this.home_BTN.Size = new System.Drawing.Size(96, 104);
+            this.home_BTN.Size = new System.Drawing.Size(139, 134);
             this.home_BTN.TabIndex = 11;
             this.home_BTN.Text = "Inicio";
             this.home_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.home_BTN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.home_BTN.UseVisualStyleBackColor = false;
+            this.home_BTN.Click += new System.EventHandler(this.home_BTN_Click);
             // 
             // inq_BTN
             // 
@@ -69,10 +75,10 @@
             this.inq_BTN.IconColor = System.Drawing.Color.Black;
             this.inq_BTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.inq_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.inq_BTN.Location = new System.Drawing.Point(548, 173);
-            this.inq_BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inq_BTN.Location = new System.Drawing.Point(1035, 367);
+            this.inq_BTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.inq_BTN.Name = "inq_BTN";
-            this.inq_BTN.Size = new System.Drawing.Size(48, 78);
+            this.inq_BTN.Size = new System.Drawing.Size(105, 102);
             this.inq_BTN.TabIndex = 12;
             this.inq_BTN.Text = "Inquilinos";
             this.inq_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -91,10 +97,10 @@
             this.rentas_BTN.IconColor = System.Drawing.Color.Black;
             this.rentas_BTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.rentas_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rentas_BTN.Location = new System.Drawing.Point(346, 309);
-            this.rentas_BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rentas_BTN.Location = new System.Drawing.Point(795, 512);
+            this.rentas_BTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rentas_BTN.Name = "rentas_BTN";
-            this.rentas_BTN.Size = new System.Drawing.Size(72, 52);
+            this.rentas_BTN.Size = new System.Drawing.Size(93, 91);
             this.rentas_BTN.TabIndex = 13;
             this.rentas_BTN.Text = "Rentas";
             this.rentas_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -113,10 +119,10 @@
             this.admin_BTN.IconColor = System.Drawing.Color.Black;
             this.admin_BTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.admin_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.admin_BTN.Location = new System.Drawing.Point(423, 286);
-            this.admin_BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.admin_BTN.Location = new System.Drawing.Point(884, 512);
+            this.admin_BTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.admin_BTN.Name = "admin_BTN";
-            this.admin_BTN.Size = new System.Drawing.Size(72, 75);
+            this.admin_BTN.Size = new System.Drawing.Size(121, 91);
             this.admin_BTN.TabIndex = 14;
             this.admin_BTN.Text = "Administracion";
             this.admin_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -135,10 +141,10 @@
             this.dept_BTN.IconColor = System.Drawing.Color.Black;
             this.dept_BTN.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.dept_BTN.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.dept_BTN.Location = new System.Drawing.Point(548, 91);
-            this.dept_BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dept_BTN.Location = new System.Drawing.Point(1035, 252);
+            this.dept_BTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dept_BTN.Name = "dept_BTN";
-            this.dept_BTN.Size = new System.Drawing.Size(48, 78);
+            this.dept_BTN.Size = new System.Drawing.Size(105, 115);
             this.dept_BTN.TabIndex = 15;
             this.dept_BTN.Text = "Dept";
             this.dept_BTN.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -146,19 +152,66 @@
             this.dept_BTN.UseVisualStyleBackColor = true;
             this.dept_BTN.Click += new System.EventHandler(this.dept_BTN_Click);
             // 
+            // rentas1
+            // 
+            this.rentas1.Location = new System.Drawing.Point(8, 84);
+            this.rentas1.Margin = new System.Windows.Forms.Padding(4);
+            this.rentas1.Name = "rentas1";
+            this.rentas1.Size = new System.Drawing.Size(668, 418);
+            this.rentas1.TabIndex = 20;
+            // 
+            // inquilino1
+            // 
+            this.inquilino1.Location = new System.Drawing.Point(9, 84);
+            this.inquilino1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.inquilino1.Name = "inquilino1";
+            this.inquilino1.Size = new System.Drawing.Size(667, 418);
+            this.inquilino1.TabIndex = 19;
+            // 
+            // departamentos1
+            // 
+            this.departamentos1.Location = new System.Drawing.Point(9, 84);
+            this.departamentos1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.departamentos1.Name = "departamentos1";
+            this.departamentos1.Size = new System.Drawing.Size(667, 418);
+            this.departamentos1.TabIndex = 18;
+            // 
+            // fecha1
+            // 
+            this.fecha1.BackColor = System.Drawing.SystemColors.Control;
+            this.fecha1.Location = new System.Drawing.Point(937, 83);
+            this.fecha1.Margin = new System.Windows.Forms.Padding(4);
+            this.fecha1.Name = "fecha1";
+            this.fecha1.Size = new System.Drawing.Size(200, 39);
+            this.fecha1.TabIndex = 17;
+            // 
+            // administracion1
+            // 
+            this.administracion1.Location = new System.Drawing.Point(9, 83);
+            this.administracion1.Margin = new System.Windows.Forms.Padding(5);
+            this.administracion1.Name = "administracion1";
+            this.administracion1.Size = new System.Drawing.Size(667, 418);
+            this.administracion1.TabIndex = 16;
+            this.administracion1.Visible = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(1145, 609);
+            this.Controls.Add(this.rentas1);
+            this.Controls.Add(this.inquilino1);
+            this.Controls.Add(this.departamentos1);
+            this.Controls.Add(this.fecha1);
+            this.Controls.Add(this.administracion1);
             this.Controls.Add(this.dept_BTN);
             this.Controls.Add(this.admin_BTN);
             this.Controls.Add(this.rentas_BTN);
             this.Controls.Add(this.inq_BTN);
             this.Controls.Add(this.home_BTN);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
@@ -173,6 +226,10 @@
         private FontAwesome.Sharp.IconButton rentas_BTN;
         private FontAwesome.Sharp.IconButton admin_BTN;
         private FontAwesome.Sharp.IconButton dept_BTN;
-        //private Misc.Fecha fecha1;
+        private Modulos.Administracion administracion1;
+        private Misc.Fecha fecha1;
+        private Modulos.Departamentos departamentos1;
+        private Modulos.Inquilino inquilino1;
+        private Modulos.Rentas rentas1;
     }
 }

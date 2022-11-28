@@ -16,5 +16,10 @@ namespace test.Misc
         {
             InitializeComponent();
         }
+
+        private void Fecha_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
