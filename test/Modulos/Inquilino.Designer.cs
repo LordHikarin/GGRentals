@@ -29,23 +29,22 @@
         private void InitializeComponent()
         {
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.dept_CBX = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.nombre_tb_TBX = new System.Windows.Forms.TextBox();
+            this.tel_inquilino_TBX = new System.Windows.Forms.TextBox();
+            this.correo_inquilino_TBX = new System.Windows.Forms.TextBox();
+            this.inquilino_id_TBX = new System.Windows.Forms.TextBox();
             this.nom_tb_LBL = new MaterialSkin.Controls.MaterialLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.telefono_LBL = new MaterialSkin.Controls.MaterialLabel();
             this.correo_LBL = new MaterialSkin.Controls.MaterialLabel();
             this.inquilino_id_LBL = new MaterialSkin.Controls.MaterialLabel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.dir_tb_TBX = new System.Windows.Forms.TextBox();
             this.dir_tb_LBL = new MaterialSkin.Controls.MaterialLabel();
             this.tel_tb_LBL = new MaterialSkin.Controls.MaterialLabel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.edit_BTN = new MaterialSkin.Controls.MaterialButton();
+            this.tel_tb_TBX = new System.Windows.Forms.TextBox();
             this.del_BTN = new MaterialSkin.Controls.MaterialButton();
             this.new_BTN = new MaterialSkin.Controls.MaterialButton();
+            this.nombre_inquilino_TBX = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,42 +60,33 @@
             this.materialLabel2.TabIndex = 25;
             this.materialLabel2.Text = "Nombre:";
             // 
-            // dept_CBX
+            // nombre_tb_TBX
             // 
-            this.dept_CBX.FormattingEnabled = true;
-            this.dept_CBX.Location = new System.Drawing.Point(6, 32);
-            this.dept_CBX.Name = "dept_CBX";
-            this.dept_CBX.Size = new System.Drawing.Size(175, 21);
-            this.dept_CBX.TabIndex = 24;
-            this.dept_CBX.Text = "Nombre";
+            this.nombre_tb_TBX.Location = new System.Drawing.Point(187, 33);
+            this.nombre_tb_TBX.Name = "nombre_tb_TBX";
+            this.nombre_tb_TBX.Size = new System.Drawing.Size(100, 20);
+            this.nombre_tb_TBX.TabIndex = 23;
             // 
-            // textBox4
+            // tel_inquilino_TBX
             // 
-            this.textBox4.Location = new System.Drawing.Point(187, 33);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 23;
+            this.tel_inquilino_TBX.Location = new System.Drawing.Point(4, 180);
+            this.tel_inquilino_TBX.Name = "tel_inquilino_TBX";
+            this.tel_inquilino_TBX.Size = new System.Drawing.Size(177, 20);
+            this.tel_inquilino_TBX.TabIndex = 22;
             // 
-            // textBox3
+            // correo_inquilino_TBX
             // 
-            this.textBox3.Location = new System.Drawing.Point(4, 180);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(177, 20);
-            this.textBox3.TabIndex = 22;
+            this.correo_inquilino_TBX.Location = new System.Drawing.Point(4, 135);
+            this.correo_inquilino_TBX.Name = "correo_inquilino_TBX";
+            this.correo_inquilino_TBX.Size = new System.Drawing.Size(177, 20);
+            this.correo_inquilino_TBX.TabIndex = 21;
             // 
-            // textBox2
+            // inquilino_id_TBX
             // 
-            this.textBox2.Location = new System.Drawing.Point(4, 135);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(177, 20);
-            this.textBox2.TabIndex = 21;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 20);
-            this.textBox1.TabIndex = 20;
+            this.inquilino_id_TBX.Location = new System.Drawing.Point(6, 87);
+            this.inquilino_id_TBX.Name = "inquilino_id_TBX";
+            this.inquilino_id_TBX.Size = new System.Drawing.Size(175, 20);
+            this.inquilino_id_TBX.TabIndex = 20;
             // 
             // nom_tb_LBL
             // 
@@ -154,12 +144,12 @@
             this.inquilino_id_LBL.TabIndex = 15;
             this.inquilino_id_LBL.Text = "Codigo Inquilino:";
             // 
-            // textBox5
+            // dir_tb_TBX
             // 
-            this.textBox5.Location = new System.Drawing.Point(187, 135);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 30;
+            this.dir_tb_TBX.Location = new System.Drawing.Point(187, 135);
+            this.dir_tb_TBX.Name = "dir_tb_TBX";
+            this.dir_tb_TBX.Size = new System.Drawing.Size(100, 20);
+            this.dir_tb_TBX.TabIndex = 30;
             // 
             // dir_tb_LBL
             // 
@@ -185,31 +175,12 @@
             this.tel_tb_LBL.TabIndex = 31;
             this.tel_tb_LBL.Text = "Telefono Trabajo:";
             // 
-            // textBox6
+            // tel_tb_TBX
             // 
-            this.textBox6.Location = new System.Drawing.Point(187, 86);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 32;
-            // 
-            // edit_BTN
-            // 
-            this.edit_BTN.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.edit_BTN.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.edit_BTN.Depth = 0;
-            this.edit_BTN.HighEmphasis = true;
-            this.edit_BTN.Icon = null;
-            this.edit_BTN.Location = new System.Drawing.Point(6, 246);
-            this.edit_BTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.edit_BTN.MouseState = MaterialSkin.MouseState.HOVER;
-            this.edit_BTN.Name = "edit_BTN";
-            this.edit_BTN.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.edit_BTN.Size = new System.Drawing.Size(71, 36);
-            this.edit_BTN.TabIndex = 27;
-            this.edit_BTN.Text = "Editar";
-            this.edit_BTN.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.edit_BTN.UseAccentColor = false;
-            this.edit_BTN.UseVisualStyleBackColor = true;
+            this.tel_tb_TBX.Location = new System.Drawing.Point(187, 86);
+            this.tel_tb_TBX.Name = "tel_tb_TBX";
+            this.tel_tb_TBX.Size = new System.Drawing.Size(100, 20);
+            this.tel_tb_TBX.TabIndex = 32;
             // 
             // del_BTN
             // 
@@ -218,7 +189,7 @@
             this.del_BTN.Depth = 0;
             this.del_BTN.HighEmphasis = true;
             this.del_BTN.Icon = null;
-            this.del_BTN.Location = new System.Drawing.Point(102, 294);
+            this.del_BTN.Location = new System.Drawing.Point(103, 294);
             this.del_BTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.del_BTN.MouseState = MaterialSkin.MouseState.HOVER;
             this.del_BTN.Name = "del_BTN";
@@ -229,6 +200,7 @@
             this.del_BTN.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.del_BTN.UseAccentColor = false;
             this.del_BTN.UseVisualStyleBackColor = true;
+            this.del_BTN.Click += new System.EventHandler(this.del_BTN_Click);
             // 
             // new_BTN
             // 
@@ -237,7 +209,7 @@
             this.new_BTN.Depth = 0;
             this.new_BTN.HighEmphasis = true;
             this.new_BTN.Icon = null;
-            this.new_BTN.Location = new System.Drawing.Point(4, 294);
+            this.new_BTN.Location = new System.Drawing.Point(6, 209);
             this.new_BTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.new_BTN.MouseState = MaterialSkin.MouseState.HOVER;
             this.new_BTN.Name = "new_BTN";
@@ -248,24 +220,31 @@
             this.new_BTN.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.new_BTN.UseAccentColor = false;
             this.new_BTN.UseVisualStyleBackColor = true;
+            this.new_BTN.Click += new System.EventHandler(this.new_BTN_Click);
+            // 
+            // nombre_inquilino_TBX
+            // 
+            this.nombre_inquilino_TBX.Location = new System.Drawing.Point(6, 33);
+            this.nombre_inquilino_TBX.Name = "nombre_inquilino_TBX";
+            this.nombre_inquilino_TBX.Size = new System.Drawing.Size(175, 20);
+            this.nombre_inquilino_TBX.TabIndex = 33;
             // 
             // Inquilino
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.nombre_inquilino_TBX);
+            this.Controls.Add(this.tel_tb_TBX);
             this.Controls.Add(this.tel_tb_LBL);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.dir_tb_TBX);
             this.Controls.Add(this.dir_tb_LBL);
             this.Controls.Add(this.del_BTN);
-            this.Controls.Add(this.edit_BTN);
             this.Controls.Add(this.new_BTN);
             this.Controls.Add(this.materialLabel2);
-            this.Controls.Add(this.dept_CBX);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nombre_tb_TBX);
+            this.Controls.Add(this.tel_inquilino_TBX);
+            this.Controls.Add(this.correo_inquilino_TBX);
+            this.Controls.Add(this.inquilino_id_TBX);
             this.Controls.Add(this.nom_tb_LBL);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.telefono_LBL);
@@ -282,22 +261,21 @@
 
         #endregion
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private System.Windows.Forms.ComboBox dept_CBX;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox nombre_tb_TBX;
+        private System.Windows.Forms.TextBox tel_inquilino_TBX;
+        private System.Windows.Forms.TextBox correo_inquilino_TBX;
+        private System.Windows.Forms.TextBox inquilino_id_TBX;
         private MaterialSkin.Controls.MaterialLabel nom_tb_LBL;
         private System.Windows.Forms.DataGridView dataGridView1;
         private MaterialSkin.Controls.MaterialLabel telefono_LBL;
         private MaterialSkin.Controls.MaterialLabel correo_LBL;
         private MaterialSkin.Controls.MaterialLabel inquilino_id_LBL;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox dir_tb_TBX;
         private MaterialSkin.Controls.MaterialLabel dir_tb_LBL;
         private MaterialSkin.Controls.MaterialLabel tel_tb_LBL;
-        private System.Windows.Forms.TextBox textBox6;
-        private MaterialSkin.Controls.MaterialButton edit_BTN;
+        private System.Windows.Forms.TextBox tel_tb_TBX;
         private MaterialSkin.Controls.MaterialButton del_BTN;
         private MaterialSkin.Controls.MaterialButton new_BTN;
+        private System.Windows.Forms.TextBox nombre_inquilino_TBX;
     }
 }

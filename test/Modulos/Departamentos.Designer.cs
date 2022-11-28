@@ -29,19 +29,16 @@
         private void InitializeComponent()
         {
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.dept_CBX = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.costo_TBX = new System.Windows.Forms.TextBox();
+            this.ubicacion_TBX = new System.Windows.Forms.TextBox();
+            this.departamento_ID_TBX = new System.Windows.Forms.TextBox();
             this.costo_LBL = new MaterialSkin.Controls.MaterialLabel();
             this.dept_DATA = new System.Windows.Forms.DataGridView();
             this.ubicacion_LBL = new MaterialSkin.Controls.MaterialLabel();
-            this.inquilino_id_LBL = new MaterialSkin.Controls.MaterialLabel();
             this.dept_id_LBL = new MaterialSkin.Controls.MaterialLabel();
-            this.edit_BTN = new MaterialSkin.Controls.MaterialButton();
             this.del_BTN = new MaterialSkin.Controls.MaterialButton();
             this.new_BTN = new MaterialSkin.Controls.MaterialButton();
+            this.departamento_TBX = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dept_DATA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,49 +54,33 @@
             this.materialLabel2.TabIndex = 25;
             this.materialLabel2.Text = "Departamento:";
             // 
-            // dept_CBX
+            // costo_TBX
             // 
-            this.dept_CBX.FormattingEnabled = true;
-            this.dept_CBX.Location = new System.Drawing.Point(172, 8);
-            this.dept_CBX.Name = "dept_CBX";
-            this.dept_CBX.Size = new System.Drawing.Size(300, 21);
-            this.dept_CBX.TabIndex = 24;
-            this.dept_CBX.Text = "Nombre";
+            this.costo_TBX.Location = new System.Drawing.Point(172, 84);
+            this.costo_TBX.Name = "costo_TBX";
+            this.costo_TBX.Size = new System.Drawing.Size(300, 20);
+            this.costo_TBX.TabIndex = 23;
             // 
-            // textBox4
+            // ubicacion_TBX
             // 
-            this.textBox4.Location = new System.Drawing.Point(172, 108);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(300, 20);
-            this.textBox4.TabIndex = 23;
+            this.ubicacion_TBX.Location = new System.Drawing.Point(172, 59);
+            this.ubicacion_TBX.Name = "ubicacion_TBX";
+            this.ubicacion_TBX.Size = new System.Drawing.Size(300, 20);
+            this.ubicacion_TBX.TabIndex = 22;
             // 
-            // textBox3
+            // departamento_ID_TBX
             // 
-            this.textBox3.Location = new System.Drawing.Point(172, 83);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(300, 20);
-            this.textBox3.TabIndex = 22;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(172, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 20);
-            this.textBox2.TabIndex = 21;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(172, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 20);
-            this.textBox1.TabIndex = 20;
+            this.departamento_ID_TBX.Location = new System.Drawing.Point(172, 33);
+            this.departamento_ID_TBX.Name = "departamento_ID_TBX";
+            this.departamento_ID_TBX.Size = new System.Drawing.Size(300, 20);
+            this.departamento_ID_TBX.TabIndex = 20;
             // 
             // costo_LBL
             // 
             this.costo_LBL.AutoSize = true;
             this.costo_LBL.Depth = 0;
             this.costo_LBL.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.costo_LBL.Location = new System.Drawing.Point(5, 108);
+            this.costo_LBL.Location = new System.Drawing.Point(5, 84);
             this.costo_LBL.MouseState = MaterialSkin.MouseState.HOVER;
             this.costo_LBL.Name = "costo_LBL";
             this.costo_LBL.Size = new System.Drawing.Size(101, 19);
@@ -119,24 +100,12 @@
             this.ubicacion_LBL.AutoSize = true;
             this.ubicacion_LBL.Depth = 0;
             this.ubicacion_LBL.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ubicacion_LBL.Location = new System.Drawing.Point(6, 83);
+            this.ubicacion_LBL.Location = new System.Drawing.Point(6, 59);
             this.ubicacion_LBL.MouseState = MaterialSkin.MouseState.HOVER;
             this.ubicacion_LBL.Name = "ubicacion_LBL";
             this.ubicacion_LBL.Size = new System.Drawing.Size(75, 19);
             this.ubicacion_LBL.TabIndex = 17;
             this.ubicacion_LBL.Text = "Ubicacion:";
-            // 
-            // inquilino_id_LBL
-            // 
-            this.inquilino_id_LBL.AutoSize = true;
-            this.inquilino_id_LBL.Depth = 0;
-            this.inquilino_id_LBL.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.inquilino_id_LBL.Location = new System.Drawing.Point(6, 58);
-            this.inquilino_id_LBL.MouseState = MaterialSkin.MouseState.HOVER;
-            this.inquilino_id_LBL.Name = "inquilino_id_LBL";
-            this.inquilino_id_LBL.Size = new System.Drawing.Size(120, 19);
-            this.inquilino_id_LBL.TabIndex = 16;
-            this.inquilino_id_LBL.Text = "Codigo Inquilino:";
             // 
             // dept_id_LBL
             // 
@@ -150,25 +119,6 @@
             this.dept_id_LBL.TabIndex = 15;
             this.dept_id_LBL.Text = "Codigo Departamento:";
             // 
-            // edit_BTN
-            // 
-            this.edit_BTN.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.edit_BTN.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.edit_BTN.Depth = 0;
-            this.edit_BTN.HighEmphasis = true;
-            this.edit_BTN.Icon = null;
-            this.edit_BTN.Location = new System.Drawing.Point(401, 133);
-            this.edit_BTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.edit_BTN.MouseState = MaterialSkin.MouseState.HOVER;
-            this.edit_BTN.Name = "edit_BTN";
-            this.edit_BTN.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.edit_BTN.Size = new System.Drawing.Size(71, 36);
-            this.edit_BTN.TabIndex = 27;
-            this.edit_BTN.Text = "Editar";
-            this.edit_BTN.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.edit_BTN.UseAccentColor = false;
-            this.edit_BTN.UseVisualStyleBackColor = true;
-            // 
             // del_BTN
             // 
             this.del_BTN.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -176,7 +126,7 @@
             this.del_BTN.Depth = 0;
             this.del_BTN.HighEmphasis = true;
             this.del_BTN.Icon = null;
-            this.del_BTN.Location = new System.Drawing.Point(250, 133);
+            this.del_BTN.Location = new System.Drawing.Point(250, 113);
             this.del_BTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.del_BTN.MouseState = MaterialSkin.MouseState.HOVER;
             this.del_BTN.Name = "del_BTN";
@@ -187,6 +137,7 @@
             this.del_BTN.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.del_BTN.UseAccentColor = false;
             this.del_BTN.UseVisualStyleBackColor = true;
+            this.del_BTN.Click += new System.EventHandler(this.del_BTN_Click);
             // 
             // new_BTN
             // 
@@ -195,7 +146,7 @@
             this.new_BTN.Depth = 0;
             this.new_BTN.HighEmphasis = true;
             this.new_BTN.Icon = null;
-            this.new_BTN.Location = new System.Drawing.Point(172, 133);
+            this.new_BTN.Location = new System.Drawing.Point(172, 113);
             this.new_BTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.new_BTN.MouseState = MaterialSkin.MouseState.HOVER;
             this.new_BTN.Name = "new_BTN";
@@ -206,24 +157,29 @@
             this.new_BTN.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.new_BTN.UseAccentColor = false;
             this.new_BTN.UseVisualStyleBackColor = true;
+            this.new_BTN.Click += new System.EventHandler(this.new_BTN_Click);
+            // 
+            // departamento_TBX
+            // 
+            this.departamento_TBX.Location = new System.Drawing.Point(172, 8);
+            this.departamento_TBX.Name = "departamento_TBX";
+            this.departamento_TBX.Size = new System.Drawing.Size(300, 20);
+            this.departamento_TBX.TabIndex = 29;
             // 
             // Departamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.departamento_TBX);
             this.Controls.Add(this.del_BTN);
-            this.Controls.Add(this.edit_BTN);
             this.Controls.Add(this.new_BTN);
             this.Controls.Add(this.materialLabel2);
-            this.Controls.Add(this.dept_CBX);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.costo_TBX);
+            this.Controls.Add(this.ubicacion_TBX);
+            this.Controls.Add(this.departamento_ID_TBX);
             this.Controls.Add(this.costo_LBL);
             this.Controls.Add(this.dept_DATA);
             this.Controls.Add(this.ubicacion_LBL);
-            this.Controls.Add(this.inquilino_id_LBL);
             this.Controls.Add(this.dept_id_LBL);
             this.Name = "Departamentos";
             this.Size = new System.Drawing.Size(500, 340);
@@ -236,18 +192,15 @@
 
         #endregion
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private System.Windows.Forms.ComboBox dept_CBX;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox costo_TBX;
+        private System.Windows.Forms.TextBox ubicacion_TBX;
+        private System.Windows.Forms.TextBox departamento_ID_TBX;
         private MaterialSkin.Controls.MaterialLabel costo_LBL;
         private System.Windows.Forms.DataGridView dept_DATA;
         private MaterialSkin.Controls.MaterialLabel ubicacion_LBL;
-        private MaterialSkin.Controls.MaterialLabel inquilino_id_LBL;
         private MaterialSkin.Controls.MaterialLabel dept_id_LBL;
-        private MaterialSkin.Controls.MaterialButton edit_BTN;
         private MaterialSkin.Controls.MaterialButton del_BTN;
         private MaterialSkin.Controls.MaterialButton new_BTN;
+        private System.Windows.Forms.TextBox departamento_TBX;
     }
 }

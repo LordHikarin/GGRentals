@@ -28,7 +28,7 @@ namespace test.Conexion
             try
             {
                 //Ingresar informacion de la base de datos
-                cn = new MySqlConnection("Data Source = Localhot; User ID = root; Password = 4696; Initial Catalog = GGRentals;");
+                cn = new MySqlConnection("Data Source = Localhost; User ID = root; Password = HKR4696*; Initial Catalog = GGRentals;");
                 cn.Open();
                 MessageBox.Show("Conexion Correcta.");
             }

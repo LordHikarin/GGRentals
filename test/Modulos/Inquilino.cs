@@ -25,5 +25,15 @@ namespace test.Modulos
             dataGridView1.DataSource = ds;
 
         }
+
+        private void new_BTN_Click(object sender, EventArgs e)
+        {
+            conexion.CMD("INSERT INTO `ggrentals`.`inquilinos` (`id_Inquilino`, `nombre`, `telefono`, `correo`, `nom_TB`, `dir_TB`, `tel_TB`) VALUES ('"+inquilino_id_TBX.Text.ToString()+"', '"+nombre_inquilino_TBX.Text.ToString()+"', '"+tel_inquilino_TBX.Text.ToString()+"', '"+correo_inquilino_TBX.Text.ToString()+"', '"+nombre_tb_TBX.Text.ToString()+"', '"+dir_tb_TBX.Text.ToString()+"', '"+tel_tb_TBX.Text.ToString()+"');");
+        }
+
+        private void del_BTN_Click(object sender, EventArgs e)
+        {
+            conexion.CMD("DELETE FROM `ggrentals`.`inquilinos` WHERE(`id_inquilino` = '" + inquilino_id_TBX.ToString() + "')");
+        }
     }
 }

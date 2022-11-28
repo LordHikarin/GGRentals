@@ -45,8 +45,8 @@
             this.login_BTN.Depth = 0;
             this.login_BTN.HighEmphasis = true;
             this.login_BTN.Icon = null;
-            this.login_BTN.Location = new System.Drawing.Point(12, 375);
-            this.login_BTN.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.login_BTN.Location = new System.Drawing.Point(9, 305);
+            this.login_BTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.login_BTN.MouseState = MaterialSkin.MouseState.HOVER;
             this.login_BTN.Name = "login_BTN";
             this.login_BTN.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -63,8 +63,7 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(67, 256);
-            this.materialLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.materialLabel2.Location = new System.Drawing.Point(50, 208);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(136, 19);
@@ -76,8 +75,7 @@
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(100, 316);
-            this.materialLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.materialLabel3.Location = new System.Drawing.Point(75, 257);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(82, 19);
@@ -86,19 +84,17 @@
             // 
             // usr_TBX
             // 
-            this.usr_TBX.Location = new System.Drawing.Point(12, 283);
-            this.usr_TBX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usr_TBX.Location = new System.Drawing.Point(9, 230);
             this.usr_TBX.Name = "usr_TBX";
-            this.usr_TBX.Size = new System.Drawing.Size(312, 22);
+            this.usr_TBX.Size = new System.Drawing.Size(235, 20);
             this.usr_TBX.TabIndex = 6;
             this.usr_TBX.TextChanged += new System.EventHandler(this.usr_TBX_TextChanged);
             // 
             // psw_TBX
             // 
-            this.psw_TBX.Location = new System.Drawing.Point(12, 343);
-            this.psw_TBX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.psw_TBX.Location = new System.Drawing.Point(9, 279);
             this.psw_TBX.Name = "psw_TBX";
-            this.psw_TBX.Size = new System.Drawing.Size(312, 22);
+            this.psw_TBX.Size = new System.Drawing.Size(235, 20);
             this.psw_TBX.TabIndex = 7;
             this.psw_TBX.TextChanged += new System.EventHandler(this.psw_TBX_TextChanged);
             // 
@@ -106,22 +102,21 @@
             // 
             this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.User;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 158;
-            this.iconPictureBox1.Location = new System.Drawing.Point(71, 82);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconPictureBox1.IconSize = 128;
+            this.iconPictureBox1.Location = new System.Drawing.Point(53, 67);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(171, 158);
+            this.iconPictureBox1.Size = new System.Drawing.Size(128, 128);
             this.iconPictureBox1.TabIndex = 8;
             this.iconPictureBox1.TabStop = false;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(333, 431);
+            this.ClientSize = new System.Drawing.Size(250, 350);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.psw_TBX);
             this.Controls.Add(this.usr_TBX);
@@ -129,9 +124,7 @@
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.login_BTN);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";
-            this.Padding = new System.Windows.Forms.Padding(4, 79, 4, 4);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GG Rentals";
             this.Load += new System.EventHandler(this.Form1_Load);
