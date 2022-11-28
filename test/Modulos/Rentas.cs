@@ -26,13 +26,13 @@ namespace test.Modulos
         {
 
             string sqlCommand = "SELECT * FROM departamentos";
-            DataSet ds = conexion.GetDataSet(sqlCommand);
+            DataSet ds = Conexion.GetDataSet(sqlCommand);
             rentas_DATA.DataSource = ds;
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
-            deuda=Convert.ToInt32((dateTimePicker1.Value - dateTimePicker2.Value).TotalDays)*costo);
+            deuda=Convert.ToInt32(((dateTimePicker1.Value - dateTimePicker2.Value).TotalDays)*costo);
         }
 
         private void materialButton1_Click(object sender, EventArgs e)

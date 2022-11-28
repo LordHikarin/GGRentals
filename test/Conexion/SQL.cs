@@ -30,7 +30,8 @@ namespace test.Conexion
             {
                 //Descomenta el que necesites
                 //Ingresar informacion de la base de datos
-                cn = new MySqlConnection("Data Source = Localhost; User ID = root; Password = HKR4696*; Initial Catalog = GGRentals;");
+               // cn = new MySqlConnection("Data Source = Localhost; User ID = root; Password = HKR4696*; Initial Catalog = GGRentals;");
+                cn = new MySqlConnection("Data Source = Localhost; User ID = root; Password = itspp; Initial Catalog = GGRentals;");
                 cn.Open();
                 //MessageBox.Show("Conexion Correcta.");
             }
