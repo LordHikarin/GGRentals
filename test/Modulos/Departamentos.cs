@@ -22,17 +22,20 @@ namespace test.Modulos
         {
             string sqlCommand = "SELECT * FROM departamentos";
             DataSet ds = conexion.GetDataSet(sqlCommand);
-            dept_DATA.DataSource = ds;
+            dept_DATA.DataSource = ds.Tables[0];
+            dept_DATA.Update();
         }
 
         private void new_BTN_Click(object sender, EventArgs e)
         {
             conexion.CMD("INSERT INTO `ggrentals`.`departamentos` (`id_departamentos`, `nombre`, `ubicacion`, `costo`) VALUES ('"+departamento_ID_TBX.Text.ToString()+"','"+departamento_TBX.Text.ToString()+"', '"+ubicacion_TBX.Text.ToString()+"', '"+costo_TBX.Text.ToString()+"');");
+            dept_DATA.Update();
         }
 
         private void del_BTN_Click(object sender, EventArgs e)
         {
             conexion.CMD("DELETE FROM `ggrentals`.`departamentos` WHERE(`id_departamentos` = '" + departamento_ID_TBX.Text.ToString() + "')");
+            dept_DATA.Update();
         }
     }
 }
