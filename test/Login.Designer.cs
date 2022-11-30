@@ -34,6 +34,8 @@
             this.login_BTN = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // usr_TBX
@@ -50,6 +52,7 @@
             this.psw_TBX.Name = "psw_TBX";
             this.psw_TBX.Size = new System.Drawing.Size(235, 20);
             this.psw_TBX.TabIndex = 7;
+            this.psw_TBX.UseSystemPasswordChar = true;
             this.psw_TBX.TextChanged += new System.EventHandler(this.psw_TBX_TextChanged);
             // 
             // login_BTN
@@ -67,9 +70,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 214);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 13);
+            this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Nombre  de Usuario";
+            this.label1.Text = "Nombre de Usuario";
             // 
             // label2
             // 
@@ -80,11 +83,22 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Clave de Inicio";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::test.Properties.Resources.LogoGG;
+            this.pictureBox1.Location = new System.Drawing.Point(25, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(199, 173);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(250, 350);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.login_BTN);
@@ -95,6 +109,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GG Rentals";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,6 +121,7 @@
         private System.Windows.Forms.Button login_BTN;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
