@@ -35,5 +35,10 @@ namespace test.Modulos
         {
             conexion.CMD("DELETE FROM `ggrentals`.`inquilinos` WHERE(`id_inquilino` = '" + inquilino_id_TBX.ToString() + "')");
         }
+
+        private void del_BTN_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

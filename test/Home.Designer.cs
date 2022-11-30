@@ -33,8 +33,6 @@
             this.inq_BTN = new FontAwesome.Sharp.IconButton();
             this.rentas_BTN = new FontAwesome.Sharp.IconButton();
             this.admin_BTN = new FontAwesome.Sharp.IconButton();
-            this.btn_Dept = new System.Windows.Forms.Button();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.SuspendLayout();
             // 
             // home_BTN
@@ -126,42 +124,12 @@
             this.admin_BTN.UseVisualStyleBackColor = true;
             this.admin_BTN.Click += new System.EventHandler(this.admin_BTN_Click);
             // 
-            // btn_Dept
-            // 
-            this.btn_Dept.Location = new System.Drawing.Point(123, 126);
-            this.btn_Dept.Name = "btn_Dept";
-            this.btn_Dept.Size = new System.Drawing.Size(91, 62);
-            this.btn_Dept.TabIndex = 21;
-            this.btn_Dept.Text = "Departamentos";
-            this.btn_Dept.UseVisualStyleBackColor = true;
-            // 
-            // materialButton1
-            // 
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(265, 126);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(158, 36);
-            this.materialButton1.TabIndex = 22;
-            this.materialButton1.Text = "materialButton1";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(1145, 609);
-            this.Controls.Add(this.materialButton1);
-            this.Controls.Add(this.btn_Dept);
             this.Controls.Add(this.admin_BTN);
             this.Controls.Add(this.rentas_BTN);
             this.Controls.Add(this.inq_BTN);
@@ -175,7 +143,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Home_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -184,7 +151,5 @@
         private FontAwesome.Sharp.IconButton inq_BTN;
         private FontAwesome.Sharp.IconButton rentas_BTN;
         private FontAwesome.Sharp.IconButton admin_BTN;
-        private System.Windows.Forms.Button btn_Dept;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
     }
 }

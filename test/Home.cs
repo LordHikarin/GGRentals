@@ -1,5 +1,4 @@
-﻿using MaterialSkin.Controls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +11,7 @@ using test.Modulos;
 
 namespace test
 {
-    public partial class Home : MaterialForm
+    public partial class Home : Form
     {
         Rentas rent= new Rentas();
         Inquilino inq= new Inquilino();
@@ -30,22 +29,22 @@ namespace test
 
         private void admin_BTN_Click(object sender, EventArgs e)
         {
-            administracion1.Visible = true;
+            adm.Visible = true;
         }
 
         private void rentas_BTN_Click(object sender, EventArgs e)
         {
-            rentas1.Visible = true;
+            rent.Visible = true;
         }
 
         private void inq_BTN_Click(object sender, EventArgs e)
         {
-            inquilino1.Visible = true;
+            inq.Visible = true;
         }
 
         private void dept_BTN_Click(object sender, EventArgs e)
         {
-           departamentos1.Visible = true;
+           dept.Visible = true;
         }
 
         private void home_BTN_Click(object sender, EventArgs e)

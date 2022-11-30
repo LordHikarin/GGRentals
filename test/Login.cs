@@ -1,5 +1,4 @@
 ﻿using FontAwesome.Sharp;
-using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +11,7 @@ using System.Windows.Forms;
 
 namespace test
 {
-    public partial class Login : MaterialForm
+    public partial class Login : Form
     {
         Conexion.SQL Conexion = new Conexion.SQL();
         public Login()

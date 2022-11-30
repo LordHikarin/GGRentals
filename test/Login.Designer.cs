@@ -29,58 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.login_BTN = new MaterialSkin.Controls.MaterialButton();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.usr_TBX = new System.Windows.Forms.TextBox();
             this.psw_TBX = new System.Windows.Forms.TextBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.login_BTN = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // login_BTN
-            // 
-            this.login_BTN.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.login_BTN.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.login_BTN.Depth = 0;
-            this.login_BTN.HighEmphasis = true;
-            this.login_BTN.Icon = null;
-            this.login_BTN.Location = new System.Drawing.Point(9, 305);
-            this.login_BTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.login_BTN.MouseState = MaterialSkin.MouseState.HOVER;
-            this.login_BTN.Name = "login_BTN";
-            this.login_BTN.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.login_BTN.Size = new System.Drawing.Size(91, 36);
-            this.login_BTN.TabIndex = 1;
-            this.login_BTN.Text = "Ingresar";
-            this.login_BTN.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.login_BTN.UseAccentColor = false;
-            this.login_BTN.UseVisualStyleBackColor = true;
-            this.login_BTN.Click += new System.EventHandler(this.login_BTN_Click);
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(50, 208);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(136, 19);
-            this.materialLabel2.TabIndex = 3;
-            this.materialLabel2.Text = "Nombre de Usuario";
-            // 
-            // materialLabel3
-            // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(75, 257);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(82, 19);
-            this.materialLabel3.TabIndex = 5;
-            this.materialLabel3.Text = "Contraseña";
             // 
             // usr_TBX
             // 
@@ -112,17 +68,44 @@
             this.iconPictureBox1.TabIndex = 8;
             this.iconPictureBox1.TabStop = false;
             // 
+            // login_BTN
+            // 
+            this.login_BTN.Location = new System.Drawing.Point(9, 315);
+            this.login_BTN.Name = "login_BTN";
+            this.login_BTN.Size = new System.Drawing.Size(75, 23);
+            this.login_BTN.TabIndex = 9;
+            this.login_BTN.Text = "Ingresar";
+            this.login_BTN.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 214);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Nombre  de Usuario";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 263);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Clave de Inicio";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(250, 350);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.login_BTN);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.psw_TBX);
             this.Controls.Add(this.usr_TBX);
-            this.Controls.Add(this.materialLabel3);
-            this.Controls.Add(this.materialLabel2);
-            this.Controls.Add(this.login_BTN);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -135,13 +118,12 @@
         }
 
         #endregion
-
-        private MaterialSkin.Controls.MaterialButton login_BTN;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private System.Windows.Forms.TextBox usr_TBX;
         private System.Windows.Forms.TextBox psw_TBX;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private System.Windows.Forms.Button login_BTN;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

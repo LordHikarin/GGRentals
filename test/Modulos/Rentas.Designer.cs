@@ -28,61 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.new_BTN = new MaterialSkin.Controls.MaterialButton();
-            this.del_BTN = new MaterialSkin.Controls.MaterialButton();
             this.rentas_DATA = new System.Windows.Forms.DataGridView();
             this.inquilino_id_TBX = new System.Windows.Forms.TextBox();
-            this.inquilino_id_LBL = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.costo_LBL = new MaterialSkin.Controls.MaterialLabel();
             this.costo_TBX = new System.Windows.Forms.TextBox();
             this.Departamento_id_TBX = new System.Windows.Forms.TextBox();
-            this.Departamento_id_LBL = new MaterialSkin.Controls.MaterialLabel();
+            this.new_BTN = new System.Windows.Forms.Button();
+            this.del_BTN = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.rentas_DATA)).BeginInit();
             this.SuspendLayout();
-            // 
-            // new_BTN
-            // 
-            this.new_BTN.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.new_BTN.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.new_BTN.Depth = 0;
-            this.new_BTN.HighEmphasis = true;
-            this.new_BTN.Icon = null;
-            this.new_BTN.Location = new System.Drawing.Point(247, 170);
-            this.new_BTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.new_BTN.MouseState = MaterialSkin.MouseState.HOVER;
-            this.new_BTN.Name = "new_BTN";
-            this.new_BTN.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.new_BTN.Size = new System.Drawing.Size(70, 36);
-            this.new_BTN.TabIndex = 0;
-            this.new_BTN.Text = "Nuevo";
-            this.new_BTN.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.new_BTN.UseAccentColor = false;
-            this.new_BTN.UseVisualStyleBackColor = true;
-            this.new_BTN.Click += new System.EventHandler(this.materialButton1_Click);
-            // 
-            // del_BTN
-            // 
-            this.del_BTN.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.del_BTN.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.del_BTN.Depth = 0;
-            this.del_BTN.HighEmphasis = true;
-            this.del_BTN.Icon = null;
-            this.del_BTN.Location = new System.Drawing.Point(325, 170);
-            this.del_BTN.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.del_BTN.MouseState = MaterialSkin.MouseState.HOVER;
-            this.del_BTN.Name = "del_BTN";
-            this.del_BTN.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.del_BTN.Size = new System.Drawing.Size(78, 36);
-            this.del_BTN.TabIndex = 2;
-            this.del_BTN.Text = "Borrar";
-            this.del_BTN.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.del_BTN.UseAccentColor = false;
-            this.del_BTN.UseVisualStyleBackColor = true;
-            this.del_BTN.Click += new System.EventHandler(this.del_BTN_Click);
             // 
             // rentas_DATA
             // 
@@ -100,42 +60,6 @@
             this.inquilino_id_TBX.Size = new System.Drawing.Size(175, 20);
             this.inquilino_id_TBX.TabIndex = 27;
             // 
-            // inquilino_id_LBL
-            // 
-            this.inquilino_id_LBL.AutoSize = true;
-            this.inquilino_id_LBL.Depth = 0;
-            this.inquilino_id_LBL.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.inquilino_id_LBL.Location = new System.Drawing.Point(1, 26);
-            this.inquilino_id_LBL.MouseState = MaterialSkin.MouseState.HOVER;
-            this.inquilino_id_LBL.Name = "inquilino_id_LBL";
-            this.inquilino_id_LBL.Size = new System.Drawing.Size(120, 19);
-            this.inquilino_id_LBL.TabIndex = 26;
-            this.inquilino_id_LBL.Text = "Codigo Inquilino:";
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(248, 22);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(105, 19);
-            this.materialLabel1.TabIndex = 30;
-            this.materialLabel1.Text = "Fecha Llegada";
-            // 
-            // materialLabel3
-            // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(248, 77);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(93, 19);
-            this.materialLabel3.TabIndex = 31;
-            this.materialLabel3.Text = "Fecha Salida";
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(248, 45);
@@ -150,19 +74,6 @@
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 33;
             this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
-            // 
-            // costo_LBL
-            // 
-            this.costo_LBL.AutoSize = true;
-            this.costo_LBL.Depth = 0;
-            this.costo_LBL.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.costo_LBL.Location = new System.Drawing.Point(245, 124);
-            this.costo_LBL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.costo_LBL.MouseState = MaterialSkin.MouseState.HOVER;
-            this.costo_LBL.Name = "costo_LBL";
-            this.costo_LBL.Size = new System.Drawing.Size(91, 19);
-            this.costo_LBL.TabIndex = 34;
-            this.costo_LBL.Text = "Costo Total :";
             // 
             // costo_TBX
             // 
@@ -180,35 +91,86 @@
             this.Departamento_id_TBX.Size = new System.Drawing.Size(175, 20);
             this.Departamento_id_TBX.TabIndex = 37;
             // 
-            // Departamento_id_LBL
+            // new_BTN
             // 
-            this.Departamento_id_LBL.AutoSize = true;
-            this.Departamento_id_LBL.Depth = 0;
-            this.Departamento_id_LBL.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.Departamento_id_LBL.Location = new System.Drawing.Point(3, 71);
-            this.Departamento_id_LBL.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Departamento_id_LBL.Name = "Departamento_id_LBL";
-            this.Departamento_id_LBL.Size = new System.Drawing.Size(160, 19);
-            this.Departamento_id_LBL.TabIndex = 36;
-            this.Departamento_id_LBL.Text = "Codigo Departamento:";
+            this.new_BTN.Location = new System.Drawing.Point(251, 216);
+            this.new_BTN.Name = "new_BTN";
+            this.new_BTN.Size = new System.Drawing.Size(75, 23);
+            this.new_BTN.TabIndex = 38;
+            this.new_BTN.Text = "Nuevo";
+            this.new_BTN.UseVisualStyleBackColor = true;
+            // 
+            // del_BTN
+            // 
+            this.del_BTN.Location = new System.Drawing.Point(332, 215);
+            this.del_BTN.Name = "del_BTN";
+            this.del_BTN.Size = new System.Drawing.Size(75, 23);
+            this.del_BTN.TabIndex = 39;
+            this.del_BTN.Text = "Borrar";
+            this.del_BTN.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.TabIndex = 40;
+            this.label1.Text = "Codigo Inquilino";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 77);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 13);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "Codigo Departamento";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(245, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(78, 13);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "Fecha Llegada";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(248, 77);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.TabIndex = 43;
+            this.label4.Text = "Fecha Salida";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(248, 124);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "Costo Total";
             // 
             // Rentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.Departamento_id_TBX);
-            this.Controls.Add(this.Departamento_id_LBL);
-            this.Controls.Add(this.costo_TBX);
-            this.Controls.Add(this.costo_LBL);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.materialLabel3);
-            this.Controls.Add(this.materialLabel1);
-            this.Controls.Add(this.inquilino_id_TBX);
-            this.Controls.Add(this.inquilino_id_LBL);
-            this.Controls.Add(this.rentas_DATA);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.del_BTN);
             this.Controls.Add(this.new_BTN);
+            this.Controls.Add(this.Departamento_id_TBX);
+            this.Controls.Add(this.costo_TBX);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.inquilino_id_TBX);
+            this.Controls.Add(this.rentas_DATA);
             this.Name = "Rentas";
             this.Size = new System.Drawing.Size(500, 340);
             this.Load += new System.EventHandler(this.Rentas_Load);
@@ -219,19 +181,18 @@
         }
 
         #endregion
-
-        private MaterialSkin.Controls.MaterialButton new_BTN;
-        private MaterialSkin.Controls.MaterialButton del_BTN;
         private System.Windows.Forms.DataGridView rentas_DATA;
         private System.Windows.Forms.TextBox inquilino_id_TBX;
-        private MaterialSkin.Controls.MaterialLabel inquilino_id_LBL;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private MaterialSkin.Controls.MaterialLabel costo_LBL;
         private System.Windows.Forms.TextBox costo_TBX;
         private System.Windows.Forms.TextBox Departamento_id_TBX;
-        private MaterialSkin.Controls.MaterialLabel Departamento_id_LBL;
+        private System.Windows.Forms.Button new_BTN;
+        private System.Windows.Forms.Button del_BTN;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
