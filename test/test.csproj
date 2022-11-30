@@ -112,12 +112,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Misc\Fecha.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Misc\Fecha.Designer.cs">
-      <DependentUpon>Fecha.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modulos\Administracion.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -149,9 +143,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Misc\Fecha.resx">
-      <DependentUpon>Fecha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Administracion.resx">
       <DependentUpon>Administracion.cs</DependentUpon>
@@ -194,6 +185,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LogoGG.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Misc\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

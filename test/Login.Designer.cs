@@ -60,6 +60,7 @@
             this.login_BTN.TabIndex = 9;
             this.login_BTN.Text = "Ingresar";
             this.login_BTN.UseVisualStyleBackColor = true;
+            this.login_BTN.Click += new System.EventHandler(this.login_BTN_Click);
             // 
             // label1
             // 

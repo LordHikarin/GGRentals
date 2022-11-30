@@ -25,7 +25,7 @@ namespace test
         private void login_BTN_Click(object sender, EventArgs e)
         {
             //Si el usuario y contraseña coinciden, cambiar de pantalla
-            if (Conexion.Login("SELECT * FROM empleado WHERE Usuario = '" + usr_TBX.Text.ToString() + "'and Contraseña = '" + psw_TBX.Text.ToString() + "'"))
+            if (Conexion.Login("SELECT * FROM empleados WHERE nombre = '" + usr_TBX.Text.ToString() + "'and contraseña = '" + psw_TBX.Text.ToString() + "'"))
             {
                 Home rentas = new Home();
                 this.Hide();
