@@ -25,9 +25,9 @@ namespace test.Modulos
         private void Rentas_Load(object sender, EventArgs e)
         {
 
-            string sqlCommand = "SELECT * FROM departamentos";
+            string sqlCommand = "SELECT * FROM rentas";
             DataSet ds = Conexion.GetDataSet(sqlCommand);
-            rentas_DATA.DataSource = ds;
+            rentas_DATA.DataSource = ds.Tables[0];
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace test.Modulos
             deuda=Convert.ToInt32(((dateTimePicker1.Value - dateTimePicker2.Value).TotalDays)*costo);
         }
 
-        private void materialButton1_Click(object sender, EventArgs e)
+        private void new_BTN_Click(object sender, EventArgs e)
         {
 
             Conexion.CMD("`ggrentals`.`rentas` (`id_inquilino`, `id_departamento`, `fecha_inicio`, `fecha_final`, `deudas`) VALUES ('" + inquilino_id_TBX.ToString() + "','" + Departamento_id_TBX.ToString() + "','" + dateTimePicker1.Value + "','" + dateTimePicker1.Value + "','" + deuda + "');");

@@ -99,6 +99,7 @@
             this.new_BTN.TabIndex = 38;
             this.new_BTN.Text = "Nuevo";
             this.new_BTN.UseVisualStyleBackColor = true;
+            this.new_BTN.Click += new System.EventHandler(this.new_BTN_Click);
             // 
             // del_BTN
             // 
@@ -108,6 +109,7 @@
             this.del_BTN.TabIndex = 39;
             this.del_BTN.Text = "Borrar";
             this.del_BTN.UseVisualStyleBackColor = true;
+            this.del_BTN.Click += new System.EventHandler(this.del_BTN_Click);
             // 
             // label1
             // 

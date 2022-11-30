@@ -22,7 +22,7 @@ namespace test.Modulos
         {
             string sqlCommand = "SELECT * FROM inquilinos";
             DataSet ds = conexion.GetDataSet(sqlCommand);
-            dataGridView1.DataSource = ds;
+            dataGridView1.DataSource = ds.Tables[0];
 
         }
 
@@ -34,11 +34,6 @@ namespace test.Modulos
         private void del_BTN_Click(object sender, EventArgs e)
         {
             conexion.CMD("DELETE FROM `ggrentals`.`inquilinos` WHERE(`id_inquilino` = '" + inquilino_id_TBX.ToString() + "')");
-        }
-
-        private void del_BTN_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }
