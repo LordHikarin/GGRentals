@@ -35,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +58,7 @@
             // 
             // login_BTN
             // 
-            this.login_BTN.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.login_BTN.BackColor = System.Drawing.Color.SkyBlue;
             this.login_BTN.Enabled = false;
             this.login_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.login_BTN.Location = new System.Drawing.Point(9, 305);
@@ -71,6 +72,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.label1.Location = new System.Drawing.Point(6, 204);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 13);
@@ -80,6 +82,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.label2.Location = new System.Drawing.Point(12, 253);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 13);
@@ -96,6 +99,16 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.groupBox1.Location = new System.Drawing.Point(-1, 185);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(253, 169);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -108,6 +121,7 @@
             this.Controls.Add(this.login_BTN);
             this.Controls.Add(this.psw_TBX);
             this.Controls.Add(this.usr_TBX);
+            this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
@@ -128,6 +142,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
