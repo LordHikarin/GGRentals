@@ -52,6 +52,7 @@
             this.psw_TBX.Name = "psw_TBX";
             this.psw_TBX.Size = new System.Drawing.Size(235, 20);
             this.psw_TBX.TabIndex = 7;
+            this.psw_TBX.UseSystemPasswordChar = true;
             this.psw_TBX.TextChanged += new System.EventHandler(this.psw_TBX_TextChanged);
             // 
             // login_BTN
@@ -69,9 +70,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 214);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 13);
+            this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Nombre  de Usuario";
+            this.label1.Text = "Nombre de Usuario";
             // 
             // label2
             // 
