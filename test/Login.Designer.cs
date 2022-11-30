@@ -31,11 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.usr_TBX = new System.Windows.Forms.TextBox();
             this.psw_TBX = new System.Windows.Forms.TextBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.login_BTN = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // usr_TBX
@@ -53,20 +51,6 @@
             this.psw_TBX.Size = new System.Drawing.Size(235, 20);
             this.psw_TBX.TabIndex = 7;
             this.psw_TBX.TextChanged += new System.EventHandler(this.psw_TBX_TextChanged);
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 128;
-            this.iconPictureBox1.Location = new System.Drawing.Point(53, 67);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(128, 128);
-            this.iconPictureBox1.TabIndex = 8;
-            this.iconPictureBox1.TabStop = false;
             // 
             // login_BTN
             // 
@@ -103,7 +87,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.login_BTN);
-            this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.psw_TBX);
             this.Controls.Add(this.usr_TBX);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -111,7 +94,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GG Rentals";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,7 +102,6 @@
         #endregion
         private System.Windows.Forms.TextBox usr_TBX;
         private System.Windows.Forms.TextBox psw_TBX;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Button login_BTN;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

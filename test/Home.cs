@@ -26,30 +26,5 @@ namespace test
         {
 
         }
-
-        private void admin_BTN_Click(object sender, EventArgs e)
-        {
-            adm.Visible = true;
-        }
-
-        private void rentas_BTN_Click(object sender, EventArgs e)
-        {
-            rent.Visible = true;
-        }
-
-        private void inq_BTN_Click(object sender, EventArgs e)
-        {
-            inq.Visible = true;
-        }
-
-        private void dept_BTN_Click(object sender, EventArgs e)
-        {
-           dept.Visible = true;
-        }
-
-        private void home_BTN_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
