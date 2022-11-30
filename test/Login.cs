@@ -43,7 +43,7 @@ namespace test
             if (!String.IsNullOrEmpty(usr_TBX.Text) && !String.IsNullOrEmpty(psw_TBX.Text))
             {
                 login_BTN.Enabled = true;
-                login_BTN.BackColor = Color.Orchid;
+                login_BTN.BackColor = Color.Green;
             }
             else
             {
@@ -57,7 +57,7 @@ namespace test
             if (!String.IsNullOrEmpty(usr_TBX.Text) && !String.IsNullOrEmpty(psw_TBX.Text))
             {
                 login_BTN.Enabled = true;
-                login_BTN.BackColor = Color.Orchid;
+                login_BTN.BackColor = Color.Green;
             }
             else
             {

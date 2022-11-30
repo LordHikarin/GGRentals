@@ -57,9 +57,11 @@
             // 
             // login_BTN
             // 
-            this.login_BTN.Location = new System.Drawing.Point(9, 315);
+            this.login_BTN.Enabled = false;
+            this.login_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.login_BTN.Location = new System.Drawing.Point(9, 305);
             this.login_BTN.Name = "login_BTN";
-            this.login_BTN.Size = new System.Drawing.Size(75, 23);
+            this.login_BTN.Size = new System.Drawing.Size(75, 33);
             this.login_BTN.TabIndex = 9;
             this.login_BTN.Text = "Ingresar";
             this.login_BTN.UseVisualStyleBackColor = true;
@@ -86,9 +88,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::test.Properties.Resources.LogoGG;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(35, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(199, 173);
+            this.pictureBox1.Size = new System.Drawing.Size(181, 167);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -104,8 +106,10 @@
             this.Controls.Add(this.login_BTN);
             this.Controls.Add(this.psw_TBX);
             this.Controls.Add(this.usr_TBX);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GG Rentals";
             this.Load += new System.EventHandler(this.Form1_Load);
