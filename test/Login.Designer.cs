@@ -40,7 +40,7 @@
             // 
             // usr_TBX
             // 
-            this.usr_TBX.Location = new System.Drawing.Point(9, 230);
+            this.usr_TBX.Location = new System.Drawing.Point(9, 220);
             this.usr_TBX.Name = "usr_TBX";
             this.usr_TBX.Size = new System.Drawing.Size(235, 20);
             this.usr_TBX.TabIndex = 6;
@@ -48,7 +48,7 @@
             // 
             // psw_TBX
             // 
-            this.psw_TBX.Location = new System.Drawing.Point(9, 279);
+            this.psw_TBX.Location = new System.Drawing.Point(9, 269);
             this.psw_TBX.Name = "psw_TBX";
             this.psw_TBX.Size = new System.Drawing.Size(235, 20);
             this.psw_TBX.TabIndex = 7;
@@ -57,6 +57,7 @@
             // 
             // login_BTN
             // 
+            this.login_BTN.BackColor = System.Drawing.Color.LightSeaGreen;
             this.login_BTN.Enabled = false;
             this.login_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.login_BTN.Location = new System.Drawing.Point(9, 305);
@@ -64,13 +65,13 @@
             this.login_BTN.Size = new System.Drawing.Size(75, 33);
             this.login_BTN.TabIndex = 9;
             this.login_BTN.Text = "Ingresar";
-            this.login_BTN.UseVisualStyleBackColor = true;
+            this.login_BTN.UseVisualStyleBackColor = false;
             this.login_BTN.Click += new System.EventHandler(this.login_BTN_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 214);
+            this.label1.Location = new System.Drawing.Point(6, 204);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 10;
@@ -79,7 +80,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 263);
+            this.label2.Location = new System.Drawing.Point(12, 253);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 13);
             this.label2.TabIndex = 11;
@@ -99,6 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(250, 350);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
