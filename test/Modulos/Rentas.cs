@@ -35,7 +35,7 @@ namespace test.Modulos
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
-            deuda=Convert.ToInt32(((dateTimePicker1.Value - dateTimePicker2.Value).TotalDays)*costo);
+            deuda=Convert.ToInt32(((dateTimePicker2.Value - dateTimePicker1.Value).TotalDays)*costo);
         }
 
         private void new_BTN_Click(object sender, EventArgs e)
