@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using objWord = Microsoft.Office.Interop.Word;
+using System.Reflection;
 
 namespace test.Modulos
 {
@@ -50,7 +51,7 @@ namespace test.Modulos
 
         private void btn_Contrato_Click(object sender, EventArgs e)
         {
-            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);//la ruta especificada es el escritorio
+            //string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);//la ruta especificada es el escritorio
             objWord.Application objAplicacion = new objWord.Application();
             //creación del documento
             /*objWord.Document objDocumento = objAplicacion.Documents.Add();
@@ -64,7 +65,7 @@ namespace test.Modulos
             objWord._Document oDoc;
             oWord = new objWord.Application();
             oWord.Visible = true;
-            object oTemplate = System.Windows.Forms.Application.StartupPath + "C:\\Users\\orlan\\Downloads\\CONTRATO.docx";
+            object oTemplate = "C:\\Users\\orlan\\Downloads\\CONTRATO.docx";
             oDoc = oWord.Documents.Open(ref oTemplate, ref oMissing,
                 ref oMissing, ref oMissing);
         }
