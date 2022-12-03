@@ -60,7 +60,6 @@ namespace test
 
         private void rent_BTN_Click(object sender, EventArgs e)
         {
-
             u1.Hide();
             u2.Hide();
             u3.Hide();

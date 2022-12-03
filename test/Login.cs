@@ -34,7 +34,7 @@ namespace test
             } else
             //Contraseña o Usuario incorrecto
             {
-                MessageBox.Show("Datos Incorrectos");
+                MessageBox.Show("Datos incorrectos o usuario no encontrado");
             }
         }
 
