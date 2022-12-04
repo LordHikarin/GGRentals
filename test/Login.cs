@@ -27,7 +27,7 @@ namespace test
             //Si el usuario y contraseña coinciden, cambiar de pantalla
             try
             {
-                if (Conexion.Login("SELECT * FROM empleados WHERE nombre = BINARY '" + TxtBoxUsuario.Text.ToString() + "'and contraseña = BINARY '" + TxtBoxContraseña.Text.ToString() + "'"))
+                if (Conexion.Login("SELECT * FROM empleados WHERE nombre = BINARY '" + TxtBoxContraseña.Text.ToString() + "'and contraseña = BINARY '" + TxtBoxUsuario.Text.ToString() + "'"))
                 {
                     Home rentas = new Home();
                     this.Hide();
@@ -48,7 +48,7 @@ namespace test
 
         private void usr_TBX_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(TxtBoxUsuario.Text) && !String.IsNullOrEmpty(TxtBoxContraseña.Text))
+            if (!String.IsNullOrEmpty(TxtBoxContraseña.Text) && !String.IsNullOrEmpty(TxtBoxUsuario.Text))
             {
                 login_BTN.Enabled = true;
                 login_BTN.BackColor = Color.Green;
@@ -62,7 +62,7 @@ namespace test
 
         private void psw_TBX_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(TxtBoxUsuario.Text) && !String.IsNullOrEmpty(TxtBoxContraseña.Text))
+            if (!String.IsNullOrEmpty(TxtBoxContraseña.Text) && !String.IsNullOrEmpty(TxtBoxUsuario.Text))
             {
                 login_BTN.Enabled = true;
                 login_BTN.BackColor = Color.Green;
@@ -84,7 +84,7 @@ namespace test
         {
             try
             {
-                if (Conexion.Login($"select * from empleados where nombre = '{TxtBoxUsuario.Texts}' and contraseña = '{TxtBoxContraseña.Texts}'"))
+                if (Conexion.Login($"select * from empleados where nombre = '{TxtBoxContraseña.Texts}' and contraseña = '{TxtBoxUsuario.Texts}'"))
                 {
                     Home rentas = new Home();
                     this.Hide();
