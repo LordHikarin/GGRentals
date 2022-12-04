@@ -139,6 +139,12 @@
     <Compile Include="Modulos\NuevoDepartamentos.Designer.cs">
       <DependentUpon>NuevoDepartamentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\NuevoInquilino.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\NuevoInquilino.Designer.cs">
+      <DependentUpon>NuevoInquilino.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\Rentas.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\NuevoDepartamentos.resx">
       <DependentUpon>NuevoDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\NuevoInquilino.resx">
+      <DependentUpon>NuevoInquilino.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Rentas.resx">
       <DependentUpon>Rentas.cs</DependentUpon>
