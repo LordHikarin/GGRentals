@@ -183,7 +183,6 @@
             this.circularImagen1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.circularImagen1.BorderSize = 2;
             this.circularImagen1.GradientAngle = 50F;
-            this.circularImagen1.Image = global::test.Properties.Resources.LogoGG;
             this.circularImagen1.Location = new System.Drawing.Point(17, 3);
             this.circularImagen1.Name = "circularImagen1";
             this.circularImagen1.Size = new System.Drawing.Size(135, 135);
