@@ -32,11 +32,11 @@
             this.sPanel1 = new MarDeCortezDsk.UserControlls.SPanel();
             this.login_BTN = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.label3 = new System.Windows.Forms.Label();
+            this.circularImagen1 = new test.UserControlls.CircularImagen();
             this.TxtBoxContraseña = new CustomControls.RJControls.RJTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtBoxUsuario = new CustomControls.RJControls.RJTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.circularImagen1 = new test.UserControlls.CircularImagen();
             this.sPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularImagen1)).BeginInit();
             this.SuspendLayout();
@@ -92,6 +92,24 @@
             this.label3.Size = new System.Drawing.Size(252, 25);
             this.label3.TabIndex = 16;
             this.label3.Text = "____________________";
+            // 
+            // circularImagen1
+            // 
+            this.circularImagen1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.circularImagen1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.circularImagen1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.circularImagen1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.circularImagen1.BorderSize = 2;
+            this.circularImagen1.GradientAngle = 50F;
+            this.circularImagen1.Image = ((System.Drawing.Image)(resources.GetObject("circularImagen1.Image")));
+            this.circularImagen1.Location = new System.Drawing.Point(88, 23);
+            this.circularImagen1.Margin = new System.Windows.Forms.Padding(4);
+            this.circularImagen1.Name = "circularImagen1";
+            this.circularImagen1.Size = new System.Drawing.Size(180, 180);
+            this.circularImagen1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularImagen1.TabIndex = 14;
+            this.circularImagen1.TabStop = false;
+            this.circularImagen1.Click += new System.EventHandler(this.circularImagen1_Click);
             // 
             // TxtBoxContraseña
             // 
@@ -162,23 +180,6 @@
             this.label2.Size = new System.Drawing.Size(155, 25);
             this.label2.TabIndex = 11;
             this.label2.Text = "Clave de Inicio";
-            // 
-            // circularImagen1
-            // 
-            this.circularImagen1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.circularImagen1.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.circularImagen1.BorderColor2 = System.Drawing.Color.HotPink;
-            this.circularImagen1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.circularImagen1.BorderSize = 2;
-            this.circularImagen1.GradientAngle = 50F;
-            this.circularImagen1.Location = new System.Drawing.Point(88, 23);
-            this.circularImagen1.Margin = new System.Windows.Forms.Padding(4);
-            this.circularImagen1.Name = "circularImagen1";
-            this.circularImagen1.Size = new System.Drawing.Size(180, 180);
-            this.circularImagen1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circularImagen1.TabIndex = 14;
-            this.circularImagen1.TabStop = false;
-            this.circularImagen1.Click += new System.EventHandler(this.circularImagen1_Click);
             // 
             // Login
             // 
