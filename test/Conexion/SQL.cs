@@ -31,7 +31,7 @@ namespace test.Conexion
                 //Descomenta el que necesites
                 //Ingresar informacion de la base de datos
                // cn = new MySqlConnection("Data Source = Localhost; User ID = root; Password = HKR4696*; Initial Catalog = GGRentals;");
-                cn = new MySqlConnection("Data Source = Localhost; User ID = root; Password = RousLee; Initial Catalog = GGRentals;");
+                cn = new MySqlConnection("Data Source = bdv13p7ggah8rblyzmc3-mysql.services.clever-cloud.com; User ID = ujjuygkfcbwb4z5y; Password = NC7HN23JXMQL3598JbYi; Initial Catalog =bdv13p7ggah8rblyzmc3;");
                 cn.Open();
                 //MessageBox.Show("Conexion Correcta.");
             }
@@ -39,15 +39,19 @@ namespace test.Conexion
             {
                 MessageBox.Show("Conexion Fallida, "+x.ToString());
             }
+            
         }
         //Comando SQL, ejecuta un Query
         public void CMD(string query)
         {
+            
             try
             {
                 cmd = new MySqlCommand(query, cn);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Cambios Efectuados Correctamente.");
+                cn.Close();
+
             }
             catch (Exception x)
             {

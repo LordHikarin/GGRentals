@@ -13,10 +13,7 @@ namespace test
 {
     public partial class Home : Form
     {
-        Administracion u1 = new Administracion();
-        Departamentos u2 = new Departamentos();
-        Inquilino u3= new Inquilino();
-        Rentas u4 = new Rentas();
+
         public Home()
         {
             InitializeComponent();
@@ -27,45 +24,60 @@ namespace test
 
         }
 
-        private void adm_BTN_Click(object sender, EventArgs e)
-        {
-            u1.Show();
-            u1.Dock = DockStyle.Fill;
-            u2.Hide();
-            u3.Hide();
-            u4.Hide();
-            this.Controls.Add(u1);
-        }
 
-        private void dept_BTN_Click(object sender, EventArgs e)
+        private void iconButton1_Click(object sender, EventArgs e)
         {
-            u1.Hide();
-            u2.Show();
-            u2.Dock = DockStyle.Fill;
-            u3.Hide();
-            u4.Hide();
-            this.Controls.Add(u2);
+            Administracion admin = new Administracion() { Location = new Point(41, 93) };
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(admin);
+
 
         }
 
-        private void inq_BTN_Click(object sender, EventArgs e)
+        private void iconButton3_Click(object sender, EventArgs e)
         {
-            u1.Hide();
-            u2.Hide();
-            u3.Show();
-            u3.Dock = DockStyle.Fill;
-            u4.Hide();
-            this.Controls.Add(u3);
+            Departamentos dep = new Departamentos { Location = new Point(0, 0) };
+            dep.CrearDepartamento += new Departamentos.CrearDelegado(CrearDepartamento);
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(dep);
         }
 
-        private void rent_BTN_Click(object sender, EventArgs e)
+        private void iconButton2_Click(object sender, EventArgs e)
         {
-            u1.Hide();
-            u2.Hide();
-            u3.Hide();
-            u4.Show();
-            u4.Dock = DockStyle.Fill;
-            this.Controls.Add(u4);
+            Inquilino inquilino = new Inquilino() { Location = new Point(0, 0) };
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(inquilino);
+
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            Rentas rentas = new Rentas() { Location = new Point(0, 0) };
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(rentas);
+        }
+
+        private void iconButton6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.ShowDialog();
+        }
+
+        public void CrearDepartamento()
+        {
+            NuevoDepartamentos rentas = new NuevoDepartamentos() { Location = new Point(0, 0) };
+            rentas.Volver += new NuevoDepartamentos.volverDelegate(departamentos);
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(rentas);
+
+        }
+        public void departamentos()
+        {
+            Departamentos dep = new Departamentos { Location = new Point(0, 0) };
+            dep.CrearDepartamento += new Departamentos.CrearDelegado(CrearDepartamento);
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(dep);
         }
     }
 }
