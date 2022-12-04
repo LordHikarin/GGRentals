@@ -52,7 +52,7 @@ namespace test
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-            Rentas rentas = new Rentas() { Location = new Point(0, 0) };
+            VistaRentas rentas = new VistaRentas() { Location = new Point(0, 0) };
             HomeContainer.Controls.Clear();
             HomeContainer.Controls.Add(rentas);
         }

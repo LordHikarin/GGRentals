@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.rentas_DATA = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.rentas_DATA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,21 +43,36 @@
             this.rentas_DATA.Size = new System.Drawing.Size(607, 357);
             this.rentas_DATA.TabIndex = 4;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(35, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(151, 25);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Agregar Renta";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // VistaRentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(28)))), ((int)(((byte)(54)))));
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.rentas_DATA);
             this.Name = "VistaRentas";
             this.Size = new System.Drawing.Size(763, 602);
             ((System.ComponentModel.ISupportInitialize)(this.rentas_DATA)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView rentas_DATA;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -84,7 +84,7 @@ namespace test
         {
             try
             {
-                if (Conexion.Login($"select * from empleados where nombre = '{TxtBoxContraseña.Texts}' and contraseña = '{TxtBoxUsuario.Texts}'"))
+                if (Conexion.Login($"select * from empleados where nombre = '{TxtBoxUsuario.Texts}' and contraseña = '{TxtBoxContraseña.Texts}'"))
                 {
                     Home rentas = new Home();
                     this.Hide();

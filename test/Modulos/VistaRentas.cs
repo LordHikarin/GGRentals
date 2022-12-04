@@ -16,5 +16,11 @@ namespace test.Modulos
         {
             InitializeComponent();
         }
+        public delegate void RentaDelegado();
+        public event RentaDelegado Rentas;
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Rentas();
+        }
     }
 }
