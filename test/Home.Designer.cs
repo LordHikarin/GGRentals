@@ -53,9 +53,10 @@
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FileAlt;
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(0, 154);
+            this.iconButton1.Location = new System.Drawing.Point(0, 192);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(186, 50);
+            this.iconButton1.Size = new System.Drawing.Size(232, 62);
             this.iconButton1.TabIndex = 4;
             this.iconButton1.Text = "Administracion";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -73,9 +74,10 @@
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Users;
             this.iconButton2.IconColor = System.Drawing.Color.White;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(0, 266);
+            this.iconButton2.Location = new System.Drawing.Point(0, 332);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(186, 50);
+            this.iconButton2.Size = new System.Drawing.Size(232, 62);
             this.iconButton2.TabIndex = 5;
             this.iconButton2.Text = "   Inquilinos";
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -93,9 +95,10 @@
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.HouseChimney;
             this.iconButton3.IconColor = System.Drawing.Color.White;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(0, 210);
+            this.iconButton3.Location = new System.Drawing.Point(0, 262);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(186, 50);
+            this.iconButton3.Size = new System.Drawing.Size(232, 62);
             this.iconButton3.TabIndex = 6;
             this.iconButton3.Text = "Departamentos";
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -113,9 +116,10 @@
             this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.FileInvoiceDollar;
             this.iconButton4.IconColor = System.Drawing.Color.White;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(3, 322);
+            this.iconButton4.Location = new System.Drawing.Point(4, 402);
+            this.iconButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(186, 50);
+            this.iconButton4.Size = new System.Drawing.Size(232, 62);
             this.iconButton4.TabIndex = 7;
             this.iconButton4.Text = "Rentas";
             this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -131,9 +135,10 @@
             this.panel1.Controls.Add(this.iconButton4);
             this.panel1.Controls.Add(this.iconButton2);
             this.panel1.Controls.Add(this.iconButton3);
-            this.panel1.Location = new System.Drawing.Point(6, 3);
+            this.panel1.Location = new System.Drawing.Point(8, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(189, 524);
+            this.panel1.Size = new System.Drawing.Size(236, 655);
             this.panel1.TabIndex = 8;
             // 
             // iconButton6
@@ -147,9 +152,10 @@
             this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.SignOut;
             this.iconButton6.IconColor = System.Drawing.Color.White;
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.Location = new System.Drawing.Point(0, 471);
+            this.iconButton6.Location = new System.Drawing.Point(0, 589);
+            this.iconButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(186, 50);
+            this.iconButton6.Size = new System.Drawing.Size(232, 62);
             this.iconButton6.TabIndex = 17;
             this.iconButton6.Text = "Salir";
             this.iconButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -167,9 +173,10 @@
             this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.FolderPlus;
             this.iconButton5.IconColor = System.Drawing.Color.White;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Location = new System.Drawing.Point(3, 378);
+            this.iconButton5.Location = new System.Drawing.Point(4, 472);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(186, 50);
+            this.iconButton5.Size = new System.Drawing.Size(232, 62);
             this.iconButton5.TabIndex = 16;
             this.iconButton5.Text = "Abonos";
             this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -183,9 +190,11 @@
             this.circularImagen1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.circularImagen1.BorderSize = 2;
             this.circularImagen1.GradientAngle = 50F;
-            this.circularImagen1.Location = new System.Drawing.Point(17, 3);
+            this.circularImagen1.Image = ((System.Drawing.Image)(resources.GetObject("circularImagen1.Image")));
+            this.circularImagen1.Location = new System.Drawing.Point(21, 4);
+            this.circularImagen1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.circularImagen1.Name = "circularImagen1";
-            this.circularImagen1.Size = new System.Drawing.Size(135, 135);
+            this.circularImagen1.Size = new System.Drawing.Size(169, 169);
             this.circularImagen1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.circularImagen1.TabIndex = 15;
             this.circularImagen1.TabStop = false;
@@ -195,23 +204,24 @@
             this.HomeContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(28)))), ((int)(((byte)(54)))));
             this.HomeContainer.BorderColor = System.Drawing.Color.White;
             this.HomeContainer.Edge = 20;
-            this.HomeContainer.Location = new System.Drawing.Point(198, 25);
+            this.HomeContainer.Location = new System.Drawing.Point(248, 31);
+            this.HomeContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HomeContainer.Name = "HomeContainer";
-            this.HomeContainer.Size = new System.Drawing.Size(572, 489);
+            this.HomeContainer.Size = new System.Drawing.Size(715, 611);
             this.HomeContainer.TabIndex = 9;
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(787, 526);
+            this.ClientSize = new System.Drawing.Size(984, 658);
             this.Controls.Add(this.HomeContainer);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Home";
