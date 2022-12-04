@@ -24,6 +24,8 @@ namespace test.Modulos
         {
             InitializeComponent();
         }
+        public delegate void VolverDelegado();
+        public event VolverDelegado Volver;
 
         private void Rentas_Load(object sender, EventArgs e)
         {
@@ -73,6 +75,11 @@ namespace test.Modulos
             place.Text = "Puerto Peñasco, Sonora, México";// lo que se desea modificar
             object rangoP = place;
             oDoc.Bookmarks.Add("Lugar", ref rangoP); //Marcador que modificará
+        }
+
+        private void Btn_Volver_Click(object sender, EventArgs e)
+        {
+            Volver();
         }
     }
 }

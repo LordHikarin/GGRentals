@@ -32,7 +32,7 @@
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.btn_Rentas = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
@@ -54,7 +54,7 @@
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.Location = new System.Drawing.Point(0, 192);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(232, 62);
             this.iconButton1.TabIndex = 4;
@@ -75,7 +75,7 @@
             this.iconButton2.IconColor = System.Drawing.Color.White;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.Location = new System.Drawing.Point(0, 332);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(232, 62);
             this.iconButton2.TabIndex = 5;
@@ -96,7 +96,7 @@
             this.iconButton3.IconColor = System.Drawing.Color.White;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.Location = new System.Drawing.Point(0, 262);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(232, 62);
             this.iconButton3.TabIndex = 6;
@@ -105,26 +105,26 @@
             this.iconButton3.UseVisualStyleBackColor = true;
             this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
-            // iconButton4
+            // btn_Rentas
             // 
-            this.iconButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.iconButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.FileInvoiceDollar;
-            this.iconButton4.IconColor = System.Drawing.Color.White;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(4, 402);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(232, 62);
-            this.iconButton4.TabIndex = 7;
-            this.iconButton4.Text = "Rentas";
-            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton4.UseVisualStyleBackColor = true;
-            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
+            this.btn_Rentas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Rentas.FlatAppearance.BorderSize = 0;
+            this.btn_Rentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Rentas.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.btn_Rentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Rentas.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_Rentas.IconChar = FontAwesome.Sharp.IconChar.FileInvoiceDollar;
+            this.btn_Rentas.IconColor = System.Drawing.Color.White;
+            this.btn_Rentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_Rentas.Location = new System.Drawing.Point(4, 402);
+            this.btn_Rentas.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Rentas.Name = "btn_Rentas";
+            this.btn_Rentas.Size = new System.Drawing.Size(232, 62);
+            this.btn_Rentas.TabIndex = 7;
+            this.btn_Rentas.Text = "Rentas";
+            this.btn_Rentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Rentas.UseVisualStyleBackColor = true;
+            this.btn_Rentas.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // panel1
             // 
@@ -132,11 +132,11 @@
             this.panel1.Controls.Add(this.iconButton5);
             this.panel1.Controls.Add(this.circularImagen1);
             this.panel1.Controls.Add(this.iconButton1);
-            this.panel1.Controls.Add(this.iconButton4);
+            this.panel1.Controls.Add(this.btn_Rentas);
             this.panel1.Controls.Add(this.iconButton2);
             this.panel1.Controls.Add(this.iconButton3);
             this.panel1.Location = new System.Drawing.Point(8, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(236, 655);
             this.panel1.TabIndex = 8;
@@ -153,7 +153,7 @@
             this.iconButton6.IconColor = System.Drawing.Color.White;
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton6.Location = new System.Drawing.Point(0, 589);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton6.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton6.Name = "iconButton6";
             this.iconButton6.Size = new System.Drawing.Size(232, 62);
             this.iconButton6.TabIndex = 17;
@@ -174,7 +174,7 @@
             this.iconButton5.IconColor = System.Drawing.Color.White;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.Location = new System.Drawing.Point(4, 472);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(232, 62);
             this.iconButton5.TabIndex = 16;
@@ -192,7 +192,7 @@
             this.circularImagen1.GradientAngle = 50F;
             this.circularImagen1.Image = ((System.Drawing.Image)(resources.GetObject("circularImagen1.Image")));
             this.circularImagen1.Location = new System.Drawing.Point(21, 4);
-            this.circularImagen1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.circularImagen1.Margin = new System.Windows.Forms.Padding(4);
             this.circularImagen1.Name = "circularImagen1";
             this.circularImagen1.Size = new System.Drawing.Size(169, 169);
             this.circularImagen1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -205,7 +205,7 @@
             this.HomeContainer.BorderColor = System.Drawing.Color.White;
             this.HomeContainer.Edge = 20;
             this.HomeContainer.Location = new System.Drawing.Point(248, 31);
-            this.HomeContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HomeContainer.Margin = new System.Windows.Forms.Padding(4);
             this.HomeContainer.Name = "HomeContainer";
             this.HomeContainer.Size = new System.Drawing.Size(715, 611);
             this.HomeContainer.TabIndex = 9;
@@ -238,7 +238,7 @@
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton4;
+        private FontAwesome.Sharp.IconButton btn_Rentas;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton iconButton6;
         private FontAwesome.Sharp.IconButton iconButton5;

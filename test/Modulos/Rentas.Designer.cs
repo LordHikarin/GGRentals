@@ -41,12 +41,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_Contrato = new System.Windows.Forms.Button();
+            this.botonRedondo1 = new MarDeCortezDsk.UserControlls.BotonRedondo();
+            this.botonRedondo2 = new MarDeCortezDsk.UserControlls.BotonRedondo();
+            this.botonRedondo3 = new MarDeCortezDsk.UserControlls.BotonRedondo();
+            this.Btn_Volver = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.SuspendLayout();
             // 
             // inquilino_id_TBX
             // 
             this.inquilino_id_TBX.Location = new System.Drawing.Point(5, 59);
-            this.inquilino_id_TBX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.inquilino_id_TBX.Margin = new System.Windows.Forms.Padding(4);
             this.inquilino_id_TBX.Name = "inquilino_id_TBX";
             this.inquilino_id_TBX.Size = new System.Drawing.Size(232, 22);
             this.inquilino_id_TBX.TabIndex = 27;
@@ -54,7 +58,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(293, 44);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker1.TabIndex = 32;
@@ -62,7 +66,7 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(293, 112);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker2.TabIndex = 33;
@@ -80,7 +84,7 @@
             // Departamento_id_TBX
             // 
             this.Departamento_id_TBX.Location = new System.Drawing.Point(8, 114);
-            this.Departamento_id_TBX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Departamento_id_TBX.Margin = new System.Windows.Forms.Padding(4);
             this.Departamento_id_TBX.Name = "Departamento_id_TBX";
             this.Departamento_id_TBX.Size = new System.Drawing.Size(232, 22);
             this.Departamento_id_TBX.TabIndex = 37;
@@ -88,7 +92,7 @@
             // new_BTN
             // 
             this.new_BTN.Location = new System.Drawing.Point(51, 222);
-            this.new_BTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.new_BTN.Margin = new System.Windows.Forms.Padding(4);
             this.new_BTN.Name = "new_BTN";
             this.new_BTN.Size = new System.Drawing.Size(100, 28);
             this.new_BTN.TabIndex = 38;
@@ -99,7 +103,7 @@
             // del_BTN
             // 
             this.del_BTN.Location = new System.Drawing.Point(159, 222);
-            this.del_BTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.del_BTN.Margin = new System.Windows.Forms.Padding(4);
             this.del_BTN.Name = "del_BTN";
             this.del_BTN.Size = new System.Drawing.Size(100, 28);
             this.del_BTN.TabIndex = 39;
@@ -168,10 +172,87 @@
             this.btn_Contrato.UseVisualStyleBackColor = true;
             this.btn_Contrato.Click += new System.EventHandler(this.btn_Contrato_Click);
             // 
+            // botonRedondo1
+            // 
+            this.botonRedondo1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.botonRedondo1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.botonRedondo1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
+            this.botonRedondo1.BorderRadius = 20;
+            this.botonRedondo1.BorderSize = 0;
+            this.botonRedondo1.FlatAppearance.BorderSize = 0;
+            this.botonRedondo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonRedondo1.ForeColor = System.Drawing.Color.White;
+            this.botonRedondo1.Location = new System.Drawing.Point(51, 350);
+            this.botonRedondo1.Name = "botonRedondo1";
+            this.botonRedondo1.Size = new System.Drawing.Size(150, 40);
+            this.botonRedondo1.TabIndex = 46;
+            this.botonRedondo1.Text = "botonRedondo1";
+            this.botonRedondo1.TextColor = System.Drawing.Color.White;
+            this.botonRedondo1.UseVisualStyleBackColor = false;
+            // 
+            // botonRedondo2
+            // 
+            this.botonRedondo2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.botonRedondo2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.botonRedondo2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
+            this.botonRedondo2.BorderRadius = 20;
+            this.botonRedondo2.BorderSize = 0;
+            this.botonRedondo2.FlatAppearance.BorderSize = 0;
+            this.botonRedondo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonRedondo2.ForeColor = System.Drawing.Color.White;
+            this.botonRedondo2.Location = new System.Drawing.Point(239, 350);
+            this.botonRedondo2.Name = "botonRedondo2";
+            this.botonRedondo2.Size = new System.Drawing.Size(150, 40);
+            this.botonRedondo2.TabIndex = 47;
+            this.botonRedondo2.Text = "botonRedondo2";
+            this.botonRedondo2.TextColor = System.Drawing.Color.White;
+            this.botonRedondo2.UseVisualStyleBackColor = false;
+            // 
+            // botonRedondo3
+            // 
+            this.botonRedondo3.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.botonRedondo3.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.botonRedondo3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
+            this.botonRedondo3.BorderRadius = 20;
+            this.botonRedondo3.BorderSize = 0;
+            this.botonRedondo3.FlatAppearance.BorderSize = 0;
+            this.botonRedondo3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonRedondo3.ForeColor = System.Drawing.Color.White;
+            this.botonRedondo3.Location = new System.Drawing.Point(415, 350);
+            this.botonRedondo3.Name = "botonRedondo3";
+            this.botonRedondo3.Size = new System.Drawing.Size(150, 40);
+            this.botonRedondo3.TabIndex = 48;
+            this.botonRedondo3.Text = "botonRedondo3";
+            this.botonRedondo3.TextColor = System.Drawing.Color.White;
+            this.botonRedondo3.UseVisualStyleBackColor = false;
+            // 
+            // Btn_Volver
+            // 
+            this.Btn_Volver.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.Btn_Volver.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.Btn_Volver.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
+            this.Btn_Volver.BorderRadius = 20;
+            this.Btn_Volver.BorderSize = 0;
+            this.Btn_Volver.FlatAppearance.BorderSize = 0;
+            this.Btn_Volver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Volver.ForeColor = System.Drawing.Color.White;
+            this.Btn_Volver.Location = new System.Drawing.Point(51, 416);
+            this.Btn_Volver.Name = "Btn_Volver";
+            this.Btn_Volver.Size = new System.Drawing.Size(150, 40);
+            this.Btn_Volver.TabIndex = 49;
+            this.Btn_Volver.Text = "Volver";
+            this.Btn_Volver.TextColor = System.Drawing.Color.White;
+            this.Btn_Volver.UseVisualStyleBackColor = false;
+            this.Btn_Volver.Click += new System.EventHandler(this.Btn_Volver_Click);
+            // 
             // Rentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Btn_Volver);
+            this.Controls.Add(this.botonRedondo3);
+            this.Controls.Add(this.botonRedondo2);
+            this.Controls.Add(this.botonRedondo1);
             this.Controls.Add(this.btn_Contrato);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -185,7 +266,7 @@
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.inquilino_id_TBX);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Rentas";
             this.Size = new System.Drawing.Size(605, 594);
             this.Load += new System.EventHandler(this.Rentas_Load);
@@ -208,5 +289,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btn_Contrato;
+        private MarDeCortezDsk.UserControlls.BotonRedondo botonRedondo1;
+        private MarDeCortezDsk.UserControlls.BotonRedondo botonRedondo2;
+        private MarDeCortezDsk.UserControlls.BotonRedondo botonRedondo3;
+        private MarDeCortezDsk.UserControlls.BotonRedondo Btn_Volver;
     }
 }

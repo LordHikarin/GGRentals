@@ -53,6 +53,21 @@ namespace test
         private void iconButton4_Click(object sender, EventArgs e)
         {
             VistaRentas rentas = new VistaRentas() { Location = new Point(0, 0) };
+            rentas.Rentas += new VistaRentas.RentaDelegado(Rentals);
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(rentas);
+        }
+        public void GoRentals()// usario control VistaRentas.cs
+        {
+            VistaRentas rentas = new VistaRentas() { Location = new Point(0, 0) };
+            rentas.Rentas += new VistaRentas.RentaDelegado(Rentals);
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(rentas);
+        }
+        public void Rentals() // usuario control Rentas.cs
+        {
+            Rentas rentas = new Rentas() { Location = new Point(0, 0) };
+            rentas.Volver += new Rentas.VolverDelegado(GoRentals);
             HomeContainer.Controls.Clear();
             HomeContainer.Controls.Add(rentas);
         }
@@ -64,7 +79,7 @@ namespace test
             login.ShowDialog();
         }
 
-        public void CrearDepartamento()
+        public void CrearDepartamento() //Para volver al de departamentos
         {
             NuevoDepartamentos rentas = new NuevoDepartamentos() { Location = new Point(0, 0) };
             rentas.Volver += new NuevoDepartamentos.volverDelegate(departamentos);
@@ -72,7 +87,7 @@ namespace test
             HomeContainer.Controls.Add(rentas);
 
         }
-        public void departamentos()
+        public void departamentos() // Vista de los departamentos
         {
             Departamentos dep = new Departamentos { Location = new Point(0, 0) };
             dep.CrearDepartamento += new Departamentos.CrearDelegado(CrearDepartamento);
