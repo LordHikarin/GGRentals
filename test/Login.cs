@@ -25,22 +25,30 @@ namespace test
         private void login_BTN_Click(object sender, EventArgs e)
         {
             //Si el usuario y contraseña coinciden, cambiar de pantalla
-            if (Conexion.Login("SELECT * FROM empleados WHERE nombre = BINARY '" + usr_TBX.Text.ToString() + "'and contraseña = BINARY '" + psw_TBX.Text.ToString() + "'"))
+            try
             {
-                Home rentas = new Home();
-                this.Hide();
-                rentas.ShowDialog();
-                this.Close();
-            } else
-            //Contraseña o Usuario incorrecto
+                if (Conexion.Login("SELECT * FROM empleados WHERE nombre = BINARY '" + TxtBoxUsuario.Text.ToString() + "'and contraseña = BINARY '" + TxtBoxContraseña.Text.ToString() + "'"))
+                {
+                    Home rentas = new Home();
+                    this.Hide();
+                    rentas.ShowDialog();
+                    this.Close();
+                }
+                else
+                //Contraseña o Usuario incorrecto
+                {
+                    MessageBox.Show("Datos incorrectos o usuario no encontrado");
+                }
+            }
+            catch(Exception ex)
             {
-                MessageBox.Show("Datos incorrectos o usuario no encontrado");
+
             }
         }
 
         private void usr_TBX_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(usr_TBX.Text) && !String.IsNullOrEmpty(psw_TBX.Text))
+            if (!String.IsNullOrEmpty(TxtBoxUsuario.Text) && !String.IsNullOrEmpty(TxtBoxContraseña.Text))
             {
                 login_BTN.Enabled = true;
                 login_BTN.BackColor = Color.Green;
@@ -54,7 +62,7 @@ namespace test
 
         private void psw_TBX_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(usr_TBX.Text) && !String.IsNullOrEmpty(psw_TBX.Text))
+            if (!String.IsNullOrEmpty(TxtBoxUsuario.Text) && !String.IsNullOrEmpty(TxtBoxContraseña.Text))
             {
                 login_BTN.Enabled = true;
                 login_BTN.BackColor = Color.Green;
@@ -66,5 +74,35 @@ namespace test
             }
 
         }
+
+        private void circularImagen1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void botonRedondo1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Conexion.Login($"select * from empleados where nombre = '{TxtBoxUsuario.Texts}' and contraseña = '{TxtBoxContraseña.Texts}'"))
+                {
+                    Home rentas = new Home();
+                    this.Hide();
+                    rentas.ShowDialog();
+                    this.Close();
+                }
+                else
+                //Contraseña o Usuario incorrecto
+                {
+                    MessageBox.Show("Datos incorrectos o usuario no encontrado");
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+
     }
 }

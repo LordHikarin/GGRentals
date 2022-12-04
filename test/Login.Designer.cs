@@ -29,99 +29,159 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.usr_TBX = new System.Windows.Forms.TextBox();
-            this.psw_TBX = new System.Windows.Forms.TextBox();
-            this.login_BTN = new System.Windows.Forms.Button();
+            this.sPanel1 = new MarDeCortezDsk.UserControlls.SPanel();
+            this.login_BTN = new MarDeCortezDsk.UserControlls.BotonRedondo();
+            this.label3 = new System.Windows.Forms.Label();
+            this.circularImagen1 = new test.UserControlls.CircularImagen();
+            this.TxtBoxContraseña = new CustomControls.RJControls.RJTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.TxtBoxUsuario = new CustomControls.RJControls.RJTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.sPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularImagen1)).BeginInit();
             this.SuspendLayout();
             // 
-            // usr_TBX
+            // sPanel1
             // 
-            this.usr_TBX.Location = new System.Drawing.Point(9, 220);
-            this.usr_TBX.Name = "usr_TBX";
-            this.usr_TBX.Size = new System.Drawing.Size(235, 20);
-            this.usr_TBX.TabIndex = 6;
-            this.usr_TBX.TextChanged += new System.EventHandler(this.usr_TBX_TextChanged);
-            // 
-            // psw_TBX
-            // 
-            this.psw_TBX.Location = new System.Drawing.Point(9, 269);
-            this.psw_TBX.Name = "psw_TBX";
-            this.psw_TBX.Size = new System.Drawing.Size(235, 20);
-            this.psw_TBX.TabIndex = 7;
-            this.psw_TBX.UseSystemPasswordChar = true;
-            this.psw_TBX.TextChanged += new System.EventHandler(this.psw_TBX_TextChanged);
+            this.sPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
+            this.sPanel1.BorderColor = System.Drawing.Color.White;
+            this.sPanel1.Controls.Add(this.login_BTN);
+            this.sPanel1.Controls.Add(this.label3);
+            this.sPanel1.Controls.Add(this.circularImagen1);
+            this.sPanel1.Controls.Add(this.TxtBoxContraseña);
+            this.sPanel1.Controls.Add(this.label1);
+            this.sPanel1.Controls.Add(this.TxtBoxUsuario);
+            this.sPanel1.Controls.Add(this.label2);
+            this.sPanel1.Edge = 20;
+            this.sPanel1.Location = new System.Drawing.Point(25, 12);
+            this.sPanel1.Name = "sPanel1";
+            this.sPanel1.Size = new System.Drawing.Size(268, 445);
+            this.sPanel1.TabIndex = 14;
             // 
             // login_BTN
             // 
-            this.login_BTN.BackColor = System.Drawing.Color.SkyBlue;
-            this.login_BTN.Enabled = false;
-            this.login_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.login_BTN.Location = new System.Drawing.Point(9, 305);
+            this.login_BTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(156)))), ((int)(((byte)(242)))));
+            this.login_BTN.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(156)))), ((int)(((byte)(242)))));
+            this.login_BTN.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
+            this.login_BTN.BorderRadius = 20;
+            this.login_BTN.BorderSize = 0;
+            this.login_BTN.FlatAppearance.BorderSize = 0;
+            this.login_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.login_BTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_BTN.ForeColor = System.Drawing.Color.White;
+            this.login_BTN.Location = new System.Drawing.Point(30, 371);
             this.login_BTN.Name = "login_BTN";
-            this.login_BTN.Size = new System.Drawing.Size(75, 33);
-            this.login_BTN.TabIndex = 9;
+            this.login_BTN.Size = new System.Drawing.Size(205, 40);
+            this.login_BTN.TabIndex = 17;
             this.login_BTN.Text = "Ingresar";
+            this.login_BTN.TextColor = System.Drawing.Color.White;
             this.login_BTN.UseVisualStyleBackColor = false;
-            this.login_BTN.Click += new System.EventHandler(this.login_BTN_Click);
+            this.login_BTN.Click += new System.EventHandler(this.botonRedondo1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(26, 235);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(209, 20);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "____________________";
+            // 
+            // circularImagen1
+            // 
+            this.circularImagen1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.circularImagen1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.circularImagen1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.circularImagen1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.circularImagen1.BorderSize = 2;
+            this.circularImagen1.GradientAngle = 50F;
+            this.circularImagen1.Image = global::test.Properties.Resources.LogoGG;
+            this.circularImagen1.Location = new System.Drawing.Point(66, 21);
+            this.circularImagen1.Name = "circularImagen1";
+            this.circularImagen1.Size = new System.Drawing.Size(135, 135);
+            this.circularImagen1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.circularImagen1.TabIndex = 14;
+            this.circularImagen1.TabStop = false;
+            this.circularImagen1.Click += new System.EventHandler(this.circularImagen1_Click);
+            // 
+            // TxtBoxContraseña
+            // 
+            this.TxtBoxContraseña.BackColor = System.Drawing.SystemColors.Window;
+            this.TxtBoxContraseña.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.TxtBoxContraseña.BorderFocusColor = System.Drawing.SystemColors.HotTrack;
+            this.TxtBoxContraseña.BorderRadius = 0;
+            this.TxtBoxContraseña.BorderSize = 2;
+            this.TxtBoxContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoxContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxtBoxContraseña.Location = new System.Drawing.Point(36, 297);
+            this.TxtBoxContraseña.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoxContraseña.Multiline = false;
+            this.TxtBoxContraseña.Name = "TxtBoxContraseña";
+            this.TxtBoxContraseña.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.TxtBoxContraseña.PasswordChar = false;
+            this.TxtBoxContraseña.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.TxtBoxContraseña.PlaceholderText = "Contraseña";
+            this.TxtBoxContraseña.Size = new System.Drawing.Size(199, 33);
+            this.TxtBoxContraseña.TabIndex = 15;
+            this.TxtBoxContraseña.Texts = "";
+            this.TxtBoxContraseña.UnderlinedStyle = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Location = new System.Drawing.Point(6, 204);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(26, 168);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 13);
+            this.label1.Size = new System.Drawing.Size(163, 20);
             this.label1.TabIndex = 10;
             this.label1.Text = "Nombre de Usuario";
+            // 
+            // TxtBoxUsuario
+            // 
+            this.TxtBoxUsuario.BackColor = System.Drawing.SystemColors.Window;
+            this.TxtBoxUsuario.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.TxtBoxUsuario.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(156)))), ((int)(((byte)(242)))));
+            this.TxtBoxUsuario.BorderRadius = 0;
+            this.TxtBoxUsuario.BorderSize = 2;
+            this.TxtBoxUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoxUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxtBoxUsuario.Location = new System.Drawing.Point(36, 198);
+            this.TxtBoxUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBoxUsuario.Multiline = false;
+            this.TxtBoxUsuario.Name = "TxtBoxUsuario";
+            this.TxtBoxUsuario.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.TxtBoxUsuario.PasswordChar = false;
+            this.TxtBoxUsuario.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.TxtBoxUsuario.PlaceholderText = "usuario";
+            this.TxtBoxUsuario.Size = new System.Drawing.Size(199, 33);
+            this.TxtBoxUsuario.TabIndex = 15;
+            this.TxtBoxUsuario.Texts = "";
+            this.TxtBoxUsuario.UnderlinedStyle = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.label2.Location = new System.Drawing.Point(12, 253);
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(26, 268);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 13);
+            this.label2.Size = new System.Drawing.Size(126, 20);
             this.label2.TabIndex = 11;
             this.label2.Text = "Clave de Inicio";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::test.Properties.Resources.LogoGG;
-            this.pictureBox1.Location = new System.Drawing.Point(35, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(181, 167);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.groupBox1.Location = new System.Drawing.Point(-1, 185);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(253, 169);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(250, 350);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.login_BTN);
-            this.Controls.Add(this.psw_TBX);
-            this.Controls.Add(this.usr_TBX);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(319, 469);
+            this.Controls.Add(this.sPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
@@ -129,20 +189,22 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GG Rentals";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.sPanel1.ResumeLayout(false);
+            this.sPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularImagen1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox usr_TBX;
-        private System.Windows.Forms.TextBox psw_TBX;
-        private System.Windows.Forms.Button login_BTN;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private UserControlls.CircularImagen circularImagen1;
+        private System.Windows.Forms.Label label3;
+        private CustomControls.RJControls.RJTextBox TxtBoxContraseña;
+        private CustomControls.RJControls.RJTextBox TxtBoxUsuario;
+        private MarDeCortezDsk.UserControlls.SPanel sPanel1;
+        private MarDeCortezDsk.UserControlls.BotonRedondo login_BTN;
     }
 }
 

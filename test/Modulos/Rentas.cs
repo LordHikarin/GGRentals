@@ -27,10 +27,10 @@ namespace test.Modulos
 
         private void Rentas_Load(object sender, EventArgs e)
         {
-
+            /*
             string sqlCommand = "SELECT * FROM rentas";
             DataSet ds = Conexion.GetDataSet(sqlCommand);
-            rentas_DATA.DataSource = ds.Tables[0];
+            rentas_DATA.DataSource = ds.Tables[0];*/
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
