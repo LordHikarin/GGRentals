@@ -79,5 +79,20 @@ namespace test
             HomeContainer.Controls.Clear();
             HomeContainer.Controls.Add(dep);
         }
+        public void CrearInquilino()
+        {
+            NuevoInquilino inq = new NuevoInquilino() { Location = new Point(0, 0) };
+            inq.Volver += new NuevoInquilino.volverDelegate(departamentos);
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(inq);
+
+        }
+        public void inquilino()
+        {
+            Departamentos dep = new Departamentos { Location = new Point(0, 0) };
+            dep.CrearDepartamento += new Departamentos.CrearDelegado(CrearDepartamento);
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(dep);
+        }
     }
 }
