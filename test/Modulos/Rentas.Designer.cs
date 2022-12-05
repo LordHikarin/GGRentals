@@ -33,14 +33,11 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.costo_TBX = new System.Windows.Forms.TextBox();
             this.Departamento_id_TBX = new System.Windows.Forms.TextBox();
-            this.new_BTN = new System.Windows.Forms.Button();
-            this.del_BTN = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn_Contrato = new System.Windows.Forms.Button();
             this.botonRedondo1 = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.botonRedondo2 = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.botonRedondo3 = new MarDeCortezDsk.UserControlls.BotonRedondo();
@@ -49,6 +46,7 @@
             this.Btn_Borrar = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.BtnRdn_contrato = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.Btn_Regresar = new MarDeCortezDsk.UserControlls.BotonRedondo();
+            this.sPanel1 = new MarDeCortezDsk.UserControlls.SPanel();
             this.SuspendLayout();
             // 
             // inquilino_id_TBX
@@ -69,7 +67,7 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(391, 138);
+            this.dateTimePicker2.Location = new System.Drawing.Point(391, 121);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(5);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(265, 22);
@@ -92,28 +90,6 @@
             this.Departamento_id_TBX.Name = "Departamento_id_TBX";
             this.Departamento_id_TBX.Size = new System.Drawing.Size(232, 22);
             this.Departamento_id_TBX.TabIndex = 37;
-            // 
-            // new_BTN
-            // 
-            this.new_BTN.Location = new System.Drawing.Point(189, 306);
-            this.new_BTN.Margin = new System.Windows.Forms.Padding(5);
-            this.new_BTN.Name = "new_BTN";
-            this.new_BTN.Size = new System.Drawing.Size(100, 28);
-            this.new_BTN.TabIndex = 38;
-            this.new_BTN.Text = "Nuevo";
-            this.new_BTN.UseVisualStyleBackColor = true;
-            this.new_BTN.Click += new System.EventHandler(this.new_BTN_Click);
-            // 
-            // del_BTN
-            // 
-            this.del_BTN.Location = new System.Drawing.Point(330, 320);
-            this.del_BTN.Margin = new System.Windows.Forms.Padding(5);
-            this.del_BTN.Name = "del_BTN";
-            this.del_BTN.Size = new System.Drawing.Size(100, 28);
-            this.del_BTN.TabIndex = 39;
-            this.del_BTN.Text = "Borrar";
-            this.del_BTN.UseVisualStyleBackColor = true;
-            this.del_BTN.Click += new System.EventHandler(this.del_BTN_Click);
             // 
             // label1
             // 
@@ -174,17 +150,6 @@
             this.label5.Size = new System.Drawing.Size(124, 25);
             this.label5.TabIndex = 44;
             this.label5.Text = "Costo Total";
-            // 
-            // btn_Contrato
-            // 
-            this.btn_Contrato.Location = new System.Drawing.Point(488, 306);
-            this.btn_Contrato.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Contrato.Name = "btn_Contrato";
-            this.btn_Contrato.Size = new System.Drawing.Size(117, 57);
-            this.btn_Contrato.TabIndex = 45;
-            this.btn_Contrato.Text = "Generar contrato";
-            this.btn_Contrato.UseVisualStyleBackColor = true;
-            this.btn_Contrato.Click += new System.EventHandler(this.btn_Contrato_Click);
             // 
             // botonRedondo1
             // 
@@ -267,6 +232,7 @@
             this.Btn_nuevo.Text = "Nuevo";
             this.Btn_nuevo.TextColor = System.Drawing.Color.White;
             this.Btn_nuevo.UseVisualStyleBackColor = false;
+            this.Btn_nuevo.Click += new System.EventHandler(this.Btn_nuevo_Click);
             // 
             // Btn_Borrar
             // 
@@ -278,13 +244,14 @@
             this.Btn_Borrar.FlatAppearance.BorderSize = 0;
             this.Btn_Borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Borrar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Borrar.Location = new System.Drawing.Point(189, 368);
+            this.Btn_Borrar.Location = new System.Drawing.Point(171, 368);
             this.Btn_Borrar.Name = "Btn_Borrar";
             this.Btn_Borrar.Size = new System.Drawing.Size(129, 57);
             this.Btn_Borrar.TabIndex = 47;
             this.Btn_Borrar.Text = "Borrar";
             this.Btn_Borrar.TextColor = System.Drawing.Color.White;
             this.Btn_Borrar.UseVisualStyleBackColor = false;
+            this.Btn_Borrar.Click += new System.EventHandler(this.Btn_Borrar_Click);
             // 
             // BtnRdn_contrato
             // 
@@ -296,13 +263,14 @@
             this.BtnRdn_contrato.FlatAppearance.BorderSize = 0;
             this.BtnRdn_contrato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRdn_contrato.ForeColor = System.Drawing.Color.White;
-            this.BtnRdn_contrato.Location = new System.Drawing.Point(346, 368);
+            this.BtnRdn_contrato.Location = new System.Drawing.Point(319, 368);
             this.BtnRdn_contrato.Name = "BtnRdn_contrato";
             this.BtnRdn_contrato.Size = new System.Drawing.Size(129, 57);
             this.BtnRdn_contrato.TabIndex = 48;
             this.BtnRdn_contrato.Text = "Generar contrato";
             this.BtnRdn_contrato.TextColor = System.Drawing.Color.White;
             this.BtnRdn_contrato.UseVisualStyleBackColor = false;
+            this.BtnRdn_contrato.Click += new System.EventHandler(this.BtnRdn_contrato_Click);
             // 
             // Btn_Regresar
             // 
@@ -314,7 +282,7 @@
             this.Btn_Regresar.FlatAppearance.BorderSize = 0;
             this.Btn_Regresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Regresar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Regresar.Location = new System.Drawing.Point(488, 368);
+            this.Btn_Regresar.Location = new System.Drawing.Point(476, 368);
             this.Btn_Regresar.Name = "Btn_Regresar";
             this.Btn_Regresar.Size = new System.Drawing.Size(129, 57);
             this.Btn_Regresar.TabIndex = 49;
@@ -322,6 +290,16 @@
             this.Btn_Regresar.TextColor = System.Drawing.Color.White;
             this.Btn_Regresar.UseVisualStyleBackColor = false;
             this.Btn_Regresar.Click += new System.EventHandler(this.Btn_Regresar_Click);
+            // 
+            // sPanel1
+            // 
+            this.sPanel1.BackColor = System.Drawing.Color.White;
+            this.sPanel1.BorderColor = System.Drawing.Color.White;
+            this.sPanel1.Edge = 20;
+            this.sPanel1.Location = new System.Drawing.Point(7, 23);
+            this.sPanel1.Name = "sPanel1";
+            this.sPanel1.Size = new System.Drawing.Size(682, 531);
+            this.sPanel1.TabIndex = 50;
             // 
             // Rentas
             // 
@@ -332,19 +310,17 @@
             this.Controls.Add(this.BtnRdn_contrato);
             this.Controls.Add(this.Btn_Borrar);
             this.Controls.Add(this.Btn_nuevo);
-            this.Controls.Add(this.btn_Contrato);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.del_BTN);
-            this.Controls.Add(this.new_BTN);
             this.Controls.Add(this.Departamento_id_TBX);
             this.Controls.Add(this.costo_TBX);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.inquilino_id_TBX);
+            this.Controls.Add(this.sPanel1);
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Rentas";
             this.Size = new System.Drawing.Size(763, 602);
@@ -360,14 +336,11 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.TextBox costo_TBX;
         private System.Windows.Forms.TextBox Departamento_id_TBX;
-        private System.Windows.Forms.Button new_BTN;
-        private System.Windows.Forms.Button del_BTN;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btn_Contrato;
         private MarDeCortezDsk.UserControlls.BotonRedondo botonRedondo1;
         private MarDeCortezDsk.UserControlls.BotonRedondo botonRedondo2;
         private MarDeCortezDsk.UserControlls.BotonRedondo botonRedondo3;
@@ -376,5 +349,6 @@
         private MarDeCortezDsk.UserControlls.BotonRedondo Btn_Borrar;
         private MarDeCortezDsk.UserControlls.BotonRedondo BtnRdn_contrato;
         private MarDeCortezDsk.UserControlls.BotonRedondo Btn_Regresar;
+        private MarDeCortezDsk.UserControlls.SPanel sPanel1;
     }
 }

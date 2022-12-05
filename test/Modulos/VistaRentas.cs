@@ -12,6 +12,7 @@ namespace test.Modulos
 {
     public partial class VistaRentas : UserControl
     {
+        Conexion.SQL Conexion = new Conexion.SQL();
         public VistaRentas()
         {
             InitializeComponent();
@@ -21,6 +22,14 @@ namespace test.Modulos
         private void label1_Click(object sender, EventArgs e)
         {
             Rentas();
+        }
+
+        private void VistaRentas_Load(object sender, EventArgs e)
+        {
+            string sqlCommand = "SELECT * FROM rentas";
+            DataSet ds = Conexion.GetDataSet(sqlCommand);
+            rentas_DATA.DataSource = ds.Tables[0];
+            rentas_DATA.Update();
         }
     }
 }

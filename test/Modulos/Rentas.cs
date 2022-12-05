@@ -30,9 +30,7 @@ namespace test.Modulos
         private void Rentas_Load(object sender, EventArgs e)
         {
             /*
-            string sqlCommand = "SELECT * FROM rentas";
-            DataSet ds = Conexion.GetDataSet(sqlCommand);
-            rentas_DATA.DataSource = ds.Tables[0];*/
+            */
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
@@ -43,15 +41,26 @@ namespace test.Modulos
         private void new_BTN_Click(object sender, EventArgs e)
         {
 
-            Conexion.CMD("`ggrentals`.`rentas` (`id_inquilino`, `id_departamento`, `fecha_inicio`, `fecha_final`, `deudas`) VALUES ('" + inquilino_id_TBX.ToString() + "','" + Departamento_id_TBX.ToString() + "','" + dateTimePicker1.Value + "','" + dateTimePicker1.Value + "','" + deuda + "');");
         }
 
         private void del_BTN_Click(object sender, EventArgs e)
         {
-            Conexion.CMD("DELETE FROM `ggrentals`.`rentas` WHERE(`id_inquilino` = '"+inquilino_id_TBX.ToString()+"')");
         }
 
         private void btn_Contrato_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void Btn_Volver_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void Btn_Regresar_Click(object sender, EventArgs e)
+        {
+            Volver();
+        }
+
+        private void BtnRdn_contrato_Click(object sender, EventArgs e)
         {
             //string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);//la ruta especificada es el escritorio
             objWord.Application objAplicacion = new objWord.Application();
@@ -77,13 +86,14 @@ namespace test.Modulos
             oDoc.Bookmarks.Add("Lugar", ref rangoP); //Marcador que modificará
         }
 
-        private void Btn_Volver_Click(object sender, EventArgs e)
+        private void Btn_Borrar_Click(object sender, EventArgs e)
         {
+            Conexion.CMD("DELETE FROM `ggrentals`.`rentas` WHERE(`id_inquilino` = '" + inquilino_id_TBX.ToString() + "')");
         }
 
-        private void Btn_Regresar_Click(object sender, EventArgs e)
+        private void Btn_nuevo_Click(object sender, EventArgs e)
         {
-            Volver();
+            Conexion.CMD("`ggrentals`.`rentas` (`id_inquilino`, `id_departamento`, `fecha_inicio`, `fecha_final`, `deudas`) VALUES ('" + inquilino_id_TBX.ToString() + "','" + Departamento_id_TBX.ToString() + "','" + dateTimePicker1.Value + "','" + dateTimePicker1.Value + "','" + deuda + "');");
         }
     }
 }

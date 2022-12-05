@@ -64,6 +64,7 @@
             this.Controls.Add(this.rentas_DATA);
             this.Name = "VistaRentas";
             this.Size = new System.Drawing.Size(763, 602);
+            this.Load += new System.EventHandler(this.VistaRentas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rentas_DATA)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
