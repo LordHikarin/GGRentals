@@ -79,6 +79,10 @@ namespace test.Modulos
 
         private void Btn_Volver_Click(object sender, EventArgs e)
         {
+        }
+
+        private void Btn_Regresar_Click(object sender, EventArgs e)
+        {
             Volver();
         }
     }
