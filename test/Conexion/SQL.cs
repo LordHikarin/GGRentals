@@ -68,6 +68,7 @@ namespace test.Conexion
                 MySqlDataReader reader = cmd.ExecuteReader();
                 if (reader.HasRows)
                 {
+                    cn.Close();
                     return true;
                 }
                 else
@@ -92,6 +93,7 @@ namespace test.Conexion
             DataTable table = new DataTable();
             table.Load(cmd.ExecuteReader());
             ds.Tables.Add(table);
+            cn.Close();
             return ds;
         }
     }

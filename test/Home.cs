@@ -97,17 +97,17 @@ namespace test
         public void CrearInquilino()
         {
             NuevoInquilino inq = new NuevoInquilino() { Location = new Point(0, 0) };
-            inq.Volver += new NuevoInquilino.volverDelegate(departamentos);
+            inq.Volver += new NuevoInquilino.volverDelegate(inquilinos);
             HomeContainer.Controls.Clear();
             HomeContainer.Controls.Add(inq);
 
         }
-        public void inquilino()
+        public void inquilinos()
         {
-            Departamentos dep = new Departamentos { Location = new Point(0, 0) };
-            dep.CrearDepartamento += new Departamentos.CrearDelegado(CrearDepartamento);
+            Inquilino inquilino = new Inquilino { Location = new Point(0, 0) };
+            inquilino.CrearInquilino += new Inquilino.CrearDelegado(CrearInquilino);
             HomeContainer.Controls.Clear();
-            HomeContainer.Controls.Add(dep);
+            HomeContainer.Controls.Add(inquilino);
         }
     }
 }
