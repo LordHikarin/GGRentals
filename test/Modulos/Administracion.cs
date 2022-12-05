@@ -23,29 +23,11 @@ namespace test.Modulos
         private void Save_BTN_Click(object sender, EventArgs e)
         {
 
-            if (String.IsNullOrEmpty(nombre_TBX.Text))
-            {
-                MessageBox.Show("Favor de introducir un nombre.");
-            }
-            else
-            {
-                string query = "backup database GGRentals to disk = 'C:\\backup\\" + nombre_TBX.Text.ToString() + ".bak' with name = 'backup GGRentals', description = 'Backup Complete';";
-                conexion.CMD(query);
-            }
         }
 
         private void Restore_BTN_Click(object sender, EventArgs e)
         {
 
-            if (String.IsNullOrEmpty(nombre_TBX.Text))
-            {
-                MessageBox.Show("Favor de introducir un nombre.");
-            }
-            else
-            {
-                string query = "Restore Database GGRentals From Disk = 'c:\\backup\\" + nombre_TBX.Text.ToString() + ".bak' with file = 1, recovery;";
-                conexion.CMD(query);
-            }
         }
 
         private void Administracion_Load(object sender, EventArgs e)
@@ -58,11 +40,46 @@ namespace test.Modulos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CrearUsuario();
         }
 
         private void del_BTN_Click(object sender, EventArgs e)
         {
+        }
+
+        private void Btn_Nuevo_Click(object sender, EventArgs e)
+        {
+            CrearUsuario();
+        }
+
+        private void Btn_Borrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Copia_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(nombre_TBX.Text))
+            {
+                MessageBox.Show("Favor de introducir un nombre.");
+            }
+            else
+            {
+                string query = "backup database GGRentals to disk = 'C:\\backup\\" + nombre_TBX.Text.ToString() + ".bak' with name = 'backup GGRentals', description = 'Backup Complete';";
+                conexion.CMD(query);
+            }
+        }
+
+        private void Btn_Restaurar_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(nombre_TBX.Text))
+            {
+                MessageBox.Show("Favor de introducir un nombre.");
+            }
+            else
+            {
+                string query = "Restore Database GGRentals From Disk = 'c:\\backup\\" + nombre_TBX.Text.ToString() + ".bak' with file = 1, recovery;";
+                conexion.CMD(query);
+            }
         }
     }
 }

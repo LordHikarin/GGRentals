@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.sPanel1 = new MarDeCortezDsk.UserControlls.SPanel();
+            this.label4 = new System.Windows.Forms.Label();
             this.botonRedondo1 = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.login_BTN = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TxtBoxContraseña = new CustomControls.RJControls.RJTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.sPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularImagen1)).BeginInit();
             this.SuspendLayout();
@@ -58,10 +58,23 @@
             this.sPanel1.Controls.Add(this.label2);
             this.sPanel1.Edge = 20;
             this.sPanel1.Location = new System.Drawing.Point(33, 15);
-            this.sPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.sPanel1.Name = "sPanel1";
             this.sPanel1.Size = new System.Drawing.Size(357, 586);
             this.sPanel1.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
+            this.label4.Location = new System.Drawing.Point(35, 414);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(252, 25);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "____________________";
             // 
             // botonRedondo1
             // 
@@ -70,12 +83,13 @@
             this.botonRedondo1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
             this.botonRedondo1.BorderRadius = 20;
             this.botonRedondo1.BorderSize = 0;
+            this.botonRedondo1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonRedondo1.FlatAppearance.BorderSize = 0;
             this.botonRedondo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonRedondo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonRedondo1.ForeColor = System.Drawing.Color.White;
             this.botonRedondo1.Location = new System.Drawing.Point(40, 523);
-            this.botonRedondo1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.botonRedondo1.Margin = new System.Windows.Forms.Padding(4);
             this.botonRedondo1.Name = "botonRedondo1";
             this.botonRedondo1.Size = new System.Drawing.Size(273, 49);
             this.botonRedondo1.TabIndex = 18;
@@ -91,12 +105,13 @@
             this.login_BTN.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
             this.login_BTN.BorderRadius = 20;
             this.login_BTN.BorderSize = 0;
+            this.login_BTN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.login_BTN.FlatAppearance.BorderSize = 0;
             this.login_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_BTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_BTN.ForeColor = System.Drawing.Color.White;
             this.login_BTN.Location = new System.Drawing.Point(40, 457);
-            this.login_BTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.login_BTN.Margin = new System.Windows.Forms.Padding(4);
             this.login_BTN.Name = "login_BTN";
             this.login_BTN.Size = new System.Drawing.Size(273, 49);
             this.login_BTN.TabIndex = 17;
@@ -128,7 +143,7 @@
             this.circularImagen1.GradientAngle = 50F;
             this.circularImagen1.Image = ((System.Drawing.Image)(resources.GetObject("circularImagen1.Image")));
             this.circularImagen1.Location = new System.Drawing.Point(88, 23);
-            this.circularImagen1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.circularImagen1.Margin = new System.Windows.Forms.Padding(4);
             this.circularImagen1.Name = "circularImagen1";
             this.circularImagen1.Size = new System.Drawing.Size(180, 180);
             this.circularImagen1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -143,10 +158,11 @@
             this.TxtBoxUsuario.BorderFocusColor = System.Drawing.SystemColors.HotTrack;
             this.TxtBoxUsuario.BorderRadius = 0;
             this.TxtBoxUsuario.BorderSize = 2;
+            this.TxtBoxUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtBoxUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBoxUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TxtBoxUsuario.Location = new System.Drawing.Point(48, 241);
-            this.TxtBoxUsuario.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TxtBoxUsuario.Margin = new System.Windows.Forms.Padding(5);
             this.TxtBoxUsuario.Multiline = false;
             this.TxtBoxUsuario.Name = "TxtBoxUsuario";
             this.TxtBoxUsuario.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -178,10 +194,11 @@
             this.TxtBoxContraseña.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(156)))), ((int)(((byte)(242)))));
             this.TxtBoxContraseña.BorderRadius = 0;
             this.TxtBoxContraseña.BorderSize = 2;
+            this.TxtBoxContraseña.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtBoxContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBoxContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TxtBoxContraseña.Location = new System.Drawing.Point(48, 366);
-            this.TxtBoxContraseña.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TxtBoxContraseña.Margin = new System.Windows.Forms.Padding(5);
             this.TxtBoxContraseña.Multiline = false;
             this.TxtBoxContraseña.Name = "TxtBoxContraseña";
             this.TxtBoxContraseña.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -206,19 +223,6 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Clave de Inicio";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(76)))));
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(35, 414);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(252, 25);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "____________________";
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -228,7 +232,7 @@
             this.Controls.Add(this.sPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

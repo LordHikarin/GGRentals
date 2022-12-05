@@ -42,18 +42,19 @@
             this.Btn_nuevo = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.Btn_Regresar = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.sPanel1 = new MarDeCortezDsk.UserControlls.SPanel();
+            this.TxtBx_Costo = new CustomControls.RJControls.RJTextBox();
             this.TxtBx_IdDepa = new CustomControls.RJControls.RJTextBox();
             this.TxtBx_idInquilino = new CustomControls.RJControls.RJTextBox();
-            this.TxtBx_Costo = new CustomControls.RJControls.RJTextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.sPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtTime_LLegada
             // 
+            this.dtTime_LLegada.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtTime_LLegada.Location = new System.Drawing.Point(39, 342);
             this.dtTime_LLegada.Margin = new System.Windows.Forms.Padding(5);
             this.dtTime_LLegada.Name = "dtTime_LLegada";
@@ -62,6 +63,7 @@
             // 
             // dtTime_Salida
             // 
+            this.dtTime_Salida.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtTime_Salida.Location = new System.Drawing.Point(39, 423);
             this.dtTime_Salida.Margin = new System.Windows.Forms.Padding(5);
             this.dtTime_Salida.Name = "dtTime_Salida";
@@ -201,6 +203,7 @@
             this.Btn_nuevo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
             this.Btn_nuevo.BorderRadius = 20;
             this.Btn_nuevo.BorderSize = 0;
+            this.Btn_nuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_nuevo.FlatAppearance.BorderSize = 0;
             this.Btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_nuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
@@ -221,6 +224,7 @@
             this.Btn_Regresar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
             this.Btn_Regresar.BorderRadius = 20;
             this.Btn_Regresar.BorderSize = 0;
+            this.Btn_Regresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_Regresar.FlatAppearance.BorderSize = 0;
             this.Btn_Regresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
@@ -258,6 +262,30 @@
             this.sPanel1.Size = new System.Drawing.Size(443, 466);
             this.sPanel1.TabIndex = 50;
             // 
+            // TxtBx_Costo
+            // 
+            this.TxtBx_Costo.BackColor = System.Drawing.SystemColors.Window;
+            this.TxtBx_Costo.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.TxtBx_Costo.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.TxtBx_Costo.BorderRadius = 0;
+            this.TxtBx_Costo.BorderSize = 2;
+            this.TxtBx_Costo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBx_Costo.Enabled = false;
+            this.TxtBx_Costo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBx_Costo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxtBx_Costo.Location = new System.Drawing.Point(39, 242);
+            this.TxtBx_Costo.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBx_Costo.Multiline = false;
+            this.TxtBx_Costo.Name = "TxtBx_Costo";
+            this.TxtBx_Costo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.TxtBx_Costo.PasswordChar = false;
+            this.TxtBx_Costo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.TxtBx_Costo.PlaceholderText = "";
+            this.TxtBx_Costo.Size = new System.Drawing.Size(149, 35);
+            this.TxtBx_Costo.TabIndex = 47;
+            this.TxtBx_Costo.Texts = "";
+            this.TxtBx_Costo.UnderlinedStyle = false;
+            // 
             // TxtBx_IdDepa
             // 
             this.TxtBx_IdDepa.BackColor = System.Drawing.SystemColors.Window;
@@ -265,6 +293,7 @@
             this.TxtBx_IdDepa.BorderFocusColor = System.Drawing.Color.HotPink;
             this.TxtBx_IdDepa.BorderRadius = 0;
             this.TxtBx_IdDepa.BorderSize = 2;
+            this.TxtBx_IdDepa.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtBx_IdDepa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBx_IdDepa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TxtBx_IdDepa.Location = new System.Drawing.Point(39, 145);
@@ -287,6 +316,7 @@
             this.TxtBx_idInquilino.BorderFocusColor = System.Drawing.Color.HotPink;
             this.TxtBx_idInquilino.BorderRadius = 0;
             this.TxtBx_idInquilino.BorderSize = 2;
+            this.TxtBx_idInquilino.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TxtBx_idInquilino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBx_idInquilino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TxtBx_idInquilino.Location = new System.Drawing.Point(39, 50);
@@ -302,28 +332,18 @@
             this.TxtBx_idInquilino.Texts = "";
             this.TxtBx_idInquilino.UnderlinedStyle = false;
             // 
-            // TxtBx_Costo
+            // label9
             // 
-            this.TxtBx_Costo.BackColor = System.Drawing.SystemColors.Window;
-            this.TxtBx_Costo.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.TxtBx_Costo.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.TxtBx_Costo.BorderRadius = 0;
-            this.TxtBx_Costo.BorderSize = 2;
-            this.TxtBx_Costo.Enabled = false;
-            this.TxtBx_Costo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBx_Costo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TxtBx_Costo.Location = new System.Drawing.Point(39, 242);
-            this.TxtBx_Costo.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBx_Costo.Multiline = false;
-            this.TxtBx_Costo.Name = "TxtBx_Costo";
-            this.TxtBx_Costo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.TxtBx_Costo.PasswordChar = false;
-            this.TxtBx_Costo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.TxtBx_Costo.PlaceholderText = "";
-            this.TxtBx_Costo.Size = new System.Drawing.Size(149, 35);
-            this.TxtBx_Costo.TabIndex = 47;
-            this.TxtBx_Costo.Texts = "";
-            this.TxtBx_Costo.UnderlinedStyle = false;
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(23, 359);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(300, 25);
+            this.label9.TabIndex = 57;
+            this.label9.Text = "________________________";
             // 
             // label6
             // 
@@ -363,19 +383,6 @@
             this.label8.Size = new System.Drawing.Size(300, 25);
             this.label8.TabIndex = 56;
             this.label8.Text = "________________________";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(23, 359);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(300, 25);
-            this.label9.TabIndex = 57;
-            this.label9.Text = "________________________";
             // 
             // Rentas
             // 

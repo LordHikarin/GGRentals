@@ -47,6 +47,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(35, 38);
@@ -63,6 +64,7 @@
             this.BtnRdn_contrato.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
             this.BtnRdn_contrato.BorderRadius = 20;
             this.BtnRdn_contrato.BorderSize = 0;
+            this.BtnRdn_contrato.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnRdn_contrato.FlatAppearance.BorderSize = 0;
             this.BtnRdn_contrato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRdn_contrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
