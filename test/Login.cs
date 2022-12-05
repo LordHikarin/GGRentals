@@ -49,30 +49,12 @@ namespace test
 
         private void usr_TBX_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(TxtBoxContraseña.Text) && !String.IsNullOrEmpty(TxtBoxUsuario.Text))
-            {
-                login_BTN.Enabled = true;
-                login_BTN.BackColor = Color.Green;
-            }
-            else
-            {
-                login_BTN.Enabled = false;
-                login_BTN.BackColor = Color.Gray;
-            }
+            
         }
 
         private void psw_TBX_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(TxtBoxContraseña.Text) && !String.IsNullOrEmpty(TxtBoxUsuario.Text))
-            {
-                login_BTN.Enabled = true;
-                login_BTN.BackColor = Color.Green;
-            }
-            else
-            {
-                login_BTN.Enabled = false;
-                login_BTN.BackColor = Color.Gray;
-            }
+            
 
         }
 
@@ -107,6 +89,34 @@ namespace test
         private void botonRedondo1_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void TxtBoxContraseña__TextChanged(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(TxtBoxUsuario.Text) && !String.IsNullOrEmpty(TxtBoxContraseña.Text))
+            {
+                login_BTN.Enabled = true;
+                login_BTN.BackColor = Color.Green;
+            }
+            else
+            {
+                login_BTN.Enabled = false;
+                login_BTN.BackColor = Color.Gray;
+            }
+        }
+
+        private void TxtBoxUsuario__TextChanged(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(TxtBoxUsuario.Text) && !String.IsNullOrEmpty(TxtBoxContraseña.Text))
+            {
+                login_BTN.Enabled = true;
+                login_BTN.BackColor = Color.Green;
+            }
+            else
+            {
+                login_BTN.Enabled = false;
+                login_BTN.BackColor = Color.Gray;
+            }
         }
     }
 }
