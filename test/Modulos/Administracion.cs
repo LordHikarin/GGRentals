@@ -13,6 +13,8 @@ namespace test.Modulos
     public partial class Administracion : UserControl
     {
         Conexion.SQL conexion = new Conexion.SQL();
+        public delegate void CrearDelegado();
+        public event CrearDelegado CrearUsuario;
         public Administracion()
         {
             InitializeComponent();
@@ -48,7 +50,19 @@ namespace test.Modulos
 
         private void Administracion_Load(object sender, EventArgs e)
         {
+            string sqlCommand = "SELECT * FROM empleados";
+            DataSet ds = conexion.GetDataSet(sqlCommand);
+            usuarios_DATA.DataSource = ds.Tables[0];
+            usuarios_DATA.Update();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CrearUsuario();
+        }
+
+        private void del_BTN_Click(object sender, EventArgs e)
+        {
         }
     }
 }

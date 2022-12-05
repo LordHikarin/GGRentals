@@ -25,7 +25,7 @@ namespace test.Conexion
         MySqlCommand cmd;
 
         //Abrir conexion con SQL
-        public SQL(){
+        public SQL() {
             try
             {
                 //Descomenta el que necesites
@@ -36,9 +36,9 @@ namespace test.Conexion
             }
             catch (Exception x)
             {
-                MessageBox.Show("Conexion Fallida, "+x.ToString());
+                MessageBox.Show("Conexion Fallida, " + x.ToString());
             }
-            
+
         }
         //Comando SQL, ejecuta un Query
         public void CMD(string query)
@@ -54,6 +54,25 @@ namespace test.Conexion
             catch (Exception x)
             {
                 MessageBox.Show("Error, " + x.ToString());
+            }
+        }
+        public int Contador(string query) {
+            int contador = 0;
+            try
+            {
+                cmd = new MySqlCommand(query, cn);
+                cmd.ExecuteNonQuery();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read()) {
+                    contador++;
+                }
+                cn.Close();
+                return contador;
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show("Error, " + x.ToString());
+                return contador;
             }
         }
 

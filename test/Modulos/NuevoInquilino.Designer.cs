@@ -31,6 +31,7 @@
             this.botonRedondo2 = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.botonRedondo1 = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.sPanel1 = new MarDeCortezDsk.UserControlls.SPanel();
+            this.id_inquilino_TBX = new CustomControls.RJControls.RJTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.sPanel2 = new MarDeCortezDsk.UserControlls.SPanel();
+            this.tel_tb_TBX = new CustomControls.RJControls.RJTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.dir_tb_TBX = new CustomControls.RJControls.RJTextBox();
@@ -49,8 +51,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.id_inquilino_TBX = new CustomControls.RJControls.RJTextBox();
-            this.tel_tb_TBX = new CustomControls.RJControls.RJTextBox();
             this.sPanel1.SuspendLayout();
             this.sPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -117,6 +117,28 @@
             this.sPanel1.Name = "sPanel1";
             this.sPanel1.Size = new System.Drawing.Size(270, 358);
             this.sPanel1.TabIndex = 49;
+            // 
+            // id_inquilino_TBX
+            // 
+            this.id_inquilino_TBX.BackColor = System.Drawing.SystemColors.Window;
+            this.id_inquilino_TBX.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.id_inquilino_TBX.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.id_inquilino_TBX.BorderRadius = 0;
+            this.id_inquilino_TBX.BorderSize = 2;
+            this.id_inquilino_TBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_inquilino_TBX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.id_inquilino_TBX.Location = new System.Drawing.Point(29, 133);
+            this.id_inquilino_TBX.Margin = new System.Windows.Forms.Padding(4);
+            this.id_inquilino_TBX.Multiline = false;
+            this.id_inquilino_TBX.Name = "id_inquilino_TBX";
+            this.id_inquilino_TBX.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.id_inquilino_TBX.PasswordChar = false;
+            this.id_inquilino_TBX.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.id_inquilino_TBX.PlaceholderText = "";
+            this.id_inquilino_TBX.Size = new System.Drawing.Size(212, 31);
+            this.id_inquilino_TBX.TabIndex = 56;
+            this.id_inquilino_TBX.Texts = "";
+            this.id_inquilino_TBX.UnderlinedStyle = false;
             // 
             // label7
             // 
@@ -282,6 +304,28 @@
             this.sPanel2.Size = new System.Drawing.Size(270, 358);
             this.sPanel2.TabIndex = 56;
             // 
+            // tel_tb_TBX
+            // 
+            this.tel_tb_TBX.BackColor = System.Drawing.SystemColors.Window;
+            this.tel_tb_TBX.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.tel_tb_TBX.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.tel_tb_TBX.BorderRadius = 0;
+            this.tel_tb_TBX.BorderSize = 2;
+            this.tel_tb_TBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tel_tb_TBX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tel_tb_TBX.Location = new System.Drawing.Point(29, 133);
+            this.tel_tb_TBX.Margin = new System.Windows.Forms.Padding(4);
+            this.tel_tb_TBX.Multiline = false;
+            this.tel_tb_TBX.Name = "tel_tb_TBX";
+            this.tel_tb_TBX.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tel_tb_TBX.PasswordChar = false;
+            this.tel_tb_TBX.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tel_tb_TBX.PlaceholderText = "";
+            this.tel_tb_TBX.Size = new System.Drawing.Size(212, 31);
+            this.tel_tb_TBX.TabIndex = 55;
+            this.tel_tb_TBX.Texts = "";
+            this.tel_tb_TBX.UnderlinedStyle = false;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -382,50 +426,6 @@
             this.label16.Size = new System.Drawing.Size(153, 20);
             this.label16.TabIndex = 43;
             this.label16.Text = "Ubicacion Trabajo";
-            // 
-            // id_inquilino_TBX
-            // 
-            this.id_inquilino_TBX.BackColor = System.Drawing.SystemColors.Window;
-            this.id_inquilino_TBX.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.id_inquilino_TBX.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.id_inquilino_TBX.BorderRadius = 0;
-            this.id_inquilino_TBX.BorderSize = 2;
-            this.id_inquilino_TBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id_inquilino_TBX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.id_inquilino_TBX.Location = new System.Drawing.Point(29, 133);
-            this.id_inquilino_TBX.Margin = new System.Windows.Forms.Padding(4);
-            this.id_inquilino_TBX.Multiline = false;
-            this.id_inquilino_TBX.Name = "id_inquilino_TBX";
-            this.id_inquilino_TBX.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.id_inquilino_TBX.PasswordChar = false;
-            this.id_inquilino_TBX.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.id_inquilino_TBX.PlaceholderText = "";
-            this.id_inquilino_TBX.Size = new System.Drawing.Size(212, 31);
-            this.id_inquilino_TBX.TabIndex = 56;
-            this.id_inquilino_TBX.Texts = "";
-            this.id_inquilino_TBX.UnderlinedStyle = false;
-            // 
-            // tel_tb_TBX
-            // 
-            this.tel_tb_TBX.BackColor = System.Drawing.SystemColors.Window;
-            this.tel_tb_TBX.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.tel_tb_TBX.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.tel_tb_TBX.BorderRadius = 0;
-            this.tel_tb_TBX.BorderSize = 2;
-            this.tel_tb_TBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tel_tb_TBX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tel_tb_TBX.Location = new System.Drawing.Point(29, 133);
-            this.tel_tb_TBX.Margin = new System.Windows.Forms.Padding(4);
-            this.tel_tb_TBX.Multiline = false;
-            this.tel_tb_TBX.Name = "tel_tb_TBX";
-            this.tel_tb_TBX.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tel_tb_TBX.PasswordChar = false;
-            this.tel_tb_TBX.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tel_tb_TBX.PlaceholderText = "";
-            this.tel_tb_TBX.Size = new System.Drawing.Size(212, 31);
-            this.tel_tb_TBX.TabIndex = 55;
-            this.tel_tb_TBX.Texts = "";
-            this.tel_tb_TBX.UnderlinedStyle = false;
             // 
             // NuevoInquilino
             // 
