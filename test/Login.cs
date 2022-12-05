@@ -104,6 +104,9 @@ namespace test
             }
         }
 
-
+        private void botonRedondo1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
