@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.sPanel1 = new MarDeCortezDsk.UserControlls.SPanel();
+            this.botonRedondo1 = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.login_BTN = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.label3 = new System.Windows.Forms.Label();
             this.circularImagen1 = new test.UserControlls.CircularImagen();
@@ -37,7 +38,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TxtBoxContraseña = new CustomControls.RJControls.RJTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.botonRedondo1 = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.sPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularImagen1)).BeginInit();
             this.SuspendLayout();
@@ -57,8 +57,28 @@
             this.sPanel1.Edge = 20;
             this.sPanel1.Location = new System.Drawing.Point(25, 12);
             this.sPanel1.Name = "sPanel1";
-            this.sPanel1.Size = new System.Drawing.Size(268, 445);
+            this.sPanel1.Size = new System.Drawing.Size(268, 476);
             this.sPanel1.TabIndex = 14;
+            // 
+            // botonRedondo1
+            // 
+            this.botonRedondo1.BackColor = System.Drawing.Color.DarkRed;
+            this.botonRedondo1.BackgroundColor = System.Drawing.Color.DarkRed;
+            this.botonRedondo1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
+            this.botonRedondo1.BorderRadius = 20;
+            this.botonRedondo1.BorderSize = 0;
+            this.botonRedondo1.FlatAppearance.BorderSize = 0;
+            this.botonRedondo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonRedondo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonRedondo1.ForeColor = System.Drawing.Color.White;
+            this.botonRedondo1.Location = new System.Drawing.Point(30, 433);
+            this.botonRedondo1.Name = "botonRedondo1";
+            this.botonRedondo1.Size = new System.Drawing.Size(205, 40);
+            this.botonRedondo1.TabIndex = 18;
+            this.botonRedondo1.Text = "Salir";
+            this.botonRedondo1.TextColor = System.Drawing.Color.White;
+            this.botonRedondo1.UseVisualStyleBackColor = false;
+            this.botonRedondo1.Click += new System.EventHandler(this.botonRedondo1_Click_1);
             // 
             // login_BTN
             // 
@@ -119,7 +139,7 @@
             this.TxtBoxUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBoxUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TxtBoxUsuario.Location = new System.Drawing.Point(36, 196);
-            this.TxtBoxUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtBoxUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.TxtBoxUsuario.Multiline = false;
             this.TxtBoxUsuario.Name = "TxtBoxUsuario";
             this.TxtBoxUsuario.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -153,7 +173,7 @@
             this.TxtBoxContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBoxContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TxtBoxContraseña.Location = new System.Drawing.Point(36, 297);
-            this.TxtBoxContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtBoxContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.TxtBoxContraseña.Multiline = false;
             this.TxtBoxContraseña.Name = "TxtBoxContraseña";
             this.TxtBoxContraseña.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -177,32 +197,12 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Clave de Inicio";
             // 
-            // botonRedondo1
-            // 
-            this.botonRedondo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.botonRedondo1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.botonRedondo1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
-            this.botonRedondo1.BorderRadius = 20;
-            this.botonRedondo1.BorderSize = 0;
-            this.botonRedondo1.FlatAppearance.BorderSize = 0;
-            this.botonRedondo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonRedondo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonRedondo1.ForeColor = System.Drawing.Color.White;
-            this.botonRedondo1.Location = new System.Drawing.Point(165, 402);
-            this.botonRedondo1.Name = "botonRedondo1";
-            this.botonRedondo1.Size = new System.Drawing.Size(100, 32);
-            this.botonRedondo1.TabIndex = 18;
-            this.botonRedondo1.Text = "Salir";
-            this.botonRedondo1.TextColor = System.Drawing.Color.White;
-            this.botonRedondo1.UseVisualStyleBackColor = false;
-            this.botonRedondo1.Click += new System.EventHandler(this.botonRedondo1_Click_1);
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(319, 469);
+            this.ClientSize = new System.Drawing.Size(320, 500);
             this.Controls.Add(this.sPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
