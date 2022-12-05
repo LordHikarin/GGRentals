@@ -14,6 +14,7 @@ namespace test
     public partial class Home : Form
     {
 
+        Conexion.SQL Conexion = new Conexion.SQL();
         public Home()
         {
             InitializeComponent();
@@ -21,7 +22,11 @@ namespace test
 
         private void Home_Load(object sender, EventArgs e)
         {
-
+            if (Propiedades.admin)
+            {
+                iconButton1.Visible = true;
+                iconButton1.Enabled = true;
+            }
         }
 
 

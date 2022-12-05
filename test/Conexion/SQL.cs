@@ -17,7 +17,7 @@ namespace test.Conexion
     class SQL
     {
         //Tipo de usuario, se asigna en Login
-        public string user = "";
+        public Boolean user;
 
 
         //Conexion SQL
@@ -43,7 +43,6 @@ namespace test.Conexion
         //Comando SQL, ejecuta un Query
         public void CMD(string query)
         {
-            
             try
             {
                 cmd = new MySqlCommand(query, cn);
@@ -68,6 +67,10 @@ namespace test.Conexion
                 MySqlDataReader reader = cmd.ExecuteReader();
                 if (reader.HasRows)
                 {
+                    reader.Read();
+                    if (reader.GetValue(3).ToString().Equals("1")) {
+                        Propiedades.admin = true;
+                    }
                     cn.Close();
                     return true;
                 }

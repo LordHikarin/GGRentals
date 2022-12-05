@@ -164,6 +164,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Propiedades.cs" />
     <Compile Include="UserControlls\BotonRedondo.cs">
       <SubType>Component</SubType>
     </Compile>

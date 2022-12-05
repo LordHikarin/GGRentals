@@ -29,6 +29,7 @@ namespace test
             {
                 if (Conexion.Login("SELECT * FROM empleados WHERE nombre = BINARY '" + TxtBoxContraseña.Text.ToString() + "'and contraseña = BINARY '" + TxtBoxUsuario.Text.ToString() + "'"))
                 {
+                    Propiedades.admin = true;
                     Home rentas = new Home();
                     this.Hide();
                     rentas.ShowDialog();
