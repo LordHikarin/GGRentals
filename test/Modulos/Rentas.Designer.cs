@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.inquilino_id_TBX = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.costo_TBX = new System.Windows.Forms.TextBox();
-            this.Departamento_id_TBX = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,22 +45,14 @@
             this.BtnRdn_contrato = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.Btn_Regresar = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.sPanel1 = new MarDeCortezDsk.UserControlls.SPanel();
-            this.TxtBx_idInquilino = new CustomControls.RJControls.RJTextBox();
             this.TxtBx_IdDepa = new CustomControls.RJControls.RJTextBox();
+            this.TxtBx_idInquilino = new CustomControls.RJControls.RJTextBox();
             this.sPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // inquilino_id_TBX
-            // 
-            this.inquilino_id_TBX.Location = new System.Drawing.Point(50, 84);
-            this.inquilino_id_TBX.Margin = new System.Windows.Forms.Padding(5);
-            this.inquilino_id_TBX.Name = "inquilino_id_TBX";
-            this.inquilino_id_TBX.Size = new System.Drawing.Size(232, 22);
-            this.inquilino_id_TBX.TabIndex = 27;
-            // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(428, 70);
+            this.dateTimePicker1.Location = new System.Drawing.Point(257, 276);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(5);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
@@ -70,7 +60,7 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(428, 137);
+            this.dateTimePicker2.Location = new System.Drawing.Point(334, 333);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(5);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(265, 22);
@@ -85,14 +75,6 @@
             this.costo_TBX.ReadOnly = true;
             this.costo_TBX.Size = new System.Drawing.Size(120, 22);
             this.costo_TBX.TabIndex = 35;
-            // 
-            // Departamento_id_TBX
-            // 
-            this.Departamento_id_TBX.Location = new System.Drawing.Point(50, 203);
-            this.Departamento_id_TBX.Margin = new System.Windows.Forms.Padding(5);
-            this.Departamento_id_TBX.Name = "Departamento_id_TBX";
-            this.Departamento_id_TBX.Size = new System.Drawing.Size(232, 22);
-            this.Departamento_id_TBX.TabIndex = 37;
             // 
             // label1
             // 
@@ -123,7 +105,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(312, 50);
+            this.label3.Location = new System.Drawing.Point(218, 246);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(155, 25);
@@ -135,7 +117,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(312, 107);
+            this.label4.Location = new System.Drawing.Point(218, 303);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(139, 25);
@@ -302,11 +284,9 @@
             this.sPanel1.Controls.Add(this.TxtBx_IdDepa);
             this.sPanel1.Controls.Add(this.TxtBx_idInquilino);
             this.sPanel1.Controls.Add(this.costo_TBX);
-            this.sPanel1.Controls.Add(this.Departamento_id_TBX);
             this.sPanel1.Controls.Add(this.label2);
             this.sPanel1.Controls.Add(this.label5);
             this.sPanel1.Controls.Add(this.label4);
-            this.sPanel1.Controls.Add(this.inquilino_id_TBX);
             this.sPanel1.Controls.Add(this.label3);
             this.sPanel1.Controls.Add(this.label1);
             this.sPanel1.Controls.Add(this.dateTimePicker2);
@@ -316,28 +296,6 @@
             this.sPanel1.Name = "sPanel1";
             this.sPanel1.Size = new System.Drawing.Size(710, 476);
             this.sPanel1.TabIndex = 50;
-            // 
-            // TxtBx_idInquilino
-            // 
-            this.TxtBx_idInquilino.BackColor = System.Drawing.SystemColors.Window;
-            this.TxtBx_idInquilino.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.TxtBx_idInquilino.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.TxtBx_idInquilino.BorderRadius = 0;
-            this.TxtBx_idInquilino.BorderSize = 2;
-            this.TxtBx_idInquilino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBx_idInquilino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TxtBx_idInquilino.Location = new System.Drawing.Point(65, 79);
-            this.TxtBx_idInquilino.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtBx_idInquilino.Multiline = false;
-            this.TxtBx_idInquilino.Name = "TxtBx_idInquilino";
-            this.TxtBx_idInquilino.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.TxtBx_idInquilino.PasswordChar = false;
-            this.TxtBx_idInquilino.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.TxtBx_idInquilino.PlaceholderText = "";
-            this.TxtBx_idInquilino.Size = new System.Drawing.Size(250, 35);
-            this.TxtBx_idInquilino.TabIndex = 45;
-            this.TxtBx_idInquilino.Texts = "";
-            this.TxtBx_idInquilino.UnderlinedStyle = false;
             // 
             // TxtBx_IdDepa
             // 
@@ -361,6 +319,28 @@
             this.TxtBx_IdDepa.Texts = "";
             this.TxtBx_IdDepa.UnderlinedStyle = false;
             // 
+            // TxtBx_idInquilino
+            // 
+            this.TxtBx_idInquilino.BackColor = System.Drawing.SystemColors.Window;
+            this.TxtBx_idInquilino.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.TxtBx_idInquilino.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.TxtBx_idInquilino.BorderRadius = 0;
+            this.TxtBx_idInquilino.BorderSize = 2;
+            this.TxtBx_idInquilino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBx_idInquilino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxtBx_idInquilino.Location = new System.Drawing.Point(65, 79);
+            this.TxtBx_idInquilino.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBx_idInquilino.Multiline = false;
+            this.TxtBx_idInquilino.Name = "TxtBx_idInquilino";
+            this.TxtBx_idInquilino.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.TxtBx_idInquilino.PasswordChar = false;
+            this.TxtBx_idInquilino.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.TxtBx_idInquilino.PlaceholderText = "";
+            this.TxtBx_idInquilino.Size = new System.Drawing.Size(250, 35);
+            this.TxtBx_idInquilino.TabIndex = 45;
+            this.TxtBx_idInquilino.Texts = "";
+            this.TxtBx_idInquilino.UnderlinedStyle = false;
+            // 
             // Rentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -382,11 +362,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox inquilino_id_TBX;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.TextBox costo_TBX;
-        private System.Windows.Forms.TextBox Departamento_id_TBX;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

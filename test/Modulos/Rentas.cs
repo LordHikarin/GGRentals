@@ -88,7 +88,7 @@ namespace test.Modulos
 
         private void Btn_Borrar_Click(object sender, EventArgs e)
         {
-            Conexion.CMD("DELETE FROM `ggrentals`.`rentas` WHERE(`id_inquilino` = '" + inquilino_id_TBX.ToString() + "')");
+            Conexion.CMD("DELETE FROM `ggrentals`.`rentas` WHERE(`id_inquilino` = '" + TxtBx_idInquilino.ToString() + "')");
         }
 
         private void Btn_nuevo_Click(object sender, EventArgs e)
