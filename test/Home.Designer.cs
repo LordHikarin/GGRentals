@@ -82,7 +82,7 @@
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(232, 62);
             this.iconButton2.TabIndex = 5;
-            this.iconButton2.Text = "   Inquilinos";
+            this.iconButton2.Text = " Inquilinos";
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);

@@ -69,7 +69,7 @@
             this.BtnRdn_contrato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRdn_contrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.BtnRdn_contrato.ForeColor = System.Drawing.Color.White;
-            this.BtnRdn_contrato.Location = new System.Drawing.Point(419, 468);
+            this.BtnRdn_contrato.Location = new System.Drawing.Point(40, 480);
             this.BtnRdn_contrato.Name = "BtnRdn_contrato";
             this.BtnRdn_contrato.Size = new System.Drawing.Size(228, 57);
             this.BtnRdn_contrato.TabIndex = 49;

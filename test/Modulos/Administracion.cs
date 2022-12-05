@@ -58,26 +58,26 @@ namespace test.Modulos
 
         private void Btn_Copia_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(nombre_TBX.Text))
+            if (String.IsNullOrEmpty(TxtBx_Copia.Text))
             {
                 MessageBox.Show("Favor de introducir un nombre.");
             }
             else
             {
-                string query = "backup database GGRentals to disk = 'C:\\backup\\" + nombre_TBX.Text.ToString() + ".bak' with name = 'backup GGRentals', description = 'Backup Complete';";
+                string query = "backup database GGRentals to disk = 'C:\\backup\\" + TxtBx_Copia.Text.ToString() + ".bak' with name = 'backup GGRentals', description = 'Backup Complete';";
                 conexion.CMD(query);
             }
         }
 
         private void Btn_Restaurar_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(nombre_TBX.Text))
+            if (String.IsNullOrEmpty(TxtBx_Copia.Text))
             {
                 MessageBox.Show("Favor de introducir un nombre.");
             }
             else
             {
-                string query = "Restore Database GGRentals From Disk = 'c:\\backup\\" + nombre_TBX.Text.ToString() + ".bak' with file = 1, recovery;";
+                string query = "Restore Database GGRentals From Disk = 'c:\\backup\\" + TxtBx_Copia.Text.ToString() + ".bak' with file = 1, recovery;";
                 conexion.CMD(query);
             }
         }
