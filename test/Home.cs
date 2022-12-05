@@ -44,7 +44,8 @@ namespace test
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            Inquilino inquilino = new Inquilino() { Location = new Point(0, 0) };
+            Inquilino inquilino = new Inquilino { Location = new Point(0, 0) };
+            inquilino.CrearInquilino += new Inquilino.CrearDelegado(CrearInquilino);
             HomeContainer.Controls.Clear();
             HomeContainer.Controls.Add(inquilino);
 
