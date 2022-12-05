@@ -93,7 +93,7 @@ namespace test.Modulos
 
         private void Btn_nuevo_Click(object sender, EventArgs e)
         {
-            Conexion.CMD("`ggrentals`.`rentas` (`id_inquilino`, `id_departamento`, `fecha_inicio`, `fecha_final`, `deudas`) VALUES ('" + inquilino_id_TBX.ToString() + "','" + Departamento_id_TBX.ToString() + "','" + dateTimePicker1.Value + "','" + dateTimePicker1.Value + "','" + deuda + "');");
+            Conexion.CMD("`ggrentals`.`rentas` (`id_inquilino`, `id_departamento`, `fecha_inicio`, `fecha_final`, `deudas`) VALUES ('" + TxtBx_IdDepa.ToString() + "','" + TxtBx_idInquilino.ToString() + "','" + dateTimePicker1.Value + "','" + dateTimePicker1.Value + "','" + deuda + "');");
         }
     }
 }
