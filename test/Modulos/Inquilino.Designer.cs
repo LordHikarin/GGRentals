@@ -60,18 +60,19 @@
             // 
             // Btn_Borrar
             // 
-            this.Btn_Borrar.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.Btn_Borrar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.Btn_Borrar.BackColor = System.Drawing.Color.DarkRed;
+            this.Btn_Borrar.BackgroundColor = System.Drawing.Color.DarkRed;
             this.Btn_Borrar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
             this.Btn_Borrar.BorderRadius = 20;
             this.Btn_Borrar.BorderSize = 0;
             this.Btn_Borrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Btn_Borrar.FlatAppearance.BorderSize = 0;
             this.Btn_Borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Borrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.Btn_Borrar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Borrar.Location = new System.Drawing.Point(40, 462);
+            this.Btn_Borrar.Location = new System.Drawing.Point(40, 477);
             this.Btn_Borrar.Name = "Btn_Borrar";
-            this.Btn_Borrar.Size = new System.Drawing.Size(150, 40);
+            this.Btn_Borrar.Size = new System.Drawing.Size(171, 57);
             this.Btn_Borrar.TabIndex = 37;
             this.Btn_Borrar.Text = "Borrar";
             this.Btn_Borrar.TextColor = System.Drawing.Color.White;
