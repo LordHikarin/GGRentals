@@ -32,10 +32,10 @@ namespace test
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            Administracion admin = new Administracion() { Location = new Point(41, 93) };
+            Administracion adm = new Administracion { Location = new Point(0, 0) };
+            adm.CrearUsuario += new Administracion.CrearDelegado(CrearUsuario);
             HomeContainer.Controls.Clear();
-            HomeContainer.Controls.Add(admin);
-
+            HomeContainer.Controls.Add(adm);
 
         }
 
@@ -114,6 +114,21 @@ namespace test
             inquilino.CrearInquilino += new Inquilino.CrearDelegado(CrearInquilino);
             HomeContainer.Controls.Clear();
             HomeContainer.Controls.Add(inquilino);
+        }
+        public void CrearUsuario()
+        {
+            NuevoUsuario user = new NuevoUsuario() { Location = new Point(0, 0) };
+            user.Volver += new NuevoUsuario.volverDelegate(usuario);
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(user);
+
+        }
+        public void usuario()
+        {
+            Administracion adm = new Administracion { Location = new Point(0, 0) };
+            adm.CrearUsuario += new Administracion.CrearDelegado(CrearUsuario);
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(adm);
         }
 
         private void botonRedondo1_Click(object sender, EventArgs e)
