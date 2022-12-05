@@ -38,6 +38,7 @@
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.circularImagen1 = new test.UserControlls.CircularImagen();
             this.HomeContainer = new MarDeCortezDsk.UserControlls.SPanel();
+            this.botonRedondo1 = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularImagen1)).BeginInit();
             this.SuspendLayout();
@@ -198,10 +199,30 @@
             this.HomeContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(28)))), ((int)(((byte)(54)))));
             this.HomeContainer.BorderColor = System.Drawing.Color.White;
             this.HomeContainer.Edge = 20;
-            this.HomeContainer.Location = new System.Drawing.Point(198, 25);
+            this.HomeContainer.Location = new System.Drawing.Point(198, 32);
             this.HomeContainer.Name = "HomeContainer";
             this.HomeContainer.Size = new System.Drawing.Size(572, 489);
             this.HomeContainer.TabIndex = 9;
+            // 
+            // botonRedondo1
+            // 
+            this.botonRedondo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.botonRedondo1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.botonRedondo1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
+            this.botonRedondo1.BorderRadius = 20;
+            this.botonRedondo1.BorderSize = 0;
+            this.botonRedondo1.FlatAppearance.BorderSize = 0;
+            this.botonRedondo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botonRedondo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonRedondo1.ForeColor = System.Drawing.Color.White;
+            this.botonRedondo1.Location = new System.Drawing.Point(675, 0);
+            this.botonRedondo1.Name = "botonRedondo1";
+            this.botonRedondo1.Size = new System.Drawing.Size(100, 32);
+            this.botonRedondo1.TabIndex = 19;
+            this.botonRedondo1.Text = "Salir";
+            this.botonRedondo1.TextColor = System.Drawing.Color.White;
+            this.botonRedondo1.UseVisualStyleBackColor = false;
+            this.botonRedondo1.Click += new System.EventHandler(this.botonRedondo1_Click);
             // 
             // Home
             // 
@@ -211,8 +232,10 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(787, 526);
+            this.Controls.Add(this.botonRedondo1);
             this.Controls.Add(this.HomeContainer);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
@@ -237,5 +260,6 @@
         private FontAwesome.Sharp.IconButton iconButton5;
         private UserControlls.CircularImagen circularImagen1;
         private MarDeCortezDsk.UserControlls.SPanel HomeContainer;
+        private MarDeCortezDsk.UserControlls.BotonRedondo botonRedondo1;
     }
 }

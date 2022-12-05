@@ -115,5 +115,10 @@ namespace test
             HomeContainer.Controls.Clear();
             HomeContainer.Controls.Add(inquilino);
         }
+
+        private void botonRedondo1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
