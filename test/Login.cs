@@ -43,7 +43,7 @@ namespace test
             }
             catch(Exception ex)
             {
-
+                MessageBox.Show(ex.ToString());
             }
         }
 
@@ -100,7 +100,7 @@ namespace test
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show(ex.ToString());
             }
         }
 
