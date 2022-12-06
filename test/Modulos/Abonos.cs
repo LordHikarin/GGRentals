@@ -24,7 +24,12 @@ namespace test.Modulos
             AgregarAbono();
         }
 
-        private void Abonos_Load(object sender, EventArgs e)
+        private void Abonos_Load(object sender, EventArgs e) // que cargue la tabla
+        {
+
+        }
+
+        private void TxtBx_Search__TextChanged(object sender, EventArgs e) //Para que busque el usuario por todos los abonos
         {
 
         }

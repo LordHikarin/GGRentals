@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.abonos_DATA = new System.Windows.Forms.DataGridView();
+            this.TxtBx_Search = new CustomControls.RJControls.RJTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.abonos_DATA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,11 +58,35 @@
             this.abonos_DATA.Size = new System.Drawing.Size(607, 357);
             this.abonos_DATA.TabIndex = 20;
             // 
+            // TxtBx_Search
+            // 
+            this.TxtBx_Search.BackColor = System.Drawing.SystemColors.Window;
+            this.TxtBx_Search.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.TxtBx_Search.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.TxtBx_Search.BorderRadius = 0;
+            this.TxtBx_Search.BorderSize = 2;
+            this.TxtBx_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBx_Search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxtBx_Search.Location = new System.Drawing.Point(372, 38);
+            this.TxtBx_Search.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBx_Search.Multiline = false;
+            this.TxtBx_Search.Name = "TxtBx_Search";
+            this.TxtBx_Search.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.TxtBx_Search.PasswordChar = false;
+            this.TxtBx_Search.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.TxtBx_Search.PlaceholderText = "Introducir inquilino a buscar";
+            this.TxtBx_Search.Size = new System.Drawing.Size(275, 35);
+            this.TxtBx_Search.TabIndex = 22;
+            this.TxtBx_Search.Texts = "";
+            this.TxtBx_Search.UnderlinedStyle = false;
+            this.TxtBx_Search._TextChanged += new System.EventHandler(this.TxtBx_Search__TextChanged);
+            // 
             // Abonos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(28)))), ((int)(((byte)(54)))));
+            this.Controls.Add(this.TxtBx_Search);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.abonos_DATA);
             this.Name = "Abonos";
@@ -77,5 +102,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView abonos_DATA;
+        private CustomControls.RJControls.RJTextBox TxtBx_Search;
     }
 }

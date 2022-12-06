@@ -51,7 +51,7 @@ namespace test.Modulos
             CrearUsuario();
         }
 
-        private void Btn_Borrar_Click(object sender, EventArgs e)
+        private void Btn_Borrar_Click(object sender, EventArgs e) //que borre el usuario seleccionado
         {
 
         }

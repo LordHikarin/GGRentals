@@ -38,7 +38,7 @@ namespace test.Modulos
             CrearInquilino();
         }
 
-        private void Btn_Borrar_Click(object sender, EventArgs e)
+        private void Btn_Borrar_Click(object sender, EventArgs e) // al seleccionar uno que lo borre
         {
 
         }
