@@ -43,5 +43,11 @@ namespace test.Modulos
         {
             CrearDepartamento();
         }
+
+        private void Btn_Borrar_Click(object sender, EventArgs e)
+        {
+            string nombre = dept_DATA.SelectedRows[0].Cells[1].ToString();
+            conexion.CMD("DELETE FROM departamentos WHERE nombre= '" + nombre + "'");
+        }
     }
 }

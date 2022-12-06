@@ -37,11 +37,11 @@
             // rentas_DATA
             // 
             this.rentas_DATA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.rentas_DATA.Location = new System.Drawing.Point(40, 84);
-            this.rentas_DATA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rentas_DATA.Location = new System.Drawing.Point(30, 68);
+            this.rentas_DATA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rentas_DATA.Name = "rentas_DATA";
             this.rentas_DATA.RowHeadersWidth = 51;
-            this.rentas_DATA.Size = new System.Drawing.Size(607, 357);
+            this.rentas_DATA.Size = new System.Drawing.Size(455, 290);
             this.rentas_DATA.TabIndex = 4;
             // 
             // label1
@@ -50,9 +50,10 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(35, 38);
+            this.label1.Location = new System.Drawing.Point(26, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 25);
+            this.label1.Size = new System.Drawing.Size(127, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "Agregar Renta";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -69,24 +70,27 @@
             this.Btn_Borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Borrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.Btn_Borrar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Borrar.Location = new System.Drawing.Point(40, 461);
+            this.Btn_Borrar.Location = new System.Drawing.Point(30, 375);
+            this.Btn_Borrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Btn_Borrar.Name = "Btn_Borrar";
-            this.Btn_Borrar.Size = new System.Drawing.Size(166, 49);
+            this.Btn_Borrar.Size = new System.Drawing.Size(124, 40);
             this.Btn_Borrar.TabIndex = 50;
             this.Btn_Borrar.Text = "Borrar";
             this.Btn_Borrar.TextColor = System.Drawing.Color.White;
             this.Btn_Borrar.UseVisualStyleBackColor = false;
+            this.Btn_Borrar.Click += new System.EventHandler(this.Btn_Borrar_Click);
             // 
             // VistaRentas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(28)))), ((int)(((byte)(54)))));
             this.Controls.Add(this.Btn_Borrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rentas_DATA);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "VistaRentas";
-            this.Size = new System.Drawing.Size(763, 602);
+            this.Size = new System.Drawing.Size(572, 489);
             this.Load += new System.EventHandler(this.VistaRentas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rentas_DATA)).EndInit();
             this.ResumeLayout(false);

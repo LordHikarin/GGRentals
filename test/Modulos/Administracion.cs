@@ -53,7 +53,8 @@ namespace test.Modulos
 
         private void Btn_Borrar_Click(object sender, EventArgs e) //que borre el usuario seleccionado
         {
-
+            string nombre = usuarios_DATA.SelectedRows[0].Cells[1].ToString();
+            conexion.CMD("DELETE FROM empleados WHERE nombre= '" + nombre + "'");
         }
 
         private void Btn_Copia_Click(object sender, EventArgs e)

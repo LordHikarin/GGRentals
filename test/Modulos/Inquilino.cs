@@ -40,7 +40,8 @@ namespace test.Modulos
 
         private void Btn_Borrar_Click(object sender, EventArgs e) // al seleccionar uno que lo borre
         {
-
+            string nombre = dataGridView1.SelectedRows[0].Cells[1].ToString();
+            conexion.CMD("DELETE FROM inquilinos WHERE nombre= '" + nombre + "'");
         }
     }
 }

@@ -37,5 +37,11 @@ namespace test.Modulos
         {
             
         }
+
+        private void Btn_Borrar_Click(object sender, EventArgs e)
+        {
+            string nombre = rentas_DATA.SelectedRows[0].Cells[1].ToString();
+            Conexion.CMD("DELETE FROM rentas WHERE id_inquilino= '" + nombre + "'");
+        }
     }
 }
