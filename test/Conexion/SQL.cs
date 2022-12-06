@@ -1,6 +1,8 @@
 ﻿//using MySqlConnector;
+using FontAwesome.Sharp;
 using MySql.Data.MySqlClient;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -73,6 +75,24 @@ namespace test.Conexion
             {
                 MessageBox.Show("Error, " + x.ToString());
                 return contador;
+            }
+        }
+
+        public int deudas(string usuario)
+        {
+            int deudas=0;
+            try
+            {
+                cmd = new MySqlCommand("Select deudas From rentas Where id_inquilino = '"+usuario+"'", cn);
+                MySqlDataReader row;
+                row = cmd.ExecuteReader();
+                deudas = row.GetInt32("deudas");
+                return deudas;
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show("Error de conexion: "+x.ToString());
+                return 0;
             }
         }
 
