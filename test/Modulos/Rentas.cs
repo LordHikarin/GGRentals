@@ -92,7 +92,7 @@ namespace test.Modulos
             objWord._Document oDoc;
             oWord = new objWord.Application();
             oWord.Visible = true;
-            object oTemplate = "C:\\Users\\orlan\\Downloads\\CONTRATO.docx";
+            object oTemplate = "C:\\Documents\\CONTRATO.docx";
             oDoc = oWord.Documents.Open(ref oTemplate, ref oMissing,
                 ref oMissing, ref oMissing);
             object Lugar = "Lugar"; //Se debe añadir el marcador en la plantilla de word
