@@ -94,7 +94,7 @@
             this.botonRedondo1.Name = "botonRedondo1";
             this.botonRedondo1.Size = new System.Drawing.Size(115, 49);
             this.botonRedondo1.TabIndex = 50;
-            this.botonRedondo1.Text = "volver";
+            this.botonRedondo1.Text = "Volver";
             this.botonRedondo1.TextColor = System.Drawing.Color.White;
             this.botonRedondo1.UseVisualStyleBackColor = false;
             this.botonRedondo1.Click += new System.EventHandler(this.botonRedondo1_Click);
@@ -118,7 +118,7 @@
             this.sPanel1.Location = new System.Drawing.Point(25, 23);
             this.sPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.sPanel1.Name = "sPanel1";
-            this.sPanel1.Size = new System.Drawing.Size(360, 441);
+            this.sPanel1.Size = new System.Drawing.Size(342, 441);
             this.sPanel1.TabIndex = 49;
             // 
             // id_inquilino_TBX
@@ -313,10 +313,10 @@
             this.sPanel2.Controls.Add(this.label15);
             this.sPanel2.Controls.Add(this.label16);
             this.sPanel2.Edge = 20;
-            this.sPanel2.Location = new System.Drawing.Point(393, 23);
+            this.sPanel2.Location = new System.Drawing.Point(375, 23);
             this.sPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.sPanel2.Name = "sPanel2";
-            this.sPanel2.Size = new System.Drawing.Size(360, 441);
+            this.sPanel2.Size = new System.Drawing.Size(343, 441);
             this.sPanel2.TabIndex = 56;
             // 
             // tel_tb_TBX

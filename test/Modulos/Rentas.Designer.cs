@@ -64,7 +64,7 @@
             // dtTime_Salida
             // 
             this.dtTime_Salida.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dtTime_Salida.Location = new System.Drawing.Point(39, 423);
+            this.dtTime_Salida.Location = new System.Drawing.Point(39, 429);
             this.dtTime_Salida.Margin = new System.Windows.Forms.Padding(5);
             this.dtTime_Salida.Name = "dtTime_Salida";
             this.dtTime_Salida.Size = new System.Drawing.Size(269, 22);
@@ -112,7 +112,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(23, 393);
+            this.label4.Location = new System.Drawing.Point(23, 399);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(165, 25);
@@ -208,9 +208,9 @@
             this.Btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_nuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.Btn_nuevo.ForeColor = System.Drawing.Color.White;
-            this.Btn_nuevo.Location = new System.Drawing.Point(197, 509);
+            this.Btn_nuevo.Location = new System.Drawing.Point(197, 522);
             this.Btn_nuevo.Name = "Btn_nuevo";
-            this.Btn_nuevo.Size = new System.Drawing.Size(271, 57);
+            this.Btn_nuevo.Size = new System.Drawing.Size(271, 49);
             this.Btn_nuevo.TabIndex = 46;
             this.Btn_nuevo.Text = "Nuevo";
             this.Btn_nuevo.TextColor = System.Drawing.Color.White;
@@ -229,9 +229,9 @@
             this.Btn_Regresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Regresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.Btn_Regresar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Regresar.Location = new System.Drawing.Point(25, 509);
+            this.Btn_Regresar.Location = new System.Drawing.Point(25, 522);
             this.Btn_Regresar.Name = "Btn_Regresar";
-            this.Btn_Regresar.Size = new System.Drawing.Size(155, 57);
+            this.Btn_Regresar.Size = new System.Drawing.Size(155, 49);
             this.Btn_Regresar.TabIndex = 49;
             this.Btn_Regresar.Text = "Volver";
             this.Btn_Regresar.TextColor = System.Drawing.Color.White;
@@ -259,7 +259,7 @@
             this.sPanel1.Edge = 20;
             this.sPanel1.Location = new System.Drawing.Point(25, 23);
             this.sPanel1.Name = "sPanel1";
-            this.sPanel1.Size = new System.Drawing.Size(443, 466);
+            this.sPanel1.Size = new System.Drawing.Size(443, 479);
             this.sPanel1.TabIndex = 50;
             // 
             // TxtBx_Costo
@@ -338,7 +338,7 @@
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(23, 359);
+            this.label9.Location = new System.Drawing.Point(23, 365);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(300, 25);

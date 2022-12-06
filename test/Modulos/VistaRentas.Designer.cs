@@ -71,7 +71,7 @@
             this.BtnRdn_contrato.ForeColor = System.Drawing.Color.White;
             this.BtnRdn_contrato.Location = new System.Drawing.Point(40, 480);
             this.BtnRdn_contrato.Name = "BtnRdn_contrato";
-            this.BtnRdn_contrato.Size = new System.Drawing.Size(228, 57);
+            this.BtnRdn_contrato.Size = new System.Drawing.Size(228, 49);
             this.BtnRdn_contrato.TabIndex = 49;
             this.BtnRdn_contrato.Text = "Contrato";
             this.BtnRdn_contrato.TextColor = System.Drawing.Color.White;

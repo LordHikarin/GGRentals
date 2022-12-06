@@ -38,7 +38,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(40, 84);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(607, 357);
@@ -72,7 +72,7 @@
             this.Btn_Borrar.ForeColor = System.Drawing.Color.White;
             this.Btn_Borrar.Location = new System.Drawing.Point(40, 477);
             this.Btn_Borrar.Name = "Btn_Borrar";
-            this.Btn_Borrar.Size = new System.Drawing.Size(171, 57);
+            this.Btn_Borrar.Size = new System.Drawing.Size(146, 49);
             this.Btn_Borrar.TabIndex = 37;
             this.Btn_Borrar.Text = "Borrar";
             this.Btn_Borrar.TextColor = System.Drawing.Color.White;
@@ -87,7 +87,7 @@
             this.Controls.Add(this.Btn_Borrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Inquilino";
             this.Size = new System.Drawing.Size(763, 602);
             this.Load += new System.EventHandler(this.Inquilino_Load);

@@ -45,7 +45,7 @@
             // 
             this.usuarios_DATA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.usuarios_DATA.Location = new System.Drawing.Point(19, 21);
-            this.usuarios_DATA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usuarios_DATA.Margin = new System.Windows.Forms.Padding(4);
             this.usuarios_DATA.Name = "usuarios_DATA";
             this.usuarios_DATA.RowHeadersWidth = 51;
             this.usuarios_DATA.Size = new System.Drawing.Size(617, 155);
@@ -65,7 +65,7 @@
             this.Btn_Nuevo.ForeColor = System.Drawing.Color.White;
             this.Btn_Nuevo.Location = new System.Drawing.Point(225, 203);
             this.Btn_Nuevo.Name = "Btn_Nuevo";
-            this.Btn_Nuevo.Size = new System.Drawing.Size(240, 57);
+            this.Btn_Nuevo.Size = new System.Drawing.Size(240, 49);
             this.Btn_Nuevo.TabIndex = 38;
             this.Btn_Nuevo.Text = "Nuevo";
             this.Btn_Nuevo.TextColor = System.Drawing.Color.White;
@@ -86,7 +86,7 @@
             this.Btn_Borrar.ForeColor = System.Drawing.Color.White;
             this.Btn_Borrar.Location = new System.Drawing.Point(19, 203);
             this.Btn_Borrar.Name = "Btn_Borrar";
-            this.Btn_Borrar.Size = new System.Drawing.Size(166, 57);
+            this.Btn_Borrar.Size = new System.Drawing.Size(166, 49);
             this.Btn_Borrar.TabIndex = 39;
             this.Btn_Borrar.Text = "Borrar";
             this.Btn_Borrar.TextColor = System.Drawing.Color.White;
@@ -105,9 +105,9 @@
             this.Btn_Copia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Copia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.Btn_Copia.ForeColor = System.Drawing.Color.White;
-            this.Btn_Copia.Location = new System.Drawing.Point(19, 100);
+            this.Btn_Copia.Location = new System.Drawing.Point(19, 108);
             this.Btn_Copia.Name = "Btn_Copia";
-            this.Btn_Copia.Size = new System.Drawing.Size(617, 57);
+            this.Btn_Copia.Size = new System.Drawing.Size(617, 49);
             this.Btn_Copia.TabIndex = 40;
             this.Btn_Copia.Text = "Copia de seguridad";
             this.Btn_Copia.TextColor = System.Drawing.Color.White;
@@ -128,7 +128,7 @@
             this.Btn_Restaurar.ForeColor = System.Drawing.Color.White;
             this.Btn_Restaurar.Location = new System.Drawing.Point(19, 174);
             this.Btn_Restaurar.Name = "Btn_Restaurar";
-            this.Btn_Restaurar.Size = new System.Drawing.Size(617, 57);
+            this.Btn_Restaurar.Size = new System.Drawing.Size(617, 49);
             this.Btn_Restaurar.TabIndex = 41;
             this.Btn_Restaurar.Text = "Restaurar copia de seguridad";
             this.Btn_Restaurar.TextColor = System.Drawing.Color.White;
@@ -151,7 +151,7 @@
             this.TxtBx_Copia.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.TxtBx_Copia.PasswordChar = false;
             this.TxtBx_Copia.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.TxtBx_Copia.PlaceholderText = "";
+            this.TxtBx_Copia.PlaceholderText = "Ubicación del respaldo";
             this.TxtBx_Copia.Size = new System.Drawing.Size(617, 35);
             this.TxtBx_Copia.TabIndex = 42;
             this.TxtBx_Copia.Texts = "";
@@ -190,7 +190,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(28)))), ((int)(((byte)(54)))));
             this.Controls.Add(this.sPanel1);
             this.Controls.Add(this.sPanel2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Administracion";
             this.Size = new System.Drawing.Size(713, 630);
             this.Load += new System.EventHandler(this.Administracion_Load);

@@ -263,7 +263,7 @@
             this.botonRedondo1.Name = "botonRedondo1";
             this.botonRedondo1.Size = new System.Drawing.Size(115, 49);
             this.botonRedondo1.TabIndex = 47;
-            this.botonRedondo1.Text = "volver";
+            this.botonRedondo1.Text = "Volver";
             this.botonRedondo1.TextColor = System.Drawing.Color.White;
             this.botonRedondo1.UseVisualStyleBackColor = false;
             this.botonRedondo1.Click += new System.EventHandler(this.botonRedondo1_Click);
