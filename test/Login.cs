@@ -65,7 +65,7 @@ namespace test
 
         private void botonRedondo1_Click(object sender, EventArgs e)
         {
-            try
+             try
             {
                 if (Conexion.Login($"select * from empleados where nombre = '{TxtBoxUsuario.Texts}' and contraseña = '{TxtBoxContraseña.Texts}'"))
                 {
@@ -91,7 +91,7 @@ namespace test
             this.Close();
         }
 
-        private void TxtBoxContraseña__TextChanged(object sender, EventArgs e)
+        private void TxtBoxContraseña_TextChanged(object sender, EventArgs e)
         {
             if (!String.IsNullOrEmpty(TxtBoxUsuario.Text) && !String.IsNullOrEmpty(TxtBoxContraseña.Text))
             {
@@ -105,7 +105,7 @@ namespace test
             }
         }
 
-        private void TxtBoxUsuario__TextChanged(object sender, EventArgs e)
+        private void TxtBoxUsuario_TextChanged(object sender, EventArgs e)
         {
             if (!String.IsNullOrEmpty(TxtBoxUsuario.Text) && !String.IsNullOrEmpty(TxtBoxContraseña.Text))
             {

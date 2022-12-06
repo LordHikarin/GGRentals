@@ -167,7 +167,7 @@
             this.TxtBoxUsuario.TabIndex = 15;
             this.TxtBoxUsuario.Texts = "";
             this.TxtBoxUsuario.UnderlinedStyle = false;
-            this.TxtBoxUsuario._TextChanged += new System.EventHandler(this.TxtBoxUsuario__TextChanged);
+            this.TxtBoxUsuario._TextChanged += new System.EventHandler(this.TxtBoxUsuario_TextChanged);
             // 
             // label1
             // 
@@ -203,7 +203,7 @@
             this.TxtBoxContraseña.TabIndex = 15;
             this.TxtBoxContraseña.Texts = "";
             this.TxtBoxContraseña.UnderlinedStyle = false;
-            this.TxtBoxContraseña._TextChanged += new System.EventHandler(this.TxtBoxContraseña__TextChanged);
+            this.TxtBoxContraseña._TextChanged += new System.EventHandler(this.TxtBoxContraseña_TextChanged);
             // 
             // label2
             // 
