@@ -138,7 +138,24 @@ namespace test
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
-
+            Abonos rentas = new Abonos() { Location = new Point(0, 0) };
+            rentas.AgregarAbono += new Abonos.DelegadoAgregar(AgregadoAbono);
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(rentas);
+        }
+        public void AgregadoAbono()
+        {
+            NuevoAbono Abono = new NuevoAbono() { Location = new Point(0, 0) };
+            Abono.Volver += new NuevoAbono.volverDelegate(VistaAbonos);
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(Abono);
+        }
+        public void VistaAbonos()
+        {
+            Abonos Abonos = new Abonos() { Location = new Point(0, 0) };
+            Abonos.AgregarAbono += new Abonos.DelegadoAgregar(AgregadoAbono);
+            HomeContainer.Controls.Clear();
+            HomeContainer.Controls.Add(Abonos);
         }
     }
 }

@@ -118,6 +118,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modulos\Abonos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\Abonos.Designer.cs">
+      <DependentUpon>Abonos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modulos\Administracion.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,6 +141,12 @@
     </Compile>
     <Compile Include="Modulos\Inquilino.Designer.cs">
       <DependentUpon>Inquilino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\NuevoAbono.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modulos\NuevoAbono.Designer.cs">
+      <DependentUpon>NuevoAbono.cs</DependentUpon>
     </Compile>
     <Compile Include="Modulos\NuevoDepartamentos.cs">
       <SubType>UserControl</SubType>
@@ -210,6 +222,9 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\Abonos.resx">
+      <DependentUpon>Abonos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Administracion.resx">
       <DependentUpon>Administracion.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\Inquilino.resx">
       <DependentUpon>Inquilino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulos\NuevoAbono.resx">
+      <DependentUpon>NuevoAbono.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modulos\NuevoDepartamentos.resx">
       <DependentUpon>NuevoDepartamentos.cs</DependentUpon>
