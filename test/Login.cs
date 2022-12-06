@@ -19,7 +19,6 @@ namespace test
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void login_BTN_Click(object sender, EventArgs e)
@@ -93,29 +92,29 @@ namespace test
 
         private void TxtBoxContraseña_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(TxtBoxUsuario.Text) && !String.IsNullOrEmpty(TxtBoxContraseña.Text))
+            if (!String.IsNullOrEmpty(TxtBoxContraseña.Texts) && !String.IsNullOrEmpty(TxtBoxUsuario.Texts))
             {
                 login_BTN.Enabled = true;
-                login_BTN.BackColor = Color.Green;
+                login_BTN.BackgroundColor = Color.FromArgb(74, 156, 242);
             }
             else
             {
                 login_BTN.Enabled = false;
-                login_BTN.BackColor = Color.Gray;
+                login_BTN.BackgroundColor = Color.Gray;
             }
         }
 
         private void TxtBoxUsuario_TextChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(TxtBoxUsuario.Text) && !String.IsNullOrEmpty(TxtBoxContraseña.Text))
+            if (!String.IsNullOrEmpty(TxtBoxContraseña.Texts) && !String.IsNullOrEmpty(TxtBoxUsuario.Texts))
             {
                 login_BTN.Enabled = true;
-                login_BTN.BackColor = Color.Green;
+                login_BTN.BackgroundColor = Color.FromArgb(74, 156, 242);
             }
             else
             {
                 login_BTN.Enabled = false;
-                login_BTN.BackColor = Color.Gray;
+                login_BTN.BackgroundColor = Color.Gray;
             }
         }
     }
