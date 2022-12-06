@@ -57,14 +57,14 @@
             this.botonRedondo2.Name = "botonRedondo2";
             this.botonRedondo2.Size = new System.Drawing.Size(303, 49);
             this.botonRedondo2.TabIndex = 59;
-            this.botonRedondo2.Text = "Guardar";
+            this.botonRedondo2.Text = "Abonar";
             this.botonRedondo2.TextColor = System.Drawing.Color.White;
             this.botonRedondo2.UseVisualStyleBackColor = false;
             // 
             // botonRedondo1
             // 
-            this.botonRedondo1.BackColor = System.Drawing.Color.GhostWhite;
-            this.botonRedondo1.BackgroundColor = System.Drawing.Color.GhostWhite;
+            this.botonRedondo1.BackColor = System.Drawing.Color.DarkRed;
+            this.botonRedondo1.BackgroundColor = System.Drawing.Color.DarkRed;
             this.botonRedondo1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
             this.botonRedondo1.BorderRadius = 20;
             this.botonRedondo1.BorderSize = 0;
@@ -72,14 +72,14 @@
             this.botonRedondo1.FlatAppearance.BorderSize = 0;
             this.botonRedondo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonRedondo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonRedondo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(156)))), ((int)(((byte)(242)))));
+            this.botonRedondo1.ForeColor = System.Drawing.Color.White;
             this.botonRedondo1.Location = new System.Drawing.Point(27, 504);
             this.botonRedondo1.Margin = new System.Windows.Forms.Padding(4);
             this.botonRedondo1.Name = "botonRedondo1";
             this.botonRedondo1.Size = new System.Drawing.Size(115, 49);
             this.botonRedondo1.TabIndex = 58;
             this.botonRedondo1.Text = "volver";
-            this.botonRedondo1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(156)))), ((int)(((byte)(242)))));
+            this.botonRedondo1.TextColor = System.Drawing.Color.White;
             this.botonRedondo1.UseVisualStyleBackColor = false;
             this.botonRedondo1.Click += new System.EventHandler(this.botonRedondo1_Click);
             // 

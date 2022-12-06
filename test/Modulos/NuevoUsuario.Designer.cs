@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.sPanel2 = new MarDeCortezDsk.UserControlls.SPanel();
+            this.TxtBx_Permisos = new CustomControls.RJControls.RJTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.password_TBX = new CustomControls.RJControls.RJTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -37,9 +40,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.botonRedondo2 = new MarDeCortezDsk.UserControlls.BotonRedondo();
             this.botonRedondo1 = new MarDeCortezDsk.UserControlls.BotonRedondo();
-            this.TxtBx_Permisos = new CustomControls.RJControls.RJTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.sPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +62,54 @@
             this.sPanel2.Name = "sPanel2";
             this.sPanel2.Size = new System.Drawing.Size(360, 441);
             this.sPanel2.TabIndex = 57;
+            // 
+            // TxtBx_Permisos
+            // 
+            this.TxtBx_Permisos.BackColor = System.Drawing.SystemColors.Window;
+            this.TxtBx_Permisos.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.TxtBx_Permisos.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.TxtBx_Permisos.BorderRadius = 0;
+            this.TxtBx_Permisos.BorderSize = 2;
+            this.TxtBx_Permisos.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtBx_Permisos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBx_Permisos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TxtBx_Permisos.Location = new System.Drawing.Point(39, 274);
+            this.TxtBx_Permisos.Margin = new System.Windows.Forms.Padding(5);
+            this.TxtBx_Permisos.Multiline = false;
+            this.TxtBx_Permisos.Name = "TxtBx_Permisos";
+            this.TxtBx_Permisos.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.TxtBx_Permisos.PasswordChar = false;
+            this.TxtBx_Permisos.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.TxtBx_Permisos.PlaceholderText = "Sí = 1, No = 0";
+            this.TxtBx_Permisos.Size = new System.Drawing.Size(283, 39);
+            this.TxtBx_Permisos.TabIndex = 58;
+            this.TxtBx_Permisos.Texts = "";
+            this.TxtBx_Permisos.UnderlinedStyle = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(29, 308);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(300, 25);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "________________________";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(23, 236);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 25);
+            this.label2.TabIndex = 56;
+            this.label2.Text = "Permisos";
             // 
             // password_TBX
             // 
@@ -183,8 +231,8 @@
             // 
             // botonRedondo1
             // 
-            this.botonRedondo1.BackColor = System.Drawing.Color.GhostWhite;
-            this.botonRedondo1.BackgroundColor = System.Drawing.Color.GhostWhite;
+            this.botonRedondo1.BackColor = System.Drawing.Color.DarkRed;
+            this.botonRedondo1.BackgroundColor = System.Drawing.Color.DarkRed;
             this.botonRedondo1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
             this.botonRedondo1.BorderRadius = 20;
             this.botonRedondo1.BorderSize = 0;
@@ -192,64 +240,16 @@
             this.botonRedondo1.FlatAppearance.BorderSize = 0;
             this.botonRedondo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonRedondo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonRedondo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(156)))), ((int)(((byte)(242)))));
+            this.botonRedondo1.ForeColor = System.Drawing.Color.White;
             this.botonRedondo1.Location = new System.Drawing.Point(25, 506);
             this.botonRedondo1.Margin = new System.Windows.Forms.Padding(4);
             this.botonRedondo1.Name = "botonRedondo1";
             this.botonRedondo1.Size = new System.Drawing.Size(115, 49);
             this.botonRedondo1.TabIndex = 56;
             this.botonRedondo1.Text = "volver";
-            this.botonRedondo1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(156)))), ((int)(((byte)(242)))));
+            this.botonRedondo1.TextColor = System.Drawing.Color.White;
             this.botonRedondo1.UseVisualStyleBackColor = false;
             this.botonRedondo1.Click += new System.EventHandler(this.botonRedondo1_Click);
-            // 
-            // TxtBx_Permisos
-            // 
-            this.TxtBx_Permisos.BackColor = System.Drawing.SystemColors.Window;
-            this.TxtBx_Permisos.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.TxtBx_Permisos.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.TxtBx_Permisos.BorderRadius = 0;
-            this.TxtBx_Permisos.BorderSize = 2;
-            this.TxtBx_Permisos.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TxtBx_Permisos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBx_Permisos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TxtBx_Permisos.Location = new System.Drawing.Point(39, 274);
-            this.TxtBx_Permisos.Margin = new System.Windows.Forms.Padding(5);
-            this.TxtBx_Permisos.Multiline = false;
-            this.TxtBx_Permisos.Name = "TxtBx_Permisos";
-            this.TxtBx_Permisos.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
-            this.TxtBx_Permisos.PasswordChar = false;
-            this.TxtBx_Permisos.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.TxtBx_Permisos.PlaceholderText = "Sí = 1, No = 0";
-            this.TxtBx_Permisos.Size = new System.Drawing.Size(283, 39);
-            this.TxtBx_Permisos.TabIndex = 58;
-            this.TxtBx_Permisos.Texts = "";
-            this.TxtBx_Permisos.UnderlinedStyle = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(29, 308);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(300, 25);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "________________________";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(23, 236);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 25);
-            this.label2.TabIndex = 56;
-            this.label2.Text = "Permisos";
             // 
             // NuevoUsuario
             // 

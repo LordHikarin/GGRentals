@@ -110,7 +110,7 @@
             this.sPanel1.Controls.Add(this.label1);
             this.sPanel1.Edge = 20;
             this.sPanel1.Location = new System.Drawing.Point(25, 23);
-            this.sPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.sPanel1.Name = "sPanel1";
             this.sPanel1.Size = new System.Drawing.Size(443, 441);
             this.sPanel1.TabIndex = 46;
@@ -165,7 +165,7 @@
             this.costo_TBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.costo_TBX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.costo_TBX.Location = new System.Drawing.Point(39, 363);
-            this.costo_TBX.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.costo_TBX.Margin = new System.Windows.Forms.Padding(5);
             this.costo_TBX.Multiline = false;
             this.costo_TBX.Name = "costo_TBX";
             this.costo_TBX.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -188,7 +188,7 @@
             this.ubicacion_TBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ubicacion_TBX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ubicacion_TBX.Location = new System.Drawing.Point(39, 252);
-            this.ubicacion_TBX.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ubicacion_TBX.Margin = new System.Windows.Forms.Padding(5);
             this.ubicacion_TBX.Multiline = false;
             this.ubicacion_TBX.Name = "ubicacion_TBX";
             this.ubicacion_TBX.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -211,7 +211,7 @@
             this.departamento_ID_TBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.departamento_ID_TBX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.departamento_ID_TBX.Location = new System.Drawing.Point(39, 155);
-            this.departamento_ID_TBX.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.departamento_ID_TBX.Margin = new System.Windows.Forms.Padding(5);
             this.departamento_ID_TBX.Multiline = false;
             this.departamento_ID_TBX.Name = "departamento_ID_TBX";
             this.departamento_ID_TBX.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -234,7 +234,7 @@
             this.departamento_TBX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.departamento_TBX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.departamento_TBX.Location = new System.Drawing.Point(39, 50);
-            this.departamento_TBX.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.departamento_TBX.Margin = new System.Windows.Forms.Padding(5);
             this.departamento_TBX.Multiline = false;
             this.departamento_TBX.Name = "departamento_TBX";
             this.departamento_TBX.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
@@ -248,8 +248,8 @@
             // 
             // botonRedondo1
             // 
-            this.botonRedondo1.BackColor = System.Drawing.Color.GhostWhite;
-            this.botonRedondo1.BackgroundColor = System.Drawing.Color.GhostWhite;
+            this.botonRedondo1.BackColor = System.Drawing.Color.DarkRed;
+            this.botonRedondo1.BackgroundColor = System.Drawing.Color.DarkRed;
             this.botonRedondo1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
             this.botonRedondo1.BorderRadius = 20;
             this.botonRedondo1.BorderSize = 0;
@@ -257,14 +257,14 @@
             this.botonRedondo1.FlatAppearance.BorderSize = 0;
             this.botonRedondo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonRedondo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonRedondo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(156)))), ((int)(((byte)(242)))));
+            this.botonRedondo1.ForeColor = System.Drawing.Color.White;
             this.botonRedondo1.Location = new System.Drawing.Point(25, 506);
-            this.botonRedondo1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.botonRedondo1.Margin = new System.Windows.Forms.Padding(4);
             this.botonRedondo1.Name = "botonRedondo1";
             this.botonRedondo1.Size = new System.Drawing.Size(115, 49);
             this.botonRedondo1.TabIndex = 47;
             this.botonRedondo1.Text = "volver";
-            this.botonRedondo1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(156)))), ((int)(((byte)(242)))));
+            this.botonRedondo1.TextColor = System.Drawing.Color.White;
             this.botonRedondo1.UseVisualStyleBackColor = false;
             this.botonRedondo1.Click += new System.EventHandler(this.botonRedondo1_Click);
             // 
@@ -281,7 +281,7 @@
             this.botonRedondo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonRedondo2.ForeColor = System.Drawing.Color.White;
             this.botonRedondo2.Location = new System.Drawing.Point(165, 506);
-            this.botonRedondo2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.botonRedondo2.Margin = new System.Windows.Forms.Padding(4);
             this.botonRedondo2.Name = "botonRedondo2";
             this.botonRedondo2.Size = new System.Drawing.Size(303, 49);
             this.botonRedondo2.TabIndex = 48;
@@ -298,7 +298,7 @@
             this.Controls.Add(this.botonRedondo2);
             this.Controls.Add(this.botonRedondo1);
             this.Controls.Add(this.sPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "NuevoDepartamentos";
             this.Size = new System.Drawing.Size(763, 602);
             this.Load += new System.EventHandler(this.NuevoDepartamentos_Load);
