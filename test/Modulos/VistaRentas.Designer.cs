@@ -30,7 +30,7 @@
         {
             this.rentas_DATA = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.BtnRdn_contrato = new MarDeCortezDsk.UserControlls.BotonRedondo();
+            this.Btn_Borrar = new MarDeCortezDsk.UserControlls.BotonRedondo();
             ((System.ComponentModel.ISupportInitialize)(this.rentas_DATA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,33 +57,32 @@
             this.label1.Text = "Agregar Renta";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // BtnRdn_contrato
+            // Btn_Borrar
             // 
-            this.BtnRdn_contrato.BackColor = System.Drawing.Color.DarkCyan;
-            this.BtnRdn_contrato.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.BtnRdn_contrato.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
-            this.BtnRdn_contrato.BorderRadius = 20;
-            this.BtnRdn_contrato.BorderSize = 0;
-            this.BtnRdn_contrato.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnRdn_contrato.FlatAppearance.BorderSize = 0;
-            this.BtnRdn_contrato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnRdn_contrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.BtnRdn_contrato.ForeColor = System.Drawing.Color.White;
-            this.BtnRdn_contrato.Location = new System.Drawing.Point(40, 480);
-            this.BtnRdn_contrato.Name = "BtnRdn_contrato";
-            this.BtnRdn_contrato.Size = new System.Drawing.Size(228, 49);
-            this.BtnRdn_contrato.TabIndex = 49;
-            this.BtnRdn_contrato.Text = "Contrato";
-            this.BtnRdn_contrato.TextColor = System.Drawing.Color.White;
-            this.BtnRdn_contrato.UseVisualStyleBackColor = false;
-            this.BtnRdn_contrato.Click += new System.EventHandler(this.BtnRdn_contrato_Click);
+            this.Btn_Borrar.BackColor = System.Drawing.Color.DarkRed;
+            this.Btn_Borrar.BackgroundColor = System.Drawing.Color.DarkRed;
+            this.Btn_Borrar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(217)))), ((int)(((byte)(115)))), ((int)(((byte)(26)))));
+            this.Btn_Borrar.BorderRadius = 20;
+            this.Btn_Borrar.BorderSize = 0;
+            this.Btn_Borrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Borrar.FlatAppearance.BorderSize = 0;
+            this.Btn_Borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Borrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Borrar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Borrar.Location = new System.Drawing.Point(40, 461);
+            this.Btn_Borrar.Name = "Btn_Borrar";
+            this.Btn_Borrar.Size = new System.Drawing.Size(166, 49);
+            this.Btn_Borrar.TabIndex = 50;
+            this.Btn_Borrar.Text = "Borrar";
+            this.Btn_Borrar.TextColor = System.Drawing.Color.White;
+            this.Btn_Borrar.UseVisualStyleBackColor = false;
             // 
             // VistaRentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(28)))), ((int)(((byte)(54)))));
-            this.Controls.Add(this.BtnRdn_contrato);
+            this.Controls.Add(this.Btn_Borrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rentas_DATA);
             this.Name = "VistaRentas";
@@ -99,6 +98,6 @@
 
         private System.Windows.Forms.DataGridView rentas_DATA;
         private System.Windows.Forms.Label label1;
-        private MarDeCortezDsk.UserControlls.BotonRedondo BtnRdn_contrato;
+        private MarDeCortezDsk.UserControlls.BotonRedondo Btn_Borrar;
     }
 }
