@@ -23,7 +23,7 @@ namespace test.Modulos
         private void botonRedondo2_Click(object sender, EventArgs e)
         {
             int usuario = conexion.Contador("SELECT * FROM empleados;");
-            conexion.CMD("INSERT INTO `ggrentals`.`empleados`VALUES ('" + usuario + "'" + user_TBX.Texts.ToString() +"', '" + password_TBX.Texts.ToString() + "', '"+ TxtBx_Permisos.Texts.ToString()+"');");
+            conexion.CMD("INSERT INTO empleados VALUES (" + usuario + ", '" + user_TBX.Texts.ToString() +"', '" + password_TBX.Texts.ToString() + "', "+ TxtBx_Permisos.Texts.ToString()+")");
         }
 
         private void botonRedondo1_Click(object sender, EventArgs e)

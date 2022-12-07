@@ -46,8 +46,10 @@ namespace test.Modulos
 
         private void Btn_Borrar_Click(object sender, EventArgs e)
         {
-            string nombre = dept_DATA.SelectedRows[0].Cells[1].ToString();
-            conexion.CMD("DELETE FROM departamentos WHERE nombre= '" + nombre + "'");
+            string nombre = dept_DATA.SelectedRows[0].Cells[0].Value.ToString();
+            MessageBox.Show(nombre);
+            conexion.CMD("DELETE FROM departamentos WHERE (id_departamentos = '" + nombre + "')");
+            dept_DATA.Update();
         }
     }
 }

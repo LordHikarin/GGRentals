@@ -35,6 +35,7 @@ namespace test.Conexion
                 cn = new MySqlConnection("Data Source = bdv13p7ggah8rblyzmc3-mysql.services.clever-cloud.com; User ID = ujjuygkfcbwb4z5y; Password = NC7HN23JXMQL3598JbYi; Initial Catalog =bdv13p7ggah8rblyzmc3;");
                 cn.Open();
                 //MessageBox.Show("Conexion Correcta.");
+                cn.Close();
             }
             catch (Exception x)
             {
@@ -47,6 +48,7 @@ namespace test.Conexion
         {
             try
             {
+                cn.Open();
                 cmd = new MySqlCommand(query, cn);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Cambios Efectuados Correctamente.");
@@ -62,6 +64,7 @@ namespace test.Conexion
             int contador = 0;
             try
             {
+                cn.Open();
                 cmd = new MySqlCommand(query, cn);
                 cmd.ExecuteNonQuery();
                 MySqlDataReader reader = cmd.ExecuteReader();
@@ -83,6 +86,7 @@ namespace test.Conexion
             int deudas=0;
             try
             {
+                cn.Open();
                 cmd = new MySqlCommand("Select deudas From rentas Where id_inquilino = '"+usuario+"'", cn);
                 MySqlDataReader row;
                 row = cmd.ExecuteReader();
@@ -101,6 +105,7 @@ namespace test.Conexion
         {
             try
             {
+                cn.Open();
                 cmd = new MySqlCommand(query, cn);
                 cmd.ExecuteNonQuery();
                 MySqlDataReader reader = cmd.ExecuteReader();
@@ -130,6 +135,7 @@ namespace test.Conexion
         //Rellenar un Dataset con un query SELECT*FROM Tabla
         public DataSet GetDataSet(string sqlCommand)
         {
+            cn.Open();
             DataSet ds = new DataSet();
             cmd = new MySqlCommand(sqlCommand, cn);
             DataTable table = new DataTable();

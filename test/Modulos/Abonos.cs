@@ -36,7 +36,7 @@ namespace test.Modulos
         private void TxtBx_Search__TextChanged(object sender, EventArgs e) //Para que busque el usuario por todos los abonos
         {
 
-            string sqlCommand = "SELECT * FROM rentas WHERE id_inquilino ='"+TxtBx_Search.Text.ToString()+"'";
+            string sqlCommand = "SELECT * FROM rentas WHERE id_inquilino ='"+TxtBx_Search.Texts.ToString()+"'";
             DataSet ds = conexion.GetDataSet(sqlCommand);
             abonos_DATA.DataSource = ds.Tables[0];
             abonos_DATA.Update();
