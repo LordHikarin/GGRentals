@@ -39,6 +39,7 @@
             this.circularImagen1 = new test.UserControlls.CircularImagen();
             this.HomeContainer = new MarDeCortezDsk.UserControlls.SPanel();
             this.Btn_Close = new MarDeCortezDsk.UserControlls.BotonRedondo();
+            this.dtTime_Fecha = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularImagen1)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +57,7 @@
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.Location = new System.Drawing.Point(0, 519);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(232, 62);
             this.iconButton1.TabIndex = 4;
@@ -78,7 +79,7 @@
             this.iconButton2.IconColor = System.Drawing.Color.White;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.Location = new System.Drawing.Point(0, 250);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(232, 62);
             this.iconButton2.TabIndex = 5;
@@ -99,7 +100,7 @@
             this.iconButton3.IconColor = System.Drawing.Color.White;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.Location = new System.Drawing.Point(0, 180);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(232, 62);
             this.iconButton3.TabIndex = 6;
@@ -120,7 +121,7 @@
             this.btn_Rentas.IconColor = System.Drawing.Color.White;
             this.btn_Rentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Rentas.Location = new System.Drawing.Point(4, 320);
-            this.btn_Rentas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Rentas.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Rentas.Name = "btn_Rentas";
             this.btn_Rentas.Size = new System.Drawing.Size(232, 62);
             this.btn_Rentas.TabIndex = 7;
@@ -139,7 +140,7 @@
             this.panel1.Controls.Add(this.iconButton2);
             this.panel1.Controls.Add(this.iconButton3);
             this.panel1.Location = new System.Drawing.Point(8, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(236, 655);
             this.panel1.TabIndex = 8;
@@ -156,7 +157,7 @@
             this.iconButton6.IconColor = System.Drawing.Color.White;
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton6.Location = new System.Drawing.Point(0, 589);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton6.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton6.Name = "iconButton6";
             this.iconButton6.Size = new System.Drawing.Size(232, 62);
             this.iconButton6.TabIndex = 17;
@@ -177,7 +178,7 @@
             this.iconButton5.IconColor = System.Drawing.Color.White;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.Location = new System.Drawing.Point(4, 390);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(232, 62);
             this.iconButton5.TabIndex = 16;
@@ -196,7 +197,7 @@
             this.circularImagen1.GradientAngle = 50F;
             this.circularImagen1.Image = ((System.Drawing.Image)(resources.GetObject("circularImagen1.Image")));
             this.circularImagen1.Location = new System.Drawing.Point(21, 4);
-            this.circularImagen1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.circularImagen1.Margin = new System.Windows.Forms.Padding(4);
             this.circularImagen1.Name = "circularImagen1";
             this.circularImagen1.Size = new System.Drawing.Size(169, 169);
             this.circularImagen1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -209,7 +210,7 @@
             this.HomeContainer.BorderColor = System.Drawing.Color.White;
             this.HomeContainer.Edge = 20;
             this.HomeContainer.Location = new System.Drawing.Point(248, 44);
-            this.HomeContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HomeContainer.Margin = new System.Windows.Forms.Padding(4);
             this.HomeContainer.Name = "HomeContainer";
             this.HomeContainer.Size = new System.Drawing.Size(715, 607);
             this.HomeContainer.TabIndex = 9;
@@ -227,7 +228,7 @@
             this.Btn_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Close.ForeColor = System.Drawing.Color.White;
             this.Btn_Close.Location = new System.Drawing.Point(882, 4);
-            this.Btn_Close.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Close.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Close.Name = "Btn_Close";
             this.Btn_Close.Size = new System.Drawing.Size(81, 36);
             this.Btn_Close.TabIndex = 19;
@@ -235,6 +236,18 @@
             this.Btn_Close.TextColor = System.Drawing.Color.White;
             this.Btn_Close.UseVisualStyleBackColor = false;
             this.Btn_Close.Click += new System.EventHandler(this.botonRedondo1_Click);
+            // 
+            // dtTime_Fecha
+            // 
+            this.dtTime_Fecha.CalendarForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dtTime_Fecha.CalendarMonthBackground = System.Drawing.Color.DarkCyan;
+            this.dtTime_Fecha.CalendarTitleBackColor = System.Drawing.Color.DarkCyan;
+            this.dtTime_Fecha.CalendarTrailingForeColor = System.Drawing.Color.DarkCyan;
+            this.dtTime_Fecha.Checked = false;
+            this.dtTime_Fecha.Location = new System.Drawing.Point(583, 12);
+            this.dtTime_Fecha.Name = "dtTime_Fecha";
+            this.dtTime_Fecha.Size = new System.Drawing.Size(282, 22);
+            this.dtTime_Fecha.TabIndex = 20;
             // 
             // Home
             // 
@@ -244,6 +257,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(984, 658);
+            this.Controls.Add(this.dtTime_Fecha);
             this.Controls.Add(this.Btn_Close);
             this.Controls.Add(this.HomeContainer);
             this.Controls.Add(this.panel1);
@@ -273,5 +287,6 @@
         private UserControlls.CircularImagen circularImagen1;
         private MarDeCortezDsk.UserControlls.SPanel HomeContainer;
         private MarDeCortezDsk.UserControlls.BotonRedondo Btn_Close;
+        private System.Windows.Forms.DateTimePicker dtTime_Fecha;
     }
 }

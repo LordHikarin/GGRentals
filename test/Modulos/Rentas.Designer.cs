@@ -55,7 +55,7 @@
             // dtTime_LLegada
             // 
             this.dtTime_LLegada.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dtTime_LLegada.Location = new System.Drawing.Point(39, 342);
+            this.dtTime_LLegada.Location = new System.Drawing.Point(39, 351);
             this.dtTime_LLegada.Margin = new System.Windows.Forms.Padding(5);
             this.dtTime_LLegada.Name = "dtTime_LLegada";
             this.dtTime_LLegada.Size = new System.Drawing.Size(269, 22);

@@ -28,7 +28,6 @@ namespace test.Modulos
         }
         public delegate void VolverDelegado();
         public event VolverDelegado Volver;
-
         private void Rentas_Load(object sender, EventArgs e)
         {
             /*

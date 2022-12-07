@@ -9,5 +9,6 @@ namespace test
     public static class Propiedades
     {
         public static Boolean admin {get; set;}
+        public static DateTime Fecha {get; set;}
     }
 }

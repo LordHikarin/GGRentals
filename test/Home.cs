@@ -27,6 +27,7 @@ namespace test
                 iconButton1.Visible = true;
                 iconButton1.Enabled = true;
             }
+            dtTime_Fecha.Value = Propiedades.Fecha;
         }
 
 
