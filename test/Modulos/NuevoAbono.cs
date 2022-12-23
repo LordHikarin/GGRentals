@@ -141,5 +141,13 @@ namespace test.Modulos
                 conexion.CMD("DELETE FROM rentas WHERE id_inquilino= '"+user_TBX.Text.ToString()+"'");
             }
         }
+
+        private void NuevoAbono_Load(object sender, EventArgs e)
+        {
+            string sqlCommand = "SELECT * FROM rentas";
+            DataSet ds = conexion.GetDataSet(sqlCommand);
+            Data_Abonados.DataSource = ds.Tables[0];
+            Data_Abonados.Update();
+        }
     }
 }

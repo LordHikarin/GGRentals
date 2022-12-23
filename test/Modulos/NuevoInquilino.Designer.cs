@@ -118,7 +118,7 @@
             this.sPanel1.Location = new System.Drawing.Point(25, 23);
             this.sPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.sPanel1.Name = "sPanel1";
-            this.sPanel1.Size = new System.Drawing.Size(342, 441);
+            this.sPanel1.Size = new System.Drawing.Size(334, 441);
             this.sPanel1.TabIndex = 49;
             // 
             // id_inquilino_TBX
@@ -313,10 +313,10 @@
             this.sPanel2.Controls.Add(this.label15);
             this.sPanel2.Controls.Add(this.label16);
             this.sPanel2.Edge = 20;
-            this.sPanel2.Location = new System.Drawing.Point(375, 23);
+            this.sPanel2.Location = new System.Drawing.Point(367, 23);
             this.sPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.sPanel2.Name = "sPanel2";
-            this.sPanel2.Size = new System.Drawing.Size(343, 441);
+            this.sPanel2.Size = new System.Drawing.Size(336, 441);
             this.sPanel2.TabIndex = 56;
             // 
             // tel_tb_TBX
@@ -461,7 +461,7 @@
             this.Controls.Add(this.sPanel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "NuevoInquilino";
-            this.Size = new System.Drawing.Size(763, 602);
+            this.Size = new System.Drawing.Size(715, 607);
             this.sPanel1.ResumeLayout(false);
             this.sPanel1.PerformLayout();
             this.sPanel2.ResumeLayout(false);
