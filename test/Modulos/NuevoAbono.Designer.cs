@@ -132,6 +132,7 @@
             this.MetodoPago_TBX.TabIndex = 58;
             this.MetodoPago_TBX.Texts = "";
             this.MetodoPago_TBX.UnderlinedStyle = false;
+            this.MetodoPago_TBX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.MetodoPago_TBX_KeyPress);
             // 
             // label1
             // 
@@ -180,6 +181,7 @@
             this.cantidad_TBX.TabIndex = 55;
             this.cantidad_TBX.Texts = "";
             this.cantidad_TBX.UnderlinedStyle = false;
+            this.cantidad_TBX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cantidad_TBX_KeyPress);
             // 
             // label12
             // 
@@ -229,6 +231,7 @@
             this.user_TBX.TabIndex = 49;
             this.user_TBX.Texts = "";
             this.user_TBX.UnderlinedStyle = false;
+            this.user_TBX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.user_TBX_KeyPress);
             // 
             // label14
             // 
