@@ -41,6 +41,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.Data_Abonados = new System.Windows.Forms.DataGridView();
+            this.TBx_search = new CustomControls.RJControls.RJTextBox();
             this.sPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Data_Abonados)).BeginInit();
             this.SuspendLayout();
@@ -256,18 +257,43 @@
             // Data_Abonados
             // 
             this.Data_Abonados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Data_Abonados.Location = new System.Drawing.Point(385, 21);
+            this.Data_Abonados.Location = new System.Drawing.Point(385, 75);
             this.Data_Abonados.Name = "Data_Abonados";
             this.Data_Abonados.RowHeadersWidth = 51;
             this.Data_Abonados.RowTemplate.Height = 24;
-            this.Data_Abonados.Size = new System.Drawing.Size(316, 441);
+            this.Data_Abonados.Size = new System.Drawing.Size(316, 387);
             this.Data_Abonados.TabIndex = 61;
+            // 
+            // TBx_search
+            // 
+            this.TBx_search.BackColor = System.Drawing.SystemColors.Window;
+            this.TBx_search.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.TBx_search.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.TBx_search.BorderRadius = 0;
+            this.TBx_search.BorderSize = 2;
+            this.TBx_search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TBx_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBx_search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TBx_search.Location = new System.Drawing.Point(386, 28);
+            this.TBx_search.Margin = new System.Windows.Forms.Padding(5);
+            this.TBx_search.Multiline = false;
+            this.TBx_search.Name = "TBx_search";
+            this.TBx_search.Padding = new System.Windows.Forms.Padding(13, 9, 13, 9);
+            this.TBx_search.PasswordChar = false;
+            this.TBx_search.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.TBx_search.PlaceholderText = "Introducir inquilino a buscar";
+            this.TBx_search.Size = new System.Drawing.Size(315, 39);
+            this.TBx_search.TabIndex = 59;
+            this.TBx_search.Texts = "";
+            this.TBx_search.UnderlinedStyle = false;
+            this.TBx_search._TextChanged += new System.EventHandler(this.rjTextBox1__TextChanged);
             // 
             // NuevoAbono
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(28)))), ((int)(((byte)(54)))));
+            this.Controls.Add(this.TBx_search);
             this.Controls.Add(this.Data_Abonados);
             this.Controls.Add(this.botonRedondo2);
             this.Controls.Add(this.botonRedondo1);
@@ -298,5 +324,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView Data_Abonados;
+        private CustomControls.RJControls.RJTextBox TBx_search;
     }
 }

@@ -149,5 +149,13 @@ namespace test.Modulos
             Data_Abonados.DataSource = ds.Tables[0];
             Data_Abonados.Update();
         }
+
+        private void rjTextBox1__TextChanged(object sender, EventArgs e)
+        {
+            string sqlCommand = "SELECT * FROM rentas WHERE id_inquilino ='"+TBx_search.Texts.ToString()+"'";
+            DataSet ds = conexion.GetDataSet(sqlCommand);
+            Data_Abonados.DataSource = ds.Tables[0];
+            Data_Abonados.Update();
+        }
     }
 }
